@@ -1,0 +1,30 @@
+{{> components/hr.hbs size="md" }}
+{{#if interests.length}}
+  <section class="section">
+    <header>
+      <h2 class='section-title' class='section-title'>
+        <span class="{{ ICO "interest" }}"></span>
+        Interests
+      </h2>
+    </header>
+    <section id="interests">
+      {{#each interests}}
+        <div class="item">
+          {{#if name}}
+            <h3>{{ name }}</h3>
+          {{/if}}
+          {{#if keywords.length}}
+            <ul class="keywords">
+              {{#each keywords}}
+                <li>{{.}}</li>
+              {{/each}}
+            </ul>
+          {{/if}}
+          {{#if summary}}
+            <div class="summary">{{ summary }}</div>
+          {{/if}}
+        </div>
+      {{/each}}
+    </section>
+  </section>
+{{/if}}

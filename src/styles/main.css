@@ -1,0 +1,169 @@
+@import "https://cdn.jsdelivr.net/npm/simpledotcss@2.2.0/simple.min.css";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+:root {
+  --cww: #FFF;
+  --cbb: #000;
+
+  --brl: 14px;
+  --brm: 10px;
+  --brs: 6px;
+  --blur: 8px;
+
+  --c00: #443388;
+  --c01: #CC3377;
+  --ca1: #FF3399;
+  --c02: #55CC44;
+  --c03: #DDAA33;
+  --c04: #1177DD;
+  --c05: #6644DD;
+  --c06: #44DDBB;
+  --c07: #9999EE;
+
+  --c08: #5544AA;
+  --c09: #BB4488;
+  --c10: #77DD55;
+  --c11: #EEBB44;
+  --c12: #2299EE;
+  --c13: #8866EE;
+  --c14: #66EECC;
+  --c15: #AABBFF;
+
+  --cc0: #332266;
+  --cc1: #DD2266;
+  --cc2: #33BB33;
+  --cc3: #CC9922;
+  --cc4: #2244CC;
+  --cc5: #5522CC;
+  --cc6: #22CCAA;
+  --cc7: #8888EE;
+
+  --cy0: #6655BB;
+  --cy1: #AA5599;
+  --cy2: #99EE66;
+  --cy3: #FFCC55;
+  --cy4: #44BBFF;
+  --cy5: #9988FF;
+  --cy6: #88FFDD;
+  --cy7: #BBCCFF;
+
+  --cx0: #221155;
+  --cx1: #EE1155;
+  --cx2: #11AA22;
+  --cx3: #BB8811;
+  --cx4: #3311BB;
+  --cx5: #4422BB;
+  --cx6: #11BB99;
+  --cx7: #8877DD;
+
+  --cz0: #111133;
+  --cz1: #FF0044;
+  --cz2: #009911;
+  --cz3: #AA7700;
+  --cz4: #3300AA;
+  --cz5: #4411AA;
+  --cz6: #00AA88;
+  --cz7: #7766CC;
+
+  --zk0: #BB44AA;
+  --zk1: #BB55BB;
+  --zk2: #CC66CC;
+  --zk3: #CC77DD;
+  --zk4: #DD88DD;
+  --zk5: #DD99EE;
+  --zk6: #EEAAEE;
+  --zk7: #EEBBFF;
+  --zk8: #FFCCFF;
+  --zk9: #FFDDFF;
+
+  --pk0: #FF4488;
+  --pk1: #EE4499;
+  --pk2: #DD44AA;
+  --pk3: #CC44BB;
+  --pk4: #BB44CC;
+  --pk5: #AA44DD;
+  --pk6: #9944EE;
+  --pk7: #8844FF;
+  --pk8: #7755FF;
+  --pk9: #6655FF;
+
+  --sbg: #DD3366;
+  --sfg: #331155;
+  --wbg: #3311BB;
+  --wfg: #2299EE;
+  --ebg: #009911;
+  --efg: #113344;
+  --xbg: #221155;
+
+  --xbg: #EEDDFF;
+  --xfg: #44BBFF;
+  --xgg: #EECCFF44;
+  --xog: #99AAFF11;
+
+  --sk0: #220044;
+  --sk1: #441155;
+  --sk2: #662266;
+  --sk3: #883377;
+  --sk4: #994488;
+  --sk5: #AA5599;
+  --sk6: #BB66AA;
+  --sk7: #CC77BB;
+  --sk8: #DD88CC;
+  --sk9: #EE99DD;
+
+  --wk0: #200244;
+  --wk1: #221155;
+  --wk2: #332266;
+  --wk3: #443388;
+  --wk4: #5544AA;
+  --wk5: #6655BB;
+  --wk6: #7766CC;
+  --wk7: #8877DD;
+  --wk8: #9999EE;
+  --wk9: #BBAAFF;
+
+  --ek0: #003322;
+  --ek1: #114433;
+  --ek2: #226644;
+  --ek3: #339955;
+  --ek4: #44AA66;
+  --ek5: #55BB77;
+  --ek6: #66CC88;
+  --ek7: #77DD99;
+  --ek8: #88EEAA;
+  --ek9: #99FFAA;
+}
+
+img {
+  opacity: 1;
+}
+
+div.line-pattern {
+  height: 16px;
+  display: block;
+  position: relative;
+  margin:  20px 0;
+  width: 100%;
+  background-image: url("/src/assets/line.svg");
+  background-size: 30px 26px;
+  background-repeat: space;
+  opacity: .2;
+
+  &.md {
+    /* filter: hue-rotate(22deg); */
+    height: 30px;
+    background-size: 50px 60px;
+  }
+  &.lg {
+    height: 40px;
+    background-size: 80px;
+  }
+}
+
+/* html { filter: invert(1); } */
+/* margin: 84px 0; */
+/* background-position: 20% 50%; */
+/* background-clip: padding-box; */

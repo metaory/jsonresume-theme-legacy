@@ -1,0 +1,36 @@
+{{> components/hr.hbs size="md" }}
+{{#if languages.length}}
+  <section class="section">
+    <header>
+      <h2 class='section-title'>
+        <span class="{{ ICO "code" }}"></span>
+      Languages</h2>
+    </header>
+    <section id="languages">
+      {{#each languages}}
+        <div class="display">
+          <section class="language">
+            <span>
+              <!-- <img  src="https://cdn.simpleicons.org/{{ language }}?viewbox=auto&" /> -->
+              <!-- <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/{{icon}}.svg" /> -->
+                    <span class="icon {{ ICO language }}"></span>
+            </span>
+            <h3>{{ language }}</h3>
+          </section>
+          <div class="item">
+            {{#if fluency}}
+              <div class="level fluency {{ fluency }}">
+                {{#if fluencyDisplay}}
+                  <em>{{ fluencyDisplay }}</em>
+                {{ else }}
+                  <em>{{ fluency }}</em>
+                {{/if}}
+                <div class="bar"></div>
+              </div>
+            {{/if}}
+          </div>
+        </div>
+      {{/each}}
+    </section>
+  </section>
+{{/if}}

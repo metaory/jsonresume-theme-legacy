@@ -1,0 +1,224 @@
+{
+  "basics": {
+    "name": "John Doe",
+    "label": "Programmer",
+    "image": "https://cdn.pixabay.com/photo/2024/06/08/18/38/ai-generated-8817381_960_720.png",
+    "logo": "https://cdn.pixabay.com/photo/2023/03/21/19/47/character-7868059_960_720.jpg",
+    "email": "john@gmail.com",
+    "phone": "(912) 555-4321",
+    "url": "https://johndoe.com",
+    "label": "Cyngsbez Ratvarre · Yrnq  Fbyhgvba Nepuvgrpg  Shyy-fgnpx · QriBcf · NJF  Yhn · Abqr · Yvahk · aIvz",
+    "summary": "<ul style='margin-bottom: 0px;'> <li> Lorem ipsum odor amet, consectetuer adipiscing elit </li> <li> Ornare ac vehicula diam fermentum interdum finibus tincidunt </li> <li> Consectetur eget elit senectus nibh porttitor urna</li> <li> Netus sem venenatis feugiat ac curabitur pellentesque torquent et</li> <li> Volutpat ultrices sed, mi curabitur magna sit libero</li> <li> Mauris maecenas nisi nulla; vehicula auctor magnis</li> <li> Gravida mauris commodo taciti gravida netus</li> <li> Elementum nec curae ultrices nec himenaeos nibh</li> <li> Fames magna gravida parturient tincidunt suspendisse ipsum congue nam</li> <li> Ultrices curabitur justo lacus felis nam a consequat</li> <li> Proin penatibus lacinia adipiscing; scelerisque id per mauris</li> <li> Varius montes duis elementum accumsan nullam maximus sit</li> <li> Nostra placerat eu fringilla dapibus amet magna </li> </ul>",
+    "location": {
+      "address": "2712 Broadway St",
+      "postalCode": "CA 94115",
+      "city": "San Francisco",
+      "countryCode": "US",
+      "region": "California"
+    },
+    "profiles": [
+      {
+        "network": "Twitter",
+        "username": "john",
+        "url": "https://twitter.com/john"
+      }
+    ]
+  },
+  "work": [
+    {
+      "name": "Company",
+      "position": "President",
+      "url": "https://company.com",
+      "startDate": "2014-01-01",
+      "endDate": "2024-01-01",
+      "summary": "Description…",
+      "keywords": [
+        "AWS",
+        "CI/CD",
+        "CloudFormation",
+        "Docker",
+        "Git",
+        "Integrations",
+        "NodeJs",
+        "OIDC",
+        "React",
+        "Serverless",
+        "Svelte",
+        "Performance",
+        "Terraform"
+      ],
+      "highlights": [
+        "Lorem ipsum odor amet",
+        "consectetuer adipiscing elit",
+        "Sollicitudin sit libero venenatis nascetur",
+        "dignissim lacinia ac euismod",
+        "Venenatis curabitur pulvinar sociosqu",
+        "class a senectus",
+        "Metus mattis parturient"
+      ]
+    }
+  ],
+  "volunteer": [
+    {
+      "organization": "Organization",
+      "position": "Volunteer",
+      "url": "https://organization.com/",
+      "startDate": "2012-01-01",
+      "endDate": "2013-01-01",
+      "summary": "Description…",
+      "highlights": ["Awarded 'Volunteer of the Month'"]
+    }
+  ],
+  "education": [
+    {
+      "institution": "University",
+      "url": "https://institution.com/",
+      "area": "Software Development",
+      "studyType": "Bachelor",
+      "startDate": "2011-01-01",
+      "endDate": "2013-01-01",
+      "score": "4.0",
+      "courses": ["DB1101 - Basic SQL"]
+    }
+  ],
+  "awards": [
+    {
+      "title": "Award",
+      "date": "2014-11-01",
+      "awarder": "Company",
+      "summary": "There is no spoon."
+    }
+  ],
+  "certificates": [
+    {
+      "name": "Certificate",
+      "date": "2021-11-07",
+      "issuer": "Company",
+      "url": "https://certificate.com"
+    }
+  ],
+  "publications": [
+    {
+      "name": "Publication",
+      "publisher": "Company",
+      "releaseDate": "2014-10-01",
+      "url": "https://publication.com",
+      "summary": "Description…"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Cenpgvprf",
+      "level": "Advanced",
+      "keywords": ["Ntvyr", "QEL", "XVFF"]
+    },
+    {
+      "name": "Cnenqvtzf",
+      "level": "Advanced",
+      "keywords": ["OQQ", "QQQ", "BBC", "SC", "EC", "GQQ"]
+    },
+    {
+      "name": "QriBcf",
+      "level": "Master",
+      "keywords": ["PV/PQ", "PSA", "GS"]
+    },
+    {
+      "name": "Pybhq",
+      "level": "Advanced",
+      "keywords": ["NJF", "TPC", "Irepry"]
+    },
+    {
+      "name": "Gbbypunva",
+      "level": "Master",
+      "keywords": ["NepuYvahk", "Arbivz", "Gzhk", "NjrfbzrJZ", "Docker", "FZF"]
+    }
+  ],
+  "languages": [
+    { "language": "Bash", "fluency": "Master" },
+    { "language": "Haskell", "fluency": "Beginner" },
+    { "language": "Elixir", "fluency": "Intermediate" },
+    { "language": "Go", "fluency": "Advanced" },
+    { "language": "JavaScript", "fluency": "Master" },
+    { "language": "Lua", "fluency": "Advanced" },
+    { "language": "Python", "fluency": "Beginner" },
+    { "language": "Rust", "fluency": "Beginner" },
+    { "language": "Zig", "fluency": "Beginner" }
+  ],
+  "interests": [
+    {
+      "name": "PYV Gbbyf",
+      "keywords": ["jbexsybj", "nhgbzngvba", "pyv"]
+    },
+    {
+      "name": "Jvaqbj Znantref",
+      "keywords": ["njrfbzrjz", "gvyvat-jz", "yhn"]
+    },
+    {
+      "name": "Grkg Rqvgbef",
+      "keywords": ["grkg-rqvgbe", "arbivz", "aivz", "ivz", "yhn"]
+    }
+  ],
+  "references": [
+    {
+      "name": "Jane Doe",
+      "reference": "Reference…"
+    }
+  ],
+  "projects": [
+    {
+      "name": "markup.json",
+      "url": "https://github.com/zrgnbel/znexhc.wfba",
+      "description": "QBZ gerr ercerfragngvba va pbzcnpg WFBA -- Qensg Fcrp, Yvoenel naq PYV",
+      "roles": ["Author"],
+      "startDate": "2024-09-12",
+      "endDate": "2024-09-24",
+      "keywords": ["cli", "html", "javascript", "json", "library", "magic", "markup", "transpiler", "npm"]
+    },
+    {
+      "name": "cpnyy.wf",
+      "url": "https://github.com/zrgnbel/cpnyy.wf",
+      "description": "Zvavzny Erfhyg/Zbanq yvxr ghcyrf sbe WF ── mreb-qrcraqrapl",
+      "roles": ["Author"],
+      "startDate": "2024-04-18",
+      "endDate": "2024-06-27",
+      "keywords": ["javascript", "library", "lua", "npm"]
+    },
+
+    {
+      "name": "kvpb",
+      "url": "https://github.com/zrgnbel/kvpb",
+      "description": "Fvzcyr pyv gb znxr cat vzntrf sebz nal Havpbqr tylcu punenpgre",
+      "roles": ["Author"],
+      "startDate": "2024-04-03",
+      "endDate": "2024-07-06",
+      "keywords": ["automation", "bash", "cli", "font", "glyph", "image", "linux", "magic", "svg"]
+    },
+    {
+      "name": "zkpbye",
+      "url": "https://github.com/zrgnbel/zkpbye",
+      "description": "Trarengr, Cerivrj naq Nccyl ornhgvshy havsvrq uhzna sevraqyl cfrhqb enaqbz pbybe fpurzrf, FLFGRZ JVQR!",
+      "roles": ["Author"],
+      "startDate": "2021-05-08",
+      "endDate": "2024-06-30",
+      "keywords": ["automation", "bash", "cli", "colorscheme", "config", "magic", "random", "task"]
+    },
+    {
+      "name": "zksybj-pyv",
+      "url": "https://github.com/zrgnbel/zksybj-pyv",
+      "description": "Ornhgvshy, Sevraqyl, Trareny checbfr PYV gnfx ehaare",
+      "roles": ["Author"],
+      "startDate": "2022-09-24",
+      "endDate": "2024-06-27",
+      "keywords": ["automation", "cli", "javascript", "npm", "task"]
+    },
+    {
+      "name": "zvav-nafv",
+      "url": "https://github.com/zrgnbel/zvav-nafv",
+      "description": "Zvavzny NAFV pbybe rfpncr hgvyvgl va haqre 10 yvar!",
+      "roles": ["Author"],
+      "startDate": "2024-06-18",
+      "endDate": "2024-07-04",
+      "keywords": ["colorscheme", "javascript", "library", "npm"]
+    }
+  ]
+}

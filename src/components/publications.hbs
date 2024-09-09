@@ -1,0 +1,54 @@
+{{> components/hr.hbs size="md" }}
+{{#if publications.length}}
+  <section class="section">
+    <header>
+      <h2 class='section-title'>
+        <span class="{{ ICO "article" }}"></span>
+        Publications
+      </h2>
+    </header>
+    <section id="publications">
+      {{#each publications}}
+        <section class="publication-item">
+          {{#if summary}}
+            <label for="publication-item-{{@index}}"></label>
+          {{/if}}
+          <header class="clear">
+            {{#if releaseDate}}
+              <span class="date">{{ DMY releaseDate }}</span>
+            {{/if}}
+            <div class="header-left">
+              {{#if name}}
+                <span class="name">
+                  {{#if website}}
+                    <span class="website">
+                      <span class="fa-solid fa-up-right-from-square"></span>
+                      <a target="_blank" href="{{ website }}">{{ name }}</a>
+                    </span>
+                  {{ else }}
+                    {{ name }}
+                  {{/if}}
+                </span>
+              {{/if}}
+              {{#if publisher}}
+                <span class="publisher">in {{ publisher }}</span>
+              {{/if}}
+            </div>
+          </header>
+          {{#if keywords.length}}
+            <ul class="keywords">
+              {{#each keywords}}
+                <li>{{.}}</li>
+              {{/each}}
+            </ul>
+          {{/if}}
+          <div class="item">
+            {{#if summary}}
+              <div class="summary">{{ summary }}</div>
+            {{/if}}
+          </div>
+        </section>
+      {{/each}}
+    </section>
+  </section>
+{{/if}}

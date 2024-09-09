@@ -1,0 +1,35 @@
+{{> components/hr.hbs size="md" }}
+{{#if skills.length}}
+<section class="section">
+	<header>
+		<h1 class='section-title'>Skills</h1>
+	</header>
+	<section id="skills">
+		{{#each skills}}
+		<div class="item">
+			{{#if name}}
+			<h3 class="name">
+				{{name}}
+			</h3>
+			{{/if}} {{#if level}}
+			<div class="level {{level}}">
+				{{#if levelDisplay}}
+				<em>{{levelDisplay}}</em>
+				{{else}}
+				<em>{{level}}</em>
+				{{/if}}
+				<div class="bar"></div>
+			</div>
+			{{/if}}
+			{{#if keywords.length}}
+			<ul class="keywords">
+				{{#each keywords}}
+				<li>{{.}}</li>
+				{{/each}}
+			</ul>
+			{{/if}}
+		</div>
+		{{/each}}
+	</section>
+</section>
+{{/if}}
