@@ -16,18 +16,13 @@
           <header class="clear">
             <div>
               {{#if name}}
-                <span class="name">
-                  {{#if website}}
-                    <span class="website">
-                      <a target="_blank" href="{{ website }}">{{ name }}</a>
-                    </span>
-                  {{ else }}
-                    {{ name }}
-                  {{/if}}
-                </span>
+                <span class="name">{{ name }}</span>
               {{/if}}
               {{#if publisher}}
-                <span class="publisher">in {{ publisher }}</span>
+                <span class="url publisher">
+                  <span class="icon {{ ICO publisher }}"></span>
+                  <a target="_blank" href="{{ url }}">{{ publisher }}</a>
+                </span>
               {{/if}}
             </div>
             {{#if releaseDate}}

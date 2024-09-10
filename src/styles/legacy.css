@@ -252,7 +252,7 @@ strong {
 #header .image {
   width: 2em;
   outline: solid 10px var(--xbg);
-  border-radius: 2rem;
+  border-radius: 4rem;
   justify-self: end;
 }
 
