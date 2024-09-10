@@ -12,7 +12,8 @@
   "scripts": {
     "dev": "vite dev",
     "build": "vite build",
-    "deploy": "chromium --headless --disable-gpu --screenshot --window-size=786,11800 http://localhost:5173",
+    "build:image": "chromium --headless --disable-gpu --screenshot --window-size=786,5100 http://localhost:5173",
+    "build:pdf": "chromium --headless --no-pdf-header-footer --disable-gpu --print-to-pdf=output.pdf --window-size=786,5100 http://localhost:5173",
     "preview": "vite preview"
   },
   "devDependencies": {

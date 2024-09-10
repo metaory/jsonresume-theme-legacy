@@ -38,7 +38,10 @@ nvim src/pages/private.json
 http://localhost:5173/private
 
 # build production
-pnpm run deploy
+pnpm run build:image
+pnpm run build:pdf
+
+# you'll need to update build scripts window-size and point to /private route
 ```
 
 ---

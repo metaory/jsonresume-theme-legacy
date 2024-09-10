@@ -1,36 +1,33 @@
 {{#if certificates.length}}
+  {{> components/hr.hbs size="md" }}
   <section class="section">
     <header>
-      <h2 class="section-title">Certificates</h2>
+      <h2 class="section-title">
+        <span class="icon {{ ICO "certificate" }}"></span>
+        Certificates
+      </h2>
     </header>
     <section id="certificates">
       {{#each certificates}}
         <section class="certificate-item">
           <header class="clear">
-            {{#if date}}
-              <div class="date">
-                {{date}}
-              </div>
-            {{/if}}
-            <div class="header-left">
+            <div>
               {{#if name}}
-                <div class="name">
-                  {{name}}
-                </div>
+                <div class="name">{{ name }}</div>
               {{/if}}
               {{#if issuer}}
-                <div class="issuer">
-                  {{issuer}}
-                </div>
+                <div class="issuer">{{ issuer }}</div>
               {{/if}}
             </div>
+            {{#if date}}
+              <div class="date">{{ date }}</div>
+            {{/if}}
           </header>
-
           <div class="item">
             {{#if url}}
               <span class="url">
-                <span class="fa-solid fa-up-right-from-square"></span>
-                <a target="_blank" href="{{url}}">{{url}}</a>
+                <span class="icon {{ ICO "link" }}"></span>
+                <a target="_blank" href="{{ url }}">{{ URL url }}</a>
               </span>
             {{/if}}
           </div>

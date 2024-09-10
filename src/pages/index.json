@@ -21,6 +21,16 @@
         "network": "Twitter",
         "username": "john",
         "url": "https://twitter.com/john"
+      },
+      {
+        "network": "GitHub",
+        "username": "zrgnbel",
+        "url": "https://github.com/zrgnbel"
+      },
+      {
+        "network": "LinkedIn",
+        "username": "cbh-lna",
+        "url": "https://linkedin.com/in/cbh-lna"
       }
     ]
   },

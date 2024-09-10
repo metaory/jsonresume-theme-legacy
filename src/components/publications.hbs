@@ -3,7 +3,7 @@
   <section class="section">
     <header>
       <h2 class='section-title'>
-        <span class="{{ ICO "article" }}"></span>
+        <span class="icon {{ ICO "article" }}"></span>
         Publications
       </h2>
     </header>
@@ -14,15 +14,11 @@
             <label for="publication-item-{{@index}}"></label>
           {{/if}}
           <header class="clear">
-            {{#if releaseDate}}
-              <span class="date">{{ DMY releaseDate }}</span>
-            {{/if}}
-            <div class="header-left">
+            <div>
               {{#if name}}
                 <span class="name">
                   {{#if website}}
                     <span class="website">
-                      <span class="fa-solid fa-up-right-from-square"></span>
                       <a target="_blank" href="{{ website }}">{{ name }}</a>
                     </span>
                   {{ else }}
@@ -34,6 +30,9 @@
                 <span class="publisher">in {{ publisher }}</span>
               {{/if}}
             </div>
+            {{#if releaseDate}}
+              <span class="date">{{ DMY releaseDate }}</span>
+            {{/if}}
           </header>
           {{#if keywords.length}}
             <ul class="keywords">

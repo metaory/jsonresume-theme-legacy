@@ -1,7 +1,11 @@
 {{#if awards.length}}
+  {{> components/hr.hbs size="md" }}
   <section class="section">
     <header>
-      <h2 class="section-title">Awards</h2>
+      <h2 class="section-title">
+        <span class="icon {{ ICO "award" }}"></span>
+        Awards
+      </h2>
     </header>
     <section id="awards">
       {{#each awards}}
@@ -9,30 +13,22 @@
           {{#if summary}}
             <label for="award-item-{{@index}}"></label>
           {{/if}}
-
           <header class="clear">
-            {{#if date}}
-              <div class="date">
-                {{Y date}}
-              </div>
-            {{/if}}
-            <div class="header-left">
+            <div>
               {{#if title}}
-                <div class="title">
-                  {{title}}
-                </div>
+                <div class="title">{{ title }}</div>
               {{/if}}
               {{#if awarder}}
-                <div class="awarder">
-                  {{awarder}}
-                </div>
+                <div class="awarder">{{ awarder }}</div>
               {{/if}}
             </div>
+            {{#if date}}
+              <div class="date">{{ Y date }}</div>
+            {{/if}}
           </header>
-
           <div class="item">
             {{#if summary}}
-              <div class="summary">{{summary}}</div>
+              <div class="summary">{{ summary }}</div>
             {{/if}}
           </div>
         </section>
