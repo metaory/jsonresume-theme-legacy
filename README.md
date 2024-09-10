@@ -4,7 +4,7 @@ JSONRESUME-THEME-LEGACY
 Legacy handlebars port to Vite
 
 <div align="center">
-  <img src="https://raw.githubusercontent.com/metaory/jsonresume-theme-legacy/master/screenshot.png" width="200px">
+  <img src="https://raw.githubusercontent.com/metaory/jsonresume-theme-legacy/master/screenshot.png">
 </div>
 
 ---
