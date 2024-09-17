@@ -142,10 +142,11 @@ html {
   letter-spacing: 0;
   line-height: 1.46153846;
   text-align: left;
-  background-image: url("/src/assets/bg.svg");
+  background-image: url("/src/assets/bg.png");
   background-color: white;
   background-position: center;
   background-size: cover;
+  background-repeat: no-repeat;
 }
 
 p {
@@ -359,7 +360,6 @@ section#skills {
       & li {
         display: block;
         width: max-content;
-        height: max-content;
       }
     }
 
@@ -810,6 +810,7 @@ ul.keywords {
     backdrop-filter: blur(var(--blur));
     border-radius: var(--brm);
     width: max-content;
+    font-size: 12px;
     list-style: none;
     padding: 4px 8px;
 
@@ -823,6 +824,10 @@ ul.keywords {
   }
 }
 
+section#interests ul.keywords li {
+  font-size: 12px;
+}
+
 section.main-summary,
 section.project-item,
 section.work-item,
@@ -833,9 +838,11 @@ section.work-item,
 .auto-break-before {
   page-break-before: auto;
 }
+
 .auto-break-after {
   page-break-after: auto;
 }
+
 .no-break-before {
   page-break-before: avoid;
 }
