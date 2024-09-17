@@ -1,15 +1,19 @@
-{{> components/hr.hbs size="md" }}
 {{#if work.length}}
   <section class="section">
-    <header>
-      <h2 class='section-title'>
+    <header class="no-break-before no-break-after">
+      <h2 class="section-title">
         <span class="icon {{ ICO "work" }}"></span>
         Work Experience <span class="item-count">({{ work.length }})</span>
       </h2>
     </header>
     <section id="work">
       {{#each work}}
-        <section class="work-item">
+        <section class="work-item auto-break-before">
+          {{#if @first}}
+            <span />
+          {{ else }}
+            {{> components/hr.hbs }}
+          {{/if}}
           {{#if summary}}
             <label for="work-item-{{@index}}"></label>
           {{/if}}
@@ -39,7 +43,7 @@
               <a target="_blank" href="{{ url }}">{{ URL url }}</a>
             </span>
           {{/if}}
-          <div class="item" id="work-item">
+          <div class="item">
             {{#if summary}}
               <div class="summary">{{ summary }}</div>
             {{/if}}
@@ -61,11 +65,6 @@
               </ul>
             {{/if}}
           </div>
-          {{#if @last}}
-            <span />
-          {{ else }}
-            {{> components/hr.hbs }}
-          {{/if}}
         </section>
       {{/each}}
     </section>

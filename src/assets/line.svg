@@ -1,13 +1,10 @@
-<svg xmlns="http://www.w3.org/2000/svg"
-viewBox="0 0 400 400"
->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
 <line
-  x1="160"
+  x1="100"
   y1="0"
-  x2="360"
-  y2="380"
+  x2="300"
+  y2="300"
   stroke-linecap="square"
   stroke="#6655FF"
   stroke-width="180"/>
-
 </svg>

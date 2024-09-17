@@ -822,3 +822,29 @@ ul.keywords {
     }
   }
 }
+
+section.main-summary,
+section.project-item,
+section.work-item,
+.no-break-inside {
+  page-break-inside: avoid;
+}
+
+.auto-break-before {
+  page-break-before: auto;
+}
+.auto-break-after {
+  page-break-after: auto;
+}
+.no-break-before {
+  page-break-before: avoid;
+}
+
+.no-break-after {
+  page-break-after: avoid;
+}
+
+@page {
+  size: 210mm 297mm;
+  margin: 0;
+}

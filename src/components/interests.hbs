@@ -1,6 +1,6 @@
-{{> components/hr.hbs size="md" }}
+{{> components/hr.hbs size="md" etc="no-break-after" }}
 {{#if interests.length}}
-  <section class="section">
+  <section class="section no-break-inside no-break-after">
     <header>
       <h2 class='section-title' class='section-title'>
         <span class="icon {{ ICO "interest" }}"></span>
@@ -26,5 +26,6 @@
         </div>
       {{/each}}
     </section>
+    {{> components/hr.hbs size="md" etc="no-break-before no-break-after" }}
   </section>
 {{/if}}

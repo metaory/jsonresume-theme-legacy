@@ -9,7 +9,12 @@
     </header>
     <section id="projects">
       {{#each projects}}
-        <section class="project-item">
+        <section class="project-item auto-break-before">
+          {{#if @first}}
+            <span />
+          {{ else }}
+            {{> components/hr.hbs }}
+          {{/if}}
           {{#if summary}}
             <label for="project-item-{{@index}}"></label>
           {{/if}}
@@ -71,11 +76,6 @@
               </li>
             {{/each}}
           </ul>
-        {{/if}}
-        {{#if @last}}
-          <span />
-        {{ else }}
-          {{> components/hr.hbs }}
         {{/if}}
       </section>
     {{/each}}

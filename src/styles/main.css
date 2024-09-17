@@ -145,7 +145,7 @@ div.line-pattern {
   height: 16px;
   display: block;
   position: relative;
-  margin-top: 1em;
+  margin: 1em 0;
   width: 100%;
   background-image: url("/src/assets/line.svg");
   background-size: 30px 26px;
@@ -153,17 +153,11 @@ div.line-pattern {
   opacity: .2;
 
   &.md {
-    /* filter: hue-rotate(22deg); */
-    height: 30px;
-    background-size: 50px 60px;
+    height: 20px;
+    background-size: 40px 30px;
   }
   &.lg {
-    height: 40px;
-    background-size: 80px;
+    height: 30px;
+    background-size: 61px 51px;
   }
 }
-
-/* html { filter: invert(1); } */
-/* margin: 84px 0; */
-/* background-position: 20% 50%; */
-/* background-clip: padding-box; */
