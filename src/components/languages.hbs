@@ -4,16 +4,15 @@
     <header>
       <h2 class='section-title'>
         <span class="icon {{ ICO "code" }}"></span>
-      Languages</h2>
+        {{ TITLE "languages" }}
+      </h2>
     </header>
     <section id="languages">
       {{#each languages}}
         <div class="display">
           <section class="language">
             <span>
-              <!-- <img  src="https://cdn.simpleicons.org/{{ language }}?viewbox=auto&" /> -->
-              <!-- <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/{{icon}}.svg" /> -->
-                    <span class="icon {{ ICO language }}"></span>
+              <span class="icon {{ ICO language }}"></span>
             </span>
             <h3>{{ language }}</h3>
           </section>

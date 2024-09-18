@@ -1,6 +1,6 @@
 {
   "name": "jsonresume-theme-legacy",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "✱ Legacy handlebars jsonresume theme port to vite",
   "author": "metaory <metaory@gmail.com>",
   "bugs": "https://github.com/metaory/jsonresume-theme-legacy/issues",
@@ -8,7 +8,6 @@
   "repository": "git+https://github.com/metaory/jsonresume-theme-legacy.git",
   "type": "module",
   "license": "MIT",
-  "private": true,
   "scripts": {
     "dev": "vite dev",
     "build": "npm run build:private",

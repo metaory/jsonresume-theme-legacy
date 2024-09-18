@@ -867,13 +867,14 @@ h6,
 header,
 ul.keywords li,
 span.url,
-a
-{
+a {
   font-family: 'Monaspace Krypton', monospace, sans-serif;
 }
+
 blockquote {
   font-family: 'Monaspace Radon', serif;
 }
+
 section {
   font-family: 'Monaspace Argon', system-ui, sans-serif;
 }
