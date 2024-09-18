@@ -100,9 +100,7 @@ section {
   display: block;
 }
 
-body {
-  line-height: 1;
-}
+/* body { padding: 0 3em; margin: 0; } */
 
 ol,
 ul {
@@ -768,14 +766,6 @@ section.education-item {
   border-radius: 2em;
   backdrop-filter: blur(var(--blur));
   border-radius: var(--brm);
-}
-
-hr {
-  border-color: red;
-  background-color: var(--xbg);
-  border: dashed 2px var(--xgg);
-  border-radius: var(--brm);
-  box-shadow: inset 0 0 4px red;
 }
 
 svg.hr {
