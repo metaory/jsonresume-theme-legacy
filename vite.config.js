@@ -126,7 +126,7 @@ const ICONS = {
   pandas: 'icon-park-outline:panda',
   patching: 'fluent:patch-24-regular',
   performance: 'solar:graph-up-linear',
-  phone: 'fluent:phone-16-regular',
+  phone: 'hugeicons:smart-phone-01',
   promise: 'logos:promises',
   proxy: 'mingcute:route-line',
   python: 'gravity-ui:logo-python',

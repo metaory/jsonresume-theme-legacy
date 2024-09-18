@@ -233,13 +233,13 @@ strong {
   display: grid;
   grid-template-columns: 2fr 1fr;
   justify-content: center;
-  color: var(--pk7);
+  color: var(--c05);
   align-items: center;
   font-size: 3.8rem;
   font-weight: 900;
   margin-bottom: .6em;
   padding-left: 1em;
-  -webkit-text-stroke: 1px var(--pk7);
+  -webkit-text-stroke: 1px var(--c05);
   text-shadow:
     var(--zk3) 2px 1px,
     var(--zk5) 4px 3px,
@@ -250,12 +250,14 @@ strong {
 #header .image {
   width: 2em;
   outline: solid 10px var(--xbg);
+  outline-offset: -2px;
   border-radius: 4rem;
   justify-self: end;
+  opacity: .9;
 }
 
 #header .label {
-  background-color: var(--xgg);
+  background-color: var(--xog);
   backdrop-filter: blur(var(--blur));
   border-radius: 2em;
   margin: 2em 1em;
@@ -267,7 +269,7 @@ strong {
   align-items: center;
 
   & img {
-    border: solid 10px var(--zk9);
+    border: solid 10px var(--xgg);
     border-radius: 2em;
     height: 140px;
     width: 140px;
@@ -854,6 +856,7 @@ section.work-item,
   page-break-after: avoid;
 }
 
+
 h1,
 h2,
 h3,
@@ -862,11 +865,11 @@ h5,
 h6,
 header,
 ul.keywords li,
+span.url,
 a
 {
   font-family: 'Monaspace Krypton', monospace, sans-serif;
 }
-
 blockquote {
   font-family: 'Monaspace Radon', serif;
 }

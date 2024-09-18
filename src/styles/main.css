@@ -150,7 +150,7 @@ div.line-pattern {
   background-image: url("/src/assets/line.svg");
   background-size: 30px 26px;
   background-repeat: space;
-  opacity: .2;
+  opacity: .1;
 
   &.md {
     height: 20px;
