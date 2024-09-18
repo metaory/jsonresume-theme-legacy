@@ -253,7 +253,7 @@ strong {
   outline-offset: -2px;
   border-radius: 4rem;
   justify-self: end;
-  opacity: .9;
+  opacity: .8;
 }
 
 #header .label {
@@ -273,6 +273,7 @@ strong {
     border-radius: 2em;
     height: 140px;
     width: 140px;
+    opacity: .8;
   }
 }
 
