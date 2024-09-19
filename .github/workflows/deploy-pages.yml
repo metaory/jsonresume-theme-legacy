@@ -47,8 +47,10 @@ jobs:
 
   deploy:
     needs: build
+    permissions:
+      pages: write
+      id-token: write
     runs-on: ubuntu-latest
-    name: Deploy
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
