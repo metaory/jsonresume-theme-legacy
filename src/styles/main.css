@@ -1,4 +1,4 @@
-@import "https://cdn.jsdelivr.net/npm/simpledotcss@2.2.0/simple.min.css";
+/* @import "https://cdn.jsdelivr.net/npm/simpledotcss@2.2.0/simple.min.css"; */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -141,6 +141,10 @@ img {
   opacity: 1;
 }
 
+body {
+  padding: 4em;
+}
+
 div.line-pattern {
   height: 16px;
   display: block;
@@ -156,9 +160,61 @@ div.line-pattern {
     height: 20px;
     background-size: 40px 30px;
   }
+
   &.lg {
     height: 30px;
     background-size: 61px 51px;
   }
 }
+
+section.main-summary,
+section.project-item,
+section.work-item,
+.no-break-inside {
+  page-break-inside: avoid;
+}
+
+.auto-break-before {
+  page-break-before: auto;
+}
+
+.auto-break-after {
+  page-break-after: auto;
+}
+
+.no-break-before {
+  page-break-before: avoid;
+}
+
+.no-break-after {
+  page-break-after: avoid;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+ul.keywords li,
+span.url,
+a {
+  font-family: 'Monaspace Krypton', monospace, sans-serif;
+}
+
+blockquote {
+  font-family: 'Monaspace Radon', serif;
+}
+
+section {
+  font-family: 'Monaspace Argon', system-ui, sans-serif;
+}
+
+@page {
+  size: 210mm 297mm;
+  margin: 0;
+}
+
 /* html { filter: invert(1); } */
