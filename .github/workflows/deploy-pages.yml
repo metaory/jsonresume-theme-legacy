@@ -40,7 +40,7 @@ jobs:
         # run: corepack use pnpm@latest
         working-directory: .
       - name: Build Vite
-        run: npm exec vite build --base=${{ steps.pages.outputs.base_path }}
+        run: npm exec vite build --base=/jsonresume-theme-legacy
         working-directory: .
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
