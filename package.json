@@ -14,6 +14,7 @@
     "build:vite": "vite build",
     "build:sample": "chromium --headless --disable-gpu --no-pdf-header-footer --print-to-pdf=sample.pdf http://localhost:5173",
     "build:private": "chromium --headless --disable-gpu --no-pdf-header-footer --print-to-pdf=private.pdf http://localhost:5173/private",
+    "deploy": "vite build --base=/jsonresume-theme-legacy",
     "preview": "vite preview"
   },
   "devDependencies": {

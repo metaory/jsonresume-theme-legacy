@@ -15,7 +15,7 @@ concurrency:
   cancel-in-progress: false
 
 env:
-  BUILD_PATH: "." # default value when not using subfolders
+  BUILD_PATH: "."
 
 jobs:
   build:
@@ -30,17 +30,15 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: "20"
-          # cache: pnpm
           cache-dependency-path: pnpm-lock.yaml
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5
       - name: Install dependencies
         run: corepack enable && pnpm install
-        # run: corepack use pnpm@latest
         working-directory: .
       - name: Build Vite
-        run: npm exec vite build --base=/jsonresume-theme-legacy
+        run: npm run deploy
         working-directory: .
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
