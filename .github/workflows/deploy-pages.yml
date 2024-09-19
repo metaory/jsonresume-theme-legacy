@@ -50,6 +50,8 @@ jobs:
     permissions:
       pages: write
       id-token: write
+    environment:
+      name: github-pages
     runs-on: ubuntu-latest
     steps:
       - name: Deploy to GitHub Pages
