@@ -14,7 +14,8 @@
     "build:vite": "vite build",
     "build:sample": "chromium --headless --disable-gpu --no-pdf-header-footer --print-to-pdf=sample.pdf http://localhost:5173",
     "build:private": "chromium --headless --disable-gpu --no-pdf-header-footer --print-to-pdf=private.pdf http://localhost:5173/private",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "deploy": "gh-pages -d dist"
   },
   "devDependencies": {
     "@iconify/json": "^2.2.245",
@@ -22,6 +23,7 @@
     "@vituum/vite-plugin-handlebars": "^1",
     "@vituum/vite-plugin-tailwindcss": "^1.2.0",
     "autoprefixer": "^10.4.20",
+    "gh-pages": "^6.1.1",
     "postcss": "^8.4.45",
     "tailwindcss": "^3.4.10",
     "vite": "^5.4.3",
