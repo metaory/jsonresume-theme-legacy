@@ -137,6 +137,31 @@
   --ek9: #99FFAA;
 }
 
+@font-face {
+  font-family: KR-B;
+  src: url("/src/assets/fonts/MonaspaceKrypton-SemiWideExtraBold.woff") format('woff');
+}
+@font-face {
+  font-family: KR-M;
+  src: url("/src/assets/fonts/MonaspaceKrypton-Medium.woff") format('woff');
+}
+@font-face {
+  font-family: AR-B;
+  src: url("/src/assets/fonts/MonaspaceArgon-Bold.woff") format('woff');
+}
+@font-face {
+  font-family: AR-M;
+  src: url("/src/assets/fonts/MonaspaceArgon-Medium.woff") format('woff');
+}
+@font-face {
+  font-family: RN-M;
+  src: url("/src/assets/fonts/MonaspaceRadon-Medium.woff") format('woff');
+}
+@font-face {
+  font-family: RN-I;
+  src: url("/src/assets/fonts/MonaspaceRadon-MediumItalic.woff") format('woff');
+}
+  /* background-image: url("/src/assets/bg.png"); */
 img {
   opacity: 1;
 }
@@ -201,15 +226,15 @@ header,
 ul.keywords li,
 span.url,
 a {
-  font-family: 'Monaspace Krypton', monospace, sans-serif;
+  font-family: KR-B, monospace;
 }
 
 blockquote {
-  font-family: 'Monaspace Radon', serif;
+  font-family: RN-I, serif;
 }
 
 section {
-  font-family: 'Monaspace Argon', system-ui, sans-serif;
+  font-family: AR-M, system-ui, sans-serif;
 }
 
 @page {
