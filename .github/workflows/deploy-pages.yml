@@ -31,7 +31,7 @@ jobs:
         id: pages
         uses: actions/configure-pages@v5
       - name: Install dependencies
-        run: pnpm install
+        run: corepack use pnpm@latest
         working-directory: .
       - name: Build Vite
         run: npm exec vite build --base=${{ steps.pages.outputs.base_path }}
