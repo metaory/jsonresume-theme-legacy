@@ -1,10 +1,10 @@
 JSONRESUME-THEME-LEGACY
 =======================
 
-Legacy handlebars port to Vite
-
 <div align="center">
+  <h5>Legacy handlebars port to Vite</h5>
   <h4>
+    <i>Live Demo:</i>
     <a href="https://metaory.github.io/jsonresume-theme-legacy">
       metaory.github.io/jsonresume-theme-legacy
     </a>
