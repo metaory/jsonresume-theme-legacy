@@ -100,8 +100,7 @@
 
   --xbg: #EEDDFF;
   --xfg: #44BBFF;
-  --xgg: #EECCFF44;
-  --xog: #99AAFF11;
+  --xgg: #DDCCFF33;
 
   --sk0: #220044;
   --sk1: #441155;
@@ -222,11 +221,13 @@ h3,
 h4,
 h5,
 h6,
-header,
+header {
+  font-family: KR-B, monospace;
+}
 ul.keywords li,
 span.url,
 a {
-  font-family: KR-B, monospace;
+  font-family: KR-M, monospace;
 }
 
 blockquote {

@@ -117,7 +117,7 @@ strong {
 
 #header .image {
   width: 2em;
-  outline: solid 10px var(--xbg);
+  outline: solid 1pc var(--xbg);
   outline-offset: -2px;
   border-radius: 4rem;
   justify-self: end;
@@ -125,7 +125,7 @@ strong {
 }
 
 #header .label {
-  background-color: var(--xog);
+  background-color: var(--xgg);
   backdrop-filter: blur(var(--blur));
   border-radius: 2em;
   margin: 2em 1em;
@@ -136,11 +136,12 @@ strong {
   justify-items: middle;
   align-items: center;
 
-  & img {
-    border: solid 10px var(--xgg);
+  &>span>img {
+    width: 9pc;
+    height: 9pc;
+    border: solid 1pc var(--xgg);
+    backdrop-filter: contrast(90%);
     border-radius: 2em;
-    height: 140px;
-    width: 140px;
     opacity: .8;
   }
 }
@@ -212,14 +213,14 @@ section#skills {
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-items: center;
-  gap: 2em;
+  gap: 1em;
 
   .item {
     display: grid;
-    padding: 20px;
+    padding: 1em;
     justify-content: center;
     height: max-content;
-    width: 300px;
+    width: 270px;
     background: var(--xgg);
     backdrop-filter: blur(var(--blur));
     border-radius: var(--brl);
@@ -227,7 +228,7 @@ section#skills {
     & ul.keywords {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      gap: 8px;
+      gap: 4px;
       justify-content: center;
       justify-items: center;
 
@@ -240,7 +241,7 @@ section#skills {
   }
 
   .item:last-child {
-    width: 499px;
+    width: 450px;
     grid-column: 1/3;
 
     & ul.keywords {
@@ -412,6 +413,7 @@ span.url:hover,
 .highlights {
   margin: 1em 0 0 0;
   border-radius: var(--brl);
+  width: max-content;
   backdrop-filter: blur(var(--blur));
 }
 
@@ -692,5 +694,5 @@ ul.keywords {
 
 section#interests ul.keywords li {
   font-size: 12px;
+  padding: 6px 8px;
 }
-
