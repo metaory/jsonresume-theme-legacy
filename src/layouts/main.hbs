@@ -2,14 +2,23 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
-    <title>{{ title }}</title>
-    <link rel="icon" href="/src/assets/favicon.svg" sizes="any" type="image/svg+xml">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Legacy JSONResume">
+    <meta property="og:url"
+          content="https://metaory.github.io/jsonresume-theme-legacy">
+    <meta property="og:image"
+          content="https://raw.githubusercontent.com/metaory/jsonresume-theme-legacy/master/.github/assets/screenshot.png">
+    <meta property="og:description" content="Just another JSONResume theme">
+    <title>Legacy JSONResume</title>
+    <link rel="icon"
+          href="/src/assets/favicon.svg"
+          sizes="any"
+          type="image/svg+xml">
     <link rel="stylesheet" href="/src/styles/main.css">
     <link rel="stylesheet" href="/src/styles/legacy.css">
   </head>
   <body>
     <main>
-      <h1>{{ title }}</h1>
       {{> components/basics.hbs }}
       {{> components/skills.hbs }}
       {{> components/languages.hbs }}
