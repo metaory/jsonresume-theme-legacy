@@ -1,6 +1,6 @@
 {
   "name": "jsonresume-theme-legacy",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "✱ Legacy handlebars jsonresume theme port to vite",
   "author": "metaory <metaory@gmail.com>",
   "bugs": "https://github.com/metaory/jsonresume-theme-legacy/issues",

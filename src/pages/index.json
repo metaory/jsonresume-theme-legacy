@@ -2,8 +2,8 @@
   "basics": {
     "name": "John Doe",
     "label": "Programmer",
-    "image": "https://cdn.pixabay.com/photo/2024/06/08/18/38/ai-generated-8817381_960_720.png",
-    "logo": "https://cdn.pixabay.com/photo/2023/03/21/19/47/character-7868059_960_720.jpg",
+    "image": "/src/assets/avatar-m.png",
+    "logo": "/src/assets/logo.svg",
     "email": "john@gmail.com",
     "phone": "(912) 555-4321",
     "url": "https://johndoe.com",
@@ -40,7 +40,7 @@
       "position": "President",
       "url": "https://company.com",
       "startDate": "2014-01-01",
-      "endDate": "2024-01-01",
+      "endDate": "2024-09-01",
       "summary": "Description…",
       "keywords": [
         "AWS",
@@ -48,7 +48,6 @@
         "CloudFormation",
         "Docker",
         "Git",
-        "Integrations",
         "NodeJs",
         "OIDC",
         "React",
@@ -144,28 +143,28 @@
     }
   ],
   "languages": [
+    { "language": "Lua", "fluency": "Master" },
     { "language": "Bash", "fluency": "Master" },
-    { "language": "Haskell", "fluency": "Beginner" },
-    { "language": "Elixir", "fluency": "Intermediate" },
-    { "language": "Go", "fluency": "Advanced" },
     { "language": "JavaScript", "fluency": "Master" },
-    { "language": "Lua", "fluency": "Advanced" },
+    { "language": "Go", "fluency": "Advanced" },
+    { "language": "Elixir", "fluency": "Intermediate" },
+    { "language": "Haskell", "fluency": "Beginner" },
     { "language": "Python", "fluency": "Beginner" },
     { "language": "Rust", "fluency": "Beginner" },
     { "language": "Zig", "fluency": "Beginner" }
   ],
   "interests": [
     {
-      "name": "PYV Gbbyf",
-      "keywords": ["jbexsybj", "nhgbzngvba", "pyv"]
+      "name": "Terminals",
+      "keywords": ["Alacritty", "Wezterm"]
     },
     {
-      "name": "Jvaqbj Znantref",
-      "keywords": ["njrfbzrjz", "gvyvat-jz", "yhn"]
+      "name": "Window Managers",
+      "keywords": ["AwesomeWM", "Hyprland"]
     },
     {
-      "name": "Grkg Rqvgbef",
-      "keywords": ["grkg-rqvgbe", "arbivz", "aivz", "ivz", "yhn"]
+      "name": "Text Editors",
+      "keywords": ["Neovim", "Helix"]
     }
   ],
   "references": [
@@ -181,45 +180,8 @@
       "description": "QBZ gerr ercerfragngvba va pbzcnpg WFBA -- Qensg Fcrp, Yvoenel naq PYV",
       "roles": ["Author"],
       "startDate": "2024-09-12",
-      "endDate": "2024-09-24",
+      "endDate": "2024-11-24",
       "keywords": ["cli", "html", "library", "markup", "transpiler", "npm"]
-    },
-    {
-      "name": "cpnyy.wf",
-      "url": "https://github.com/zrgnbel/cpnyy.wf",
-      "description": "Zvavzny Erfhyg/Zbanq yvxr ghcyrf sbe WF ── mreb-qrcraqrapl",
-      "roles": ["Author"],
-      "startDate": "2024-04-18",
-      "endDate": "2024-06-27",
-      "keywords": ["javascript", "library", "lua", "npm"]
-    },
-
-    {
-      "name": "kvpb",
-      "url": "https://github.com/zrgnbel/kvpb",
-      "description": "Fvzcyr pyv gb znxr cat vzntrf sebz nal Havpbqr tylcu punenpgre",
-      "roles": ["Author"],
-      "startDate": "2024-04-03",
-      "endDate": "2024-07-06",
-      "keywords": ["cli", "font", "glyph", "image", "linux", "magic"]
-    },
-    {
-      "name": "zkpbye",
-      "url": "https://github.com/zrgnbel/zkpbye",
-      "description": "Trarengr, Cerivrj naq Nccyl ornhgvshy havsvrq uhzna sevraqyl cfrhqb enaqbz pbybe fpurzrf, FLFGRZ JVQR!",
-      "roles": ["Author"],
-      "startDate": "2021-05-08",
-      "endDate": "2024-06-30",
-      "keywords": ["automation", "bash", "config", "magic", "random", "task"]
-    },
-    {
-      "name": "zksybj-pyv",
-      "url": "https://github.com/zrgnbel/zksybj-pyv",
-      "description": "Ornhgvshy, Sevraqyl, Trareny checbfr PYV gnfx ehaare",
-      "roles": ["Author"],
-      "startDate": "2022-09-24",
-      "endDate": "2024-06-27",
-      "keywords": ["automation", "cli", "javascript", "npm", "task"]
     },
     {
       "name": "zvav-nafv",
@@ -227,7 +189,7 @@
       "description": "Zvavzny NAFV pbybe rfpncr hgvyvgl va haqre 10 yvar!",
       "roles": ["Author"],
       "startDate": "2024-06-18",
-      "endDate": "2024-07-04",
+      "endDate": "2024-08-04",
       "keywords": ["colorscheme", "javascript", "library", "npm"]
     }
   ],
@@ -311,7 +273,13 @@
         "mongodb": "tabler:brand-mongodb",
         "mqtt": "mdi:mq",
         "na": "gravity-ui--circle-exclamation-fill",
-        "neovim": "skill-icons--neovim-dark",
+        "alacritty": "tabler:layout-board-split",
+        "tui": "gravity-ui:terminal",
+        "awesomewm": "tabler:layout-board-split",
+        "wezterm": "simple-icons:wezterm",
+        "hyprland": "simple-icons:hyprland",
+        "helix":"clarity:helix-line",
+        "neovim": "simple-icons:neovim",
         "nlp": "flowbite:language-outline",
         "nodejs": "tabler:brand-nodejs",
         "npm": "hugeicons:npm",

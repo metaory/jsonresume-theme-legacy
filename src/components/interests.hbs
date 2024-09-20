@@ -11,12 +11,15 @@
       {{#each interests}}
         <div class="item">
           {{#if name}}
-            <h3>{{ name }}</h3>
+              <h4>{{ name }}</h4>
           {{/if}}
           {{#if keywords.length}}
             <ul class="keywords">
               {{#each keywords}}
-                <li>{{.}}</li>
+                <li>
+                  <span class="icon {{ ICO this }}"></span>
+                  {{.}}
+                </li>
               {{/each}}
             </ul>
           {{/if}}
@@ -26,6 +29,5 @@
         </div>
       {{/each}}
     </section>
-    {{> components/hr.hbs size="md" etc="no-break-before no-break-after" }}
   </section>
 {{/if}}
