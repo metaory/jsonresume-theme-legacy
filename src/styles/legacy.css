@@ -5,35 +5,34 @@ body::-webkit-scrollbar {
 
 body,
 html {
-  font-family: 'Monaspace Krypton', monospace, sans-serif;
-  width: 210mm;
-  max-width: 210mm;
+  font-family: KR-M, monospace, sans-serif;
   font-weight: Bold;
   font-size: 14px;
   color: var(--wk4);
-  letter-spacing: 0;
-  line-height: 1.46153846;
-  text-align: left;
-  background-image: url("/src/assets/bg.png");
-  background-color: white;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
 }
 
 p {
   display: block;
 }
 
-a {
-  color: var(--c04);
+a,
+a:hover,
+a:visited {
   text-decoration: none;
 }
 
-a:hover {
-  color: var(--cx4);
-  text-decoration: underline;
+a,
+a:visited {
+  color: var(--c05);
 }
+
+/* header { */
+/* width: max-content; */
+/* max-width: 210mm; */
+/* background-color: red; */
+/* } */
 
 span.icon {
   width: 20px;
@@ -73,9 +72,6 @@ strong {
   font-weight: 700;
 }
 
-#resume {
-  padding: 1.5rem;
-}
 
 .section {
   margin-bottom: 1rem;
@@ -112,7 +108,8 @@ strong {
     padding: 10px;
     justify-self: end;
     border-radius: 40%;
-    backdrop-filter: brightness(94%);
+    background-color: var(--xgg);
+    backdrop-filter: contrast(94%);
 
     >img {
       width: 80px;
@@ -136,14 +133,6 @@ strong {
       var(--zk9) 8px 7px;
   }
 
-  a {
-    color: var(--wk6);
-  }
-
-  a,
-  a:hover {
-    text-decoration: none;
-  }
 
   span.icon {
     color: var(--pk7);
@@ -489,7 +478,7 @@ span.url:hover,
 .highlights {
   margin: 1em 0 0 0;
   border-radius: var(--brl);
-  width: max-content;
+  width: auto;
   backdrop-filter: blur(var(--blur));
 }
 
@@ -518,8 +507,9 @@ span.url:hover,
 }
 
 .level .bar {
+  /* background-color: var(--zk9); */
   background-color: var(--xbg);
-  border-radius: 8px;
+  border-radius: var(--brs);
   display: block;
   margin: 0 8px;
   height: 10px;
@@ -665,10 +655,6 @@ span.fa-solid.fa-up-right-from-square {
   color: var(--wk5);
 }
 
-a,
-a:visited {
-  color: var(--cc4);
-}
 
 span.url {
   padding: 2px 10px 2px 6px;

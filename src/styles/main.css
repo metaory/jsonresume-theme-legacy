@@ -1,8 +1,6 @@
-/* @import "https://cdn.jsdelivr.net/npm/simpledotcss@2.2.0/simple.min.css"; */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
 
 :root {
   --cww: #FFF;
@@ -165,13 +163,23 @@
   font-family: RN-I;
   src: url("/src/assets/fonts/MonaspaceRadon-MediumItalic.woff") format('woff');
 }
-  /* background-image: url("/src/assets/bg.png"); */
-img {
-  opacity: 1;
-}
 
+html {
+  background: white;
+}
 body {
+  display: grid;
+  justify-content: center;
+  background-image: url("/src/assets/bg.png");
+  background-position: 75%;
+  background-size: cover;
+  background-repeat: repeat-y;
+}
+main {
   padding: 4em;
+  width: 210mm;
+  max-width: 210mm;
+  background-color: var(--xgg);
 }
 
 div.line-pattern {
@@ -246,8 +254,7 @@ section {
 }
 
 @page {
-  size: 210mm 297mm;
+  size: A4;
   margin: 0;
 }
 
-/* html { filter: invert(1); } */
