@@ -189,9 +189,11 @@ section.contacts span.url {
 }
 
 section.main-summary {
+  margin: auto;
+  width: max-content;
   font-size: 12px;
   letter-spacing: -.2px;
-  padding: 2em 1em;
+  padding: 2em 2em;
   margin-bottom: 2em;
   background: var(--xgg);
   border-radius: var(--brl);
