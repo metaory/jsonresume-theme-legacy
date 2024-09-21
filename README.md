@@ -1,6 +1,6 @@
 <div align="center">
   <img height="200" src="https://raw.githubusercontent.com/metaory/jsonresume-theme-legacy/master/src/assets/logo.svg">
-  <h3>JSONRESUME-THEME-LEGACY</h3>
+  <h4>JSONRESUME-THEME-LEGACY</h4>
   <h4><a href="https://metaory.github.io/jsonresume-theme-legacy">LIVE DEMO</a></h4>
 </div>
 
