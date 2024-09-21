@@ -173,7 +173,7 @@ Troubleshooting
 > [!Note]
 > Only tested on Linux
 >
-> Reconsider your life choices if you're running  💩Windows!
+> Reconsider your life choices if you're running  💩 Windows!
 
 ---
 
