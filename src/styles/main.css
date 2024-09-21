@@ -139,26 +139,32 @@
   font-family: KR-B;
   src: url("/src/assets/fonts/MonaspaceKrypton-SemiWideBold.woff") format('woff');
 }
+
 @font-face {
   font-family: KR-X;
   src: url("/src/assets/fonts/MonaspaceKrypton-SemiWideExtraBold.woff") format('woff');
 }
+
 @font-face {
   font-family: KR-M;
   src: url("/src/assets/fonts/MonaspaceKrypton-Medium.woff") format('woff');
 }
+
 @font-face {
   font-family: AR-B;
   src: url("/src/assets/fonts/MonaspaceArgon-Bold.woff") format('woff');
 }
+
 @font-face {
   font-family: AR-M;
   src: url("/src/assets/fonts/MonaspaceArgon-Medium.woff") format('woff');
 }
+
 @font-face {
   font-family: RN-M;
   src: url("/src/assets/fonts/MonaspaceRadon-Medium.woff") format('woff');
 }
+
 @font-face {
   font-family: RN-I;
   src: url("/src/assets/fonts/MonaspaceRadon-MediumItalic.woff") format('woff');
@@ -167,18 +173,19 @@
 html {
   background: white;
 }
+
 body {
   display: grid;
   justify-content: center;
   background-image: url("/src/assets/bg.png");
-  background-position: 75%;
+  background-position: 60%;
   background-size: cover;
-  background-repeat: repeat-y;
+  background-repeat: no-repeat;
 }
+
 main {
   padding: 4em;
   width: 210mm;
-  max-width: 210mm;
   background-color: var(--xgg);
 }
 
@@ -231,6 +238,7 @@ section.work-item,
 h1 {
   font-family: KR-X, monospace;
 }
+
 h2,
 h3,
 h4,
@@ -239,6 +247,7 @@ h6,
 header {
   font-family: KR-B, monospace;
 }
+
 ul.keywords li,
 span.url,
 a {
@@ -253,8 +262,53 @@ section {
   font-family: AR-M, system-ui, sans-serif;
 }
 
+@media (max-width: 600px) {
+
+  html,
+  body,
+  main {
+    width: 100vw !important;
+  }
+
+  main {
+    padding: 2em !important;
+  }
+
+  section.main-summary {
+    width: 80vw !important;
+  }
+
+  .bar {
+    width: 40mm !important;
+  }
+
+  section#skills {
+    .item {
+      justify-items: center !important;
+    }
+
+    .item:last-child {
+      grid-column: auto !important;
+    }
+  }
+
+  body,
+  section>header,
+  article#header>.label,
+  section#skills,
+  section#languages,
+  section#interests {
+    grid-template-columns: 1fr !important;
+  }
+
+  .section-title,
+  .position {
+    width: 80vw !important;
+  }
+
+}
+
 @page {
   size: A4;
   margin: 0;
 }
-

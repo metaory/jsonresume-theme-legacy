@@ -28,12 +28,6 @@ a:visited {
   color: var(--c05);
 }
 
-/* header { */
-/* width: max-content; */
-/* max-width: 210mm; */
-/* background-color: red; */
-/* } */
-
 span.icon {
   width: 20px;
   height: 20px;
@@ -179,9 +173,10 @@ section.contacts span.url {
 
 section.main-summary {
   margin: auto;
-  width: max-content;
+  width: 180mm;
   font-size: 12px;
   letter-spacing: -.2px;
+  text-wrap: balance;
   padding: 2em 2em;
   margin-bottom: 2em;
   background: var(--xgg);
@@ -191,8 +186,6 @@ section.main-summary {
 
   >ul>li {
     list-style: none;
-    width: max-content;
-
     &:before {
       content: '―';
 
@@ -241,13 +234,7 @@ section#skills {
   }
 
   .item:last-child {
-    /* width: 450px; */
-    /* grid-column: 1/3; */
-
     grid-column: auto / span 2;
-    /* & ul.keywords { */
-    /* grid-auto-flow: column; */
-    /* } */
   }
 }
 
@@ -507,7 +494,6 @@ span.url:hover,
 }
 
 .level .bar {
-  /* background-color: var(--zk9); */
   background-color: var(--xbg);
   border-radius: var(--brs);
   display: block;
@@ -528,13 +514,13 @@ span.url:hover,
 .level.beginner .bar::after {
   border-radius: var(--brs);
   background: linear-gradient(90deg, var(--pk6), var(--pk7));
-  width: 2.5em;
+  width: 30%;
 }
 
 .level.intermediate .bar::after {
   border-radius: var(--brs);
   background: linear-gradient(90deg, var(--pk6), var(--pk8));
-  width: 5em;
+  width: 55%;
 }
 
 .level.advanced .bar::after,
@@ -572,7 +558,6 @@ span.url:hover,
 
   & .item {
     padding-left: 1em;
-    /* border-left: 5px solid var(--cx4); */
     border-radius: var(--brm);
 
     & .name {
