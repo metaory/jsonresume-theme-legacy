@@ -2,6 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+
+/* color palette from github.com/metaory/hexocd-colorscheme
+ *
+ *  █░█ █▀▀ ▀▄▀ █▀█ █▀▀ █▀▄
+ *  █▀█ ██▄ █░█ █▄█ █▄▄ █▄▀
+ *
+ * * * * * * * * * * * * * */
+
 :root {
   --cww: #FFF;
   --cbb: #000;
@@ -135,6 +143,8 @@
   --ek9: #99FFAA;
 }
 
+/* fonts from monaspace.githubnext.com */
+
 @font-face {
   font-family: KR-B;
   src: url("/src/assets/fonts/MonaspaceKrypton-SemiWideBold.woff") format('woff');
@@ -184,7 +194,7 @@ body {
 }
 
 main {
-  padding: 4em;
+  padding: 3em;
   width: 210mm;
   background-color: var(--xgg);
 }
@@ -254,6 +264,10 @@ a {
   font-family: KR-M, monospace;
 }
 
+em {
+  font-family: RN-M, serif;
+}
+
 blockquote {
   font-family: RN-I, serif;
 }
@@ -268,6 +282,7 @@ section {
   body,
   main {
     width: 100vw !important;
+    overflow-x: hidden;
   }
 
   main {
@@ -276,10 +291,6 @@ section {
 
   section.main-summary {
     width: 80vw !important;
-  }
-
-  .bar {
-    width: 40mm !important;
   }
 
   section#skills {
@@ -294,6 +305,8 @@ section {
 
   body,
   section>header,
+  article#header #contact,
+  article#header #profiles,
   article#header>.label,
   section#skills,
   section#languages,
@@ -306,6 +319,13 @@ section {
     width: 80vw !important;
   }
 
+  .location>span.url {
+    grid-auto-flow: row;
+  }
+
+  #header>h1.name {
+    padding: 0;
+  }
 }
 
 @page {

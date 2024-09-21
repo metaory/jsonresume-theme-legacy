@@ -8,7 +8,7 @@
     "phone": "(912) 555-4321",
     "url": "https://johndoe.com",
     "label": "Cyngsbez Ratvarre · Yrnq  Fbyhgvba Nepuvgrpg · QriBcf Shyy-Fgnpx · NJF · Yhn   Abqr · Yvahk · aIvz",
-    "summary": "<ul style='margin-bottom: 0px;'> <li> Lorem ipsum odor amet, consectetuer adipiscing elit </li> <li> Ornare ac vehicula diam fermentum interdum finibus tincidunt </li> <li> Consectetur eget elit senectus nibh porttitor urna</li> <li> Netus sem venenatis feugiat ac curabitur pellentesque torquent et</li> <li> Volutpat ultrices sed, mi curabitur magna sit libero</li> <li> Mauris maecenas nisi nulla; vehicula auctor magnis</li> <li> Gravida mauris commodo taciti gravida netus</li> <li> Elementum nec curae ultrices nec himenaeos nibh</li> <li> Fames magna gravida parturient tincidunt suspendisse ipsum congue nam</li> <li> Ultrices curabitur justo lacus felis nam a consequat</li> <li> Proin penatibus lacinia adipiscing; scelerisque id per mauris</li> <li> Varius montes duis elementum accumsan nullam maximus sit</li> <li> Nostra placerat eu fringilla dapibus amet magna </li> </ul>",
+    "summary": "<ul style='margin-bottom: 0px;'> <li> Yberz vcfhz bqbe nzrg, pbafrpgrghre nqvcvfpvat ryvg </li> <li> Ornare ac vehicula diam fermentum interdum finibus tincidunt </li> <li> Pbafrpgrghe rtrg ryvg frarpghf avou cbeggvgbe hean</li> <li> Arghf frz irarangvf srhtvng np phenovghe cryyragrfdhr gbedhrag rg</li> <li> Volutpat ultrices sed, mi curabitur magna sit libero</li> <li> Mauris maecenas nisi nulla; vehicula auctor magnis</li> <li> Gravida mauris commodo taciti gravida netus</li> <li> Elementum nec curae ultrices nec himenaeos nibh</li> <li> Fames magna gravida parturient tincidunt suspendisse ipsum congue nam</li> <li> Ultrices curabitur justo lacus felis nam a consequat</li> <li> Proin penatibus lacinia adipiscing; scelerisque id per mauris</li> <li> Inevhf zbagrf qhvf ryrzraghz npphzfna ahyynz znkvzhf fvg</li> <li> Nostra placerat eu fringilla dapibus amet magna </li> </ul>",
     "location": {
       "address": "2712 Broadway St",
       "postalCode": "CA 94115",
@@ -36,83 +36,78 @@
   },
   "work": [
     {
-      "name": "Company",
-      "position": "President",
-      "url": "https://company.com",
+      "name": "Pbzcnal",
+      "position": "Cerfvqrag",
+      "url": "https://pbzcnal.com",
       "startDate": "2014-01-01",
       "endDate": "2024-09-01",
-      "summary": "Description…",
-      "keywords": [
-        "AWS",
-        "CI/CD",
-        "CloudFormation",
-        "Docker",
-        "Git",
-        "NodeJs",
-        "OIDC",
-        "React",
-        "Serverless",
-        "Svelte",
-        "Performance",
-        "Terraform"
-      ],
+      "summary": "Magna iaculis augue potenti consectetur nam imperdiet, Eu elit vitae vitae vivamus at aliquet sociosqu",
+      "keywords": ["AWS", "CI/CD", "CloudFormation", "Docker", "Git", "NodeJs", "OIDC", "React", "Serverless", "Svelte", "Performance", "Terraform"],
       "highlights": [
         "Lorem ipsum odor amet",
         "consectetuer adipiscing elit",
         "Sollicitudin sit libero venenatis nascetur",
         "dignissim lacinia ac euismod",
         "Venenatis curabitur pulvinar sociosqu",
-        "class a senectus",
         "Metus mattis parturient"
       ]
     }
   ],
   "volunteer": [
     {
-      "organization": "Organization",
-      "position": "Volunteer",
+      "organization": "Nunc est",
+      "position": "Suscipit Massa",
       "url": "https://organization.com/",
       "startDate": "2012-01-01",
       "endDate": "2013-01-01",
-      "summary": "Description…",
-      "highlights": ["Awarded 'Volunteer of the Month'"]
+      "summary": "Convallis eget fermentum dis. Molestie suspendisse ad id tortor morbi nostra blandit. Consectetur suspendisse porta dictum semper",
+      "highlights": [
+        "Njneqrq Ibyhagrre bs gur Zbagu",
+        "Znkvzhf ravz fntvggvf frq chehf inevhf",
+        "Evfhf rssvpvghe hean cebva zbagrf avfv yhpghf",
+        "Niry aba ynpvavn nzrg ehgehz"
+      ]
     }
   ],
   "education": [
     {
-      "institution": "University",
+      "institution": "Condimentum Ligula",
       "url": "https://institution.com/",
-      "area": "Software Development",
-      "studyType": "Bachelor",
+      "area": "Accumsan Sagittis",
+      "studyType": "Viverra ",
       "startDate": "2011-01-01",
       "endDate": "2013-01-01",
       "score": "4.0",
-      "courses": ["DB1101 - Basic SQL"]
+      "courses": [
+        "X91101 - Onfvp FDY",
+        "OBF71Z - Platea Risus",
+        "AUGU3E - Nibh Purus"
+      ]
     }
   ],
   "awards": [
     {
-      "title": "Award",
+      "title": "Aenean Porta",
       "date": "2014-11-01",
-      "awarder": "Company",
-      "summary": "There is no spoon."
+      "awarder": "Senectus",
+      "summary": "Gurer vf ab fcbba. Vcfhz bqbe nzrg, Pbafrpgrghre nqvcvfpvat ryvg."
     }
   ],
   "certificates": [
     {
-      "name": "Certificate",
+      "name": "Phasellus",
       "date": "2021-11-07",
-      "issuer": "Company",
-      "url": "https://certificate.com"
+      "issuer": "pbafrpgrghre nqvcvfpvat ryvg",
+      "url": "https://pregvsvpngr.com"
     }
   ],
   "publications": [
     {
-      "name": "Publication",
+      "name": "Adipiscing Elit",
       "publisher": "github",
       "releaseDate": "2014-10-01",
       "url": "https://publication.com",
-      "summary": "Description…"
+      "summary": "Yberz vcfhz bqbe nzrg, pbafrpgrghre nqvcvfpvat ryvg. Unovgnag cneghevrag snpvyvfv ryvg fbpvbfdh ibyhgcng."
     }
   ],
   "skills": [
@@ -139,7 +134,7 @@
     {
       "name": "Gbbypunva",
       "level": "Beginner",
-      "keywords": ["NepuYvahk", "Arbivz", "Gzhk", "NjrfbzrJZ", "Docker", "FZF"]
+      "keywords": ["NepuYvahk", "Arbivz", "Gzhk", "NjrfbzrJZ", "Qbpxre", "OMS"]
     }
   ],
   "languages": [
@@ -170,7 +165,7 @@
   "references": [
     {
       "name": "Jane Doe",
-      "reference": "Reference…"
+      "reference": "Yberz vcfhz bqbe nzrg, pbafrpgrghre nqvcvfpvat ryvg. Ghecvf ahap pbaqvzraghz nyvdhnz ihychgngr vnphyvf yvoreb ahap hg."
     }
   ],
   "projects": [
@@ -184,13 +179,13 @@
       "keywords": ["cli", "html", "library", "markup", "transpiler", "npm"]
     },
     {
-      "name": "zvav-nafv",
-      "url": "https://github.com/zrgnbel/zvav-nafv",
-      "description": "Zvavzny NAFV pbybe rfpncr hgvyvgl va haqre 10 yvar!",
+      "name": "cpnyy.wf",
+      "url": "https://github.com/zrgnbel/cpnyy.wf",
+      "description": "Zvavzny Erfhyg/Zbanq yvxr ghcyrf sbe WF ── mreb-qrcraqrapl",
       "roles": ["Author"],
-      "startDate": "2024-06-18",
-      "endDate": "2024-08-04",
-      "keywords": ["colorscheme", "javascript", "library", "npm"]
+      "startDate": "2024-04-18",
+      "endDate": "2024-06-27",
+      "keywords": ["JavaScript", "library", "Lua", "npm"]
     }
   ],
   "meta": {
