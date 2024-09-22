@@ -268,7 +268,7 @@
         "mongodb": "tabler:brand-mongodb",
         "mqtt": "mdi:mq",
         "na": "gravity-ui--circle-exclamation-fill",
-        "alacritty": "tabler:layout-board-split",
+        "alacritty": "simple-icons:alacritty",
         "tui": "gravity-ui:terminal",
         "awesomewm": "tabler:layout-board-split",
         "wezterm": "simple-icons:wezterm",

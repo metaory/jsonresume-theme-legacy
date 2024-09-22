@@ -2,145 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
-
-/* color palette from github.com/metaory/hexocd-colorscheme
- *
- *  █░█ █▀▀ ▀▄▀ █▀█ █▀▀ █▀▄
- *  █▀█ ██▄ █░█ █▄█ █▄▄ █▄▀
- *
- * * * * * * * * * * * * * */
-
 :root {
-  --cww: #FFF;
-  --cbb: #000;
-
   --brx: 18px;
   --brl: 14px;
   --brm: 10px;
   --brs: 6px;
   --blur: 8px;
 
-  --c00: #443388;
-  --c01: #CC3377;
-  --ca1: #FF3399;
-  --c02: #55CC44;
-  --c03: #DDAA33;
-  --c04: #1177DD;
-  --c05: #6644DD;
-  --c06: #44DDBB;
-  --c07: #9999EE;
-
-  --c08: #5544AA;
-  --c09: #BB4488;
-  --c10: #77DD55;
-  --c11: #EEBB44;
-  --c12: #2299EE;
-  --c13: #8866EE;
-  --c14: #66EECC;
-  --c15: #AABBFF;
-
-  --cc0: #332266;
-  --cc1: #DD2266;
-  --cc2: #33BB33;
-  --cc3: #CC9922;
-  --cc4: #2244CC;
-  --cc5: #5522CC;
-  --cc6: #22CCAA;
-  --cc7: #8888EE;
-
-  --cy0: #6655BB;
-  --cy1: #AA5599;
-  --cy2: #99EE66;
-  --cy3: #FFCC55;
-  --cy4: #44BBFF;
-  --cy5: #9988FF;
-  --cy6: #88FFDD;
-  --cy7: #BBCCFF;
-
-  --cx0: #221155;
-  --cx1: #EE1155;
-  --cx2: #11AA22;
-  --cx3: #BB8811;
-  --cx4: #3311BB;
-  --cx5: #4422BB;
-  --cx6: #11BB99;
-  --cx7: #8877DD;
-
-  --cz0: #111133;
-  --cz1: #FF0044;
-  --cz2: #009911;
-  --cz3: #AA7700;
-  --cz4: #3300AA;
-  --cz5: #4411AA;
-  --cz6: #00AA88;
-  --cz7: #7766CC;
-
-  --zk0: #BB44AA;
-  --zk1: #BB55BB;
-  --zk2: #CC66CC;
-  --zk3: #CC77DD;
-  --zk4: #DD88DD;
-  --zk5: #DD99EE;
-  --zk6: #EEAAEE;
-  --zk7: #EEBBFF;
-  --zk8: #FFCCFF;
-  --zk9: #FFDDFF;
-
-  --pk0: #FF4488;
-  --pk1: #EE4499;
-  --pk2: #DD44AA;
-  --pk3: #CC44BB;
-  --pk4: #BB44CC;
-  --pk5: #AA44DD;
-  --pk6: #9944EE;
-  --pk7: #8844FF;
-  --pk8: #7755FF;
-  --pk9: #6655FF;
-
-  --sbg: #DD3366;
-  --sfg: #331155;
-  --wbg: #3311BB;
-  --wfg: #2299EE;
-  --ebg: #009911;
-  --efg: #113344;
-  --xbg: #221155;
-
-  --xbg: #EEDDFF;
-  --xfg: #44BBFF;
-  --xgg: #DDCCFF33;
-
-  --sk0: #220044;
-  --sk1: #441155;
-  --sk2: #662266;
-  --sk3: #883377;
-  --sk4: #994488;
-  --sk5: #AA5599;
-  --sk6: #BB66AA;
-  --sk7: #CC77BB;
-  --sk8: #DD88CC;
-  --sk9: #EE99DD;
-
-  --wk0: #200244;
-  --wk1: #221155;
-  --wk2: #332266;
-  --wk3: #443388;
-  --wk4: #5544AA;
-  --wk5: #6655BB;
-  --wk6: #7766CC;
-  --wk7: #8877DD;
-  --wk8: #9999EE;
-  --wk9: #BBAAFF;
-
-  --ek0: #003322;
-  --ek1: #114433;
-  --ek2: #226644;
-  --ek3: #339955;
-  --ek4: #44AA66;
-  --ek5: #55BB77;
-  --ek6: #66CC88;
-  --ek7: #77DD99;
-  --ek8: #88EEAA;
-  --ek9: #99FFAA;
+  --bg: white;
+  --fg: var(--wk5);
+  --f2: var(--wk6);
+  --f3: var(--wk7);
+  --f4: var(--wk8);
+  --f5: var(--wk9);
+  --ic: var(--c05);
+  --ix: var(--c05);
+  --iz: var(--c13);
 }
 
 /* fonts from monaspace.githubnext.com */
@@ -181,7 +58,11 @@
 }
 
 html {
-  background: white;
+  background-color: var(--bg);
+}
+
+* {
+  transition: all .4s linear;
 }
 
 body {
@@ -197,6 +78,24 @@ main {
   padding: 3em;
   width: 210mm;
   background-color: var(--xgg);
+}
+
+html.dark {
+
+  --bg: var(--wk0);
+  --fg: var(--wk9);
+  --f2: var(--c03);
+  --f3: var(--cy4);
+  --f4: var(--c06);
+  --f5: var(--xgg);
+  --ic: var(--cy4);
+  --ix: var(--pk2);
+  --iz: var(--pk1);
+
+  #scheme-toggle {
+    --fg: var(--cy3);
+    --bg: var(--c01);
+  }
 }
 
 div.line-pattern {
@@ -276,6 +175,44 @@ section {
   font-family: AR-M, system-ui, sans-serif;
 }
 
+
+#scheme-toggle {
+  --fg: var(--cc6);
+  --bg: var(--wk4);
+
+  &button {
+    z-index: 1;
+    display: grid;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px;
+    background: blue;
+    border-radius: 42%;
+    outline: solid 12px var(--xgg);
+    background-color: var(--bg);
+    box-shadow: 0 0 40px 10px var(--fg);
+    outline-offset: -12px;
+    opacity: .8;
+    border: solid 6px var(--fg);
+
+    &:hover {
+      opacity: 1;
+      box-shadow: 0 0 30px 10px var(--fg);
+    }
+
+    &>span {
+      color: var(--fg);
+      width: 26px;
+      height: 26px;
+    }
+  }
+
+  .hidden {
+    display: none;
+  }
+}
+
 @media (max-width: 600px) {
 
   html,
@@ -331,4 +268,10 @@ section {
 @page {
   size: A4;
   margin: 0;
+}
+
+@media print {
+  #scheme-toggle * {
+    display: none;
+  }
 }

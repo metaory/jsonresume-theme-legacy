@@ -1,0 +1,25 @@
+<button id='scheme-toggle'>
+  <span></span>
+</button>
+
+<script>
+  const icons = [
+    'icon-[line-md--sunny-filled-loop-to-moon-filled-alt-loop-transition]',
+    'icon-[line-md--moon-filled-alt-to-sunny-filled-loop-transition]',
+  ]
+  const ico = document.querySelector('#scheme-toggle > span')
+  const prefersDark = matchMedia && matchMedia('(prefers-color-scheme: dark)').matches
+
+  if (prefersDark) document.body.parentElement.className = 'dark'
+
+  ico.className = icons[Number(prefersDark)]
+
+  const toggle = () => {
+    document.body.parentElement.classList.toggle('dark')
+    ico.className = icons.find(x => x !== ico.className)
+  }
+
+  document
+    .getElementById('scheme-toggle')
+    .addEventListener('click', toggle)
+</script>

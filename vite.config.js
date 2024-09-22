@@ -15,7 +15,15 @@ const { ICONS, TITLES } = readdirSync('./src/pages').reduce(
       TITLES: { ...acc.TITLES, ...sectionTitles },
     }
   },
-  { ICONS: {}, TITLES: {} }
+  {
+    ICONS: {
+      // dark: 'mage:moon-fill',
+      // light: 'mage:sun-fill',
+      dark: 'line-md:sunny-filled-loop-to-moon-filled-alt-loop-transition',
+      light: 'line-md:moon-filled-alt-to-sunny-filled-loop-transition',
+    },
+    TITLES: {},
+  }
 )
 
 const getIcon = x => `icon-[${ICONS[x.toLowerCase()] || ICONS.na}]`.replace(':', '--')

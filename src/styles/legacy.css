@@ -1,3 +1,4 @@
+
 body::-webkit-scrollbar {
   display: none;
 }
@@ -8,11 +9,10 @@ html {
   font-family: KR-M, monospace, sans-serif;
   font-weight: Bold;
   font-size: 14px;
-  color: var(--wk5);
+  color: var(--fg);
   margin: 0;
   padding: 0;
   zoom: normal;
-
 }
 
 p {
@@ -28,14 +28,14 @@ a:visited {
 a,
 span.url,
 a:visited {
-  color: var(--c05);
+  color: var(--ic);
 }
 
 span.icon {
   width: 20px;
   height: 20px;
   opacity: 0.8;
-  color: var(--c05);
+  color: var(--ic);
 }
 
 li {
@@ -59,7 +59,7 @@ h3 {
 }
 
 em {
-  color: var(--wk7);
+  color: var(--f3);
   opacity: .7;
 }
 
@@ -92,18 +92,20 @@ strong {
     margin: auto;
   }
 
-  color: var(--wk6);
+  color: var(--f2);
 
   span.image {
-    outline: solid 14px var(--xgg);
+    outline: solid 10px var(--xgg);
+    outline-offset: 6px;
     padding: 10px;
+    margin: 0 20px;
     justify-self: end;
     border-radius: 40%;
     background-color: var(--xgg);
     backdrop-filter: contrast(94%);
 
     >img {
-      width: 80px;
+      width: 60px;
       opacity: .9;
     }
   }
@@ -112,7 +114,7 @@ strong {
     display: grid;
     grid-template-columns: 2fr 1fr;
     justify-content: center;
-    color: var(--c05);
+    color: var(--ix);
     align-items: center;
     font-size: 3.8rem;
     margin-bottom: .6em;
@@ -179,7 +181,6 @@ section.main-summary {
   background: var(--xgg);
   border-radius: var(--brl);
   backdrop-filter: blur(var(--blur));
-  color: var(--wk5);
 
   >ul>li {
     list-style: none;
@@ -263,7 +264,6 @@ section#languages {
   .item>.fluency {
 
     em {
-      color: var(--wk7);
       opacity: .7;
     }
   }
@@ -277,7 +277,6 @@ section#languages {
     justify-content: start;
 
     h3 {
-      color: var(--wk5);
       padding: 4px 8px;
       border-radius: var(--brm);
       background-color: var(--xgg);
@@ -311,7 +310,7 @@ section#interests {
       font-family: KR-B;
       width: max-content;
       padding: 8px;
-      color: var(--wk6);
+      color: var(--f2);
     }
 
     width: 50mm;
@@ -334,7 +333,7 @@ section#interests {
       padding: 6px 8px;
 
       &>span {
-        color: var(--wk8);
+        color: var(--f4);
       }
     }
   }
@@ -346,7 +345,7 @@ section#interests {
   align-items: center;
   gap: 10px;
   padding: .4em .6em;
-  color: var(--c13);
+  color: var(--iz);
   text-transform: uppercase;
   font-weight: 900;
   border: none;
@@ -406,7 +405,6 @@ section#interests {
 .name {
   font-weight: 900;
   font-size: 1.4em;
-  color: var(--wk5);
 }
 
 .company::before,
@@ -414,7 +412,7 @@ section#interests {
 .organization::before,
 .awarder::before {
   content: "at ";
-  color: var(--wk7);
+  color: var(--f3);
   font-style: italic;
 }
 
@@ -430,7 +428,7 @@ section#interests {
   display: block;
   font-size: 1rem;
   padding: 0.1em 0;
-  color: var(--wk8);
+  color: var(--f4);
   font-weight: 400;
 }
 
@@ -446,7 +444,7 @@ section#interests {
   padding: 6px;
   font-size: 0.9rem;
   line-height: 1;
-  color: var(--wk6);
+  color: var(--f2);
   border-radius: var(--brs);
   background-color: var(--xgg);
   border: 0 solid var(--cy2);
@@ -456,7 +454,6 @@ span.url:hover,
 .keywords li:hover,
 .courses li:hover {
   background: var(--cy2);
-  color: var(--wk5);
 }
 
 .highlights {
@@ -492,7 +489,7 @@ span.url:hover,
 
 .level .bar {
   width: 40mm !important;
-  background-color: var(--wk9);
+  background-color: var(--f5);
   border-radius: var(--brs);
   display: block;
   margin: 0 8px;
@@ -511,27 +508,27 @@ span.url:hover,
 
 .level.beginner .bar::after {
   border-radius: var(--brs);
-  background: linear-gradient(90deg, var(--pk6), var(--pk7));
+  background: linear-gradient(90deg, var(--cc6), var(--pk7));
   width: 25%;
 }
 
 .level.intermediate .bar::after {
   border-radius: var(--brs);
-  background: linear-gradient(90deg, var(--pk6), var(--pk9));
+  background: linear-gradient(90deg, var(--cc6), var(--pk9));
   width: 55%;
 }
 
 .level.advanced .bar::after,
 .level.fluent .bar::after {
-  background: var(--c05);
-  background: linear-gradient(90deg, var(--pk6), var(--cc5));
+  background: var(--ic);
+  background: linear-gradient(90deg, var(--cc6), var(--cc5));
   border-radius: var(--brs);
   width: 75%;
 }
 
 .level.master .bar::after,
 .level.native.speaker .bar::after {
-  background: linear-gradient(90deg, var(--pk6), var(--cx5));
+  background: linear-gradient(90deg, var(--cc6), var(--cx5));
   border-radius: var(--brs);
   width: 100%;
 }
@@ -649,7 +646,7 @@ span.url {
   max-width: 210mm;
 
   & svg {
-    fill: var(--c05);
+    fill: var(--ic);
     background-color: var(--xgg);
     border-radius: var(--brs);
   }
@@ -679,14 +676,14 @@ svg.hr {
 }
 
 .item-count {
-  color: var(--wk9);
+  color: var(--f5);
   font-style: italic;
   font-size: .6em;
   vertical-align: top;
 }
 
 blockquote {
-  color: var(--c05);
+  color: var(--ic);
 }
 
 
@@ -705,11 +702,11 @@ ul.keywords {
     padding: 4px 8px;
 
     &>span.icon {
-      color: var(--wk8);
+      color: var(--f4);
     }
 
     &>span {
-      color: var(--wk6);
+      color: var(--f2);
     }
   }
 }

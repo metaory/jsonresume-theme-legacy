@@ -17,11 +17,13 @@
           href="/src/assets/logo.svg"
           sizes="any"
           type="image/svg+xml">
+    <link rel="stylesheet" href="/src/styles/hexo.css">
     <link rel="stylesheet" href="/src/styles/main.css">
     <link rel="stylesheet" href="/src/styles/legacy.css">
   </head>
   <body>
     <main>
+      {{> components/dark.hbs }}
       {{> components/basics.hbs }}
       {{> components/skills.hbs }}
       {{> components/languages.hbs }}
