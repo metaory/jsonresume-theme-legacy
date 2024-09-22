@@ -7,7 +7,6 @@
 ---
 
 <div align="center">
-  <h4>SAMPLE</h4>
   <a href="sample.pdf">sample.pdf</a>
   <img src="screenshot.png" />
 </div>
