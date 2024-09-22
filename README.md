@@ -8,8 +8,8 @@
 
 <div align="center">
   <h4>SAMPLE</h4>
-  <a href="sample.pdf">view</a> / <a href="sample.pdf">download<a>
-  <img src="https://raw.githubusercontent.com/metaory/jsonresume-theme-legacy/master/screenshot.png">
+  <a href="sample.pdf">sample.pdf</a>
+  <img src="screenshot.png" />
 </div>
 
 ---
