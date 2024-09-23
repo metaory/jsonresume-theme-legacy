@@ -23,6 +23,14 @@
     </header>
     {{#location}}
     <div class="location username">
+      {{#if residency}}
+        <div class="residency username">
+          <span class="url">
+            <span class="icon {{ ICO "residency" }}"></span>
+            {{ residency }}
+          </span>
+        </div>
+      {{/if}}
       <span class="url">
         <span class="icon {{ ICO "location" }}"></span>
         {{#if address}}
@@ -32,13 +40,13 @@
           <span class="postalCode">{{ postalCode }},</span>
         {{/if}}
         {{#if city}}
-          <span class="city">{{ city }},</span>
+          <span class="city">{{ city }}</span>
         {{/if}}
         {{#if region}}
-          <span class="region">{{ region }}</span>
+          · <span class="region">{{ region }}</span>
         {{/if}}
         {{#if countryCode}}
-          <span class="countryCode">{{ countryCode }}</span>
+          · <span class="countryCode">{{ countryCode }}</span>
         {{/if}}
       </span>
     </div>

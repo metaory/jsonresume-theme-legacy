@@ -139,6 +139,7 @@ strong {
     width: 100%;
     display: grid;
     justify-content: center;
+    grid-auto-flow: column;
   }
 
   .label {
@@ -400,12 +401,21 @@ section#interests {
 
 .position,
 .studyType,
-.area,
 .title,
 .language,
 .name {
   font-weight: 900;
+  letter-spacing: -.6px;
   font-size: 1.4em;
+}
+.studyType {
+  color: var(--f3);
+  font-style: italic;
+  font-size: 1.2em;
+}
+.area {
+  color: var(--g2);
+  font-size: 1em;
 }
 
 .company::before,
@@ -448,13 +458,12 @@ section#interests {
   color: var(--f2);
   border-radius: var(--brs);
   background-color: var(--xgg);
-  border: 0 solid var(--cy2);
 }
 
 span.url:hover,
 .keywords li:hover,
 .courses li:hover {
-  background: var(--cy2);
+  background: var(--ho);
 }
 
 .highlights {
@@ -567,10 +576,6 @@ span.url:hover,
   }
 }
 
-.section>section>section {
-  margin-bottom: 1rem;
-}
-
 .clear::after {
   content: "";
   display: table;
@@ -585,7 +590,7 @@ span.url:hover,
 
 section>header {
   display: grid;
-  grid-template-columns: 3fr 2fr;
+  grid-template-columns: 4fr 1fr;
   align-items: center;
 
   & .date {
@@ -658,6 +663,9 @@ section.education-item {
   border-radius: 2em;
   backdrop-filter: blur(var(--blur));
   border-radius: var(--brm);
+  .date {
+    justify-self: left;
+  }
 }
 
 svg.hr {
@@ -711,3 +719,12 @@ ul.keywords {
     }
   }
 }
+
+footer {
+  color: var(--f3);
+  text-align: center;
+  a {
+    padding: 0 8px;
+  }
+}
+

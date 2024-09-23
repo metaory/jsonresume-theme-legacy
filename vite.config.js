@@ -26,10 +26,13 @@ const { ICONS, TITLES } = readdirSync('./src/pages').reduce(
   }
 )
 
-const getIcon = x => `icon-[${ICONS[x.toLowerCase()] || ICONS.na}]`.replace(':', '--')
+const getIcon = x => `icon-[${ICONS[x.toLowerCase()]}]`.replace(':', '--')
 const getTitle = x => TITLES[x] || x
 
-const mkDateFormatter = opt => str => new Intl.DateTimeFormat('en-US', opt).format(new Date(str))
+const mkDateFormatter = opt => str =>
+  Date.parse(str)
+    ? new Intl.DateTimeFormat('en-US', opt).format(new Date(str))
+    : str
 
 export default {
   plugins: [
@@ -39,10 +42,15 @@ export default {
       helpers: {
         Y: mkDateFormatter({ year: 'numeric' }),
         MY: mkDateFormatter({ year: 'numeric', month: 'short' }),
-        DMY: mkDateFormatter({ year: 'numeric', month: 'short', day: 'numeric' }),
+        DMY: mkDateFormatter({ year: 'numeric', month: 'short', day: 'numeric', }),
         ICO: getIcon,
         TITLE: getTitle,
         URL: url => url.split('/').at(-1),
+        URL_SEMI: url => url.split('https://').at(-1),
+        URL_ICO: url => {
+          const [,domain] = url.match(/https:..(\w+).\w+/)
+          return getIcon(domain)
+        }
       },
     }),
     tailwindcss({

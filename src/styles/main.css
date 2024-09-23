@@ -23,6 +23,7 @@
   --g3: var(--pk9);
   --g4: var(--cc5);
   --g5: var(--cx5);
+  --ho: var(--cy2);
 }
 
 @media not print {
@@ -41,6 +42,7 @@
     --g3: var(--sk5);
     --g4: var(--sk6);
     --g5: var(--sk7);
+  --ho: var(--sk2);
     --xgg: #fDCCFF11;
 
     #scheme-toggle {
@@ -53,23 +55,8 @@
 /* fonts from monaspace.githubnext.com */
 
 @font-face {
-  font-family: KR-B;
-  src: url("/src/assets/fonts/MonaspaceKrypton-SemiWideBold.woff") format('woff');
-}
-
-@font-face {
-  font-family: KR-X;
-  src: url("/src/assets/fonts/MonaspaceKrypton-SemiWideExtraBold.woff") format('woff');
-}
-
-@font-face {
   font-family: KR-M;
   src: url("/src/assets/fonts/MonaspaceKrypton-Medium.woff") format('woff');
-}
-
-@font-face {
-  font-family: AR-B;
-  src: url("/src/assets/fonts/MonaspaceArgon-Bold.woff") format('woff');
 }
 
 @font-face {
@@ -80,11 +67,6 @@
 @font-face {
   font-family: RN-M;
   src: url("/src/assets/fonts/MonaspaceRadon-Medium.woff") format('woff');
-}
-
-@font-face {
-  font-family: RN-I;
-  src: url("/src/assets/fonts/MonaspaceRadon-MediumItalic.woff") format('woff');
 }
 
 html {
@@ -105,7 +87,7 @@ body {
 }
 
 main {
-  padding: 3em;
+  padding: 3em 3em 1em;
   width: 210mm;
   background-color: var(--xgg);
 }
@@ -131,6 +113,7 @@ div.line-pattern {
     height: 30px;
     background-size: 61px 51px;
   }
+
 }
 
 section.main-summary,
@@ -157,17 +140,16 @@ section.work-item,
 }
 
 
-h1 {
-  font-family: KR-X, monospace;
-}
+/* h1 { font-family: KR-X, monospace; } */
 
+h1,
 h2,
 h3,
 h4,
 h5,
 h6,
 header {
-  font-family: KR-B, monospace;
+  font-family: KR-M, monospace;
 }
 
 ul.keywords li,
@@ -181,9 +163,10 @@ em {
 }
 
 blockquote {
-  font-family: RN-I, serif;
+  font-family: RN-M, serif;
 }
 
+.studyType,
 section {
   font-family: AR-M, system-ui, sans-serif;
 }

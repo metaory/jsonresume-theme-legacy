@@ -129,15 +129,11 @@ Images
 
 ---
 
-Colors
-------
+Summary
+-------
 
 > [!Tip]
-> ~~You can overwrite color values~~
->
-> ~~Under `meta.themeOptions.colors`~~
->
-> 🚧 Not implemented
+> The `basics.summary` is placed as **raw HTML**
 
 ---
 
@@ -148,6 +144,18 @@ Titles
 > You can change section titles
 >
 > Under `meta.themeOptions.sectionTitles`
+
+---
+
+Colors
+------
+
+> [!Tip]
+> ~~You can overwrite color values~~
+>
+> ~~Under `meta.themeOptions.colors`~~
+>
+> 🚧 Not implemented
 
 ---
 
