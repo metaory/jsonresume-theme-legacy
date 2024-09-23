@@ -139,6 +139,13 @@ section.work-item,
   page-break-after: avoid;
 }
 
+.do-break-before {
+  page-break-before: always;
+}
+.do-break-after {
+  page-break-after: always;
+}
+
 
 /* h1 { font-family: KR-X, monospace; } */
 

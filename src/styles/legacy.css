@@ -94,9 +94,9 @@ strong {
   color: var(--f2);
 
   span.image {
-    outline: solid 10px var(--xgg);
+    outline: solid 7px var(--xgg);
     outline-offset: 6px;
-    padding: 10px;
+    padding: 4px;
     margin: 0 20px;
     justify-self: end;
     border-radius: 40%;
@@ -145,7 +145,7 @@ strong {
   .label {
     background-color: var(--xgg);
     backdrop-filter: blur(var(--blur));
-    border-radius: 2em;
+    border-radius: 3em;
     margin: 2em 1em;
     padding: 1em;
     display: grid;
@@ -155,8 +155,8 @@ strong {
     align-items: center;
 
     &>span>img {
-      width: 9pc;
-      height: 9pc;
+      width: 8pc;
+      height: 8pc;
       margin: auto;
       border: solid 1pc var(--xgg);
       backdrop-filter: contrast(90%);
