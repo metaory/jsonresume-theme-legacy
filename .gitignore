@@ -3,4 +3,5 @@ pnpm-lock.yaml
 private.*
 private*
 dist
+out
 

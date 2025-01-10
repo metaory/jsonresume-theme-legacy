@@ -1,8 +1,8 @@
 {{#if certificates.length}}
   {{> components/hr.hbs size="md" }}
   <section class="section">
-    <header>
-      <h2 class="section-title">
+    <header class="section-header">
+      <h2 class="section-title grid-column-flow">
         <span class="icon {{ ICO "certificate" }}"></span>
         {{ TITLE "certificates" }}
       </h2>
@@ -10,17 +10,17 @@
     <section id="certificates">
       {{#each certificates}}
         <section class="certificate-item">
-          <header class="clear">
+          <header class="item-header">
             <div>
               {{#if name}}
-                <div class="name">{{ name }}</div>
+                <div class="name content-title text-title-font">{{ name }}</div>
               {{/if}}
               {{#if issuer}}
-                <div class="issuer">{{ issuer }}</div>
+                <div class="issuer content-title text-title-font">{{ issuer }}</div>
               {{/if}}
             </div>
             {{#if date}}
-              <div class="date">{{ date }}</div>
+              <div class="date content-meta">{{ date }}</div>
             {{/if}}
           </header>
           <div class="item">

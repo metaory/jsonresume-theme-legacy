@@ -1,13 +1,13 @@
 {{#if references.length}}
   {{> components/hr.hbs size="md" }}
   <section class="section">
-    <header>
-      <h2 class='section-title'>
+    <header class="section-header">
+      <h2 class='section-title grid-column-flow'>
         <span class="icon {{ ICO "reference" }}"></span>
         {{ TITLE "references" }}
       </h2>
     </header>
-    <section id="references">
+    <section id="references" class="blur-card">
       {{#each references}}
         <div class="item">
           {{#if reference}}
@@ -16,7 +16,7 @@
             </blockquote>
           {{/if}}
           {{#if name}}
-            <div class="name">{{ name }}</div>
+            <div class="name text-title-font">{{ name }}</div>
           {{/if}}
         </div>
       {{/each}}

@@ -18,16 +18,19 @@
           sizes="any"
           type="image/svg+xml">
     <link rel="stylesheet" href="/src/styles/hexo.css">
-    <link rel="stylesheet" href="/src/styles/main.css">
-    <link rel="stylesheet" href="/src/styles/legacy.css">
+    <link rel="stylesheet" href="/src/styles/font.css">
+    <link rel="stylesheet" href="/src/styles/variables.css">
+    <link rel="stylesheet" href="/src/styles/utilities.css">
+    <link rel="stylesheet" href="/src/styles/components.css">
   </head>
   <body>
     <main>
+      {{> components/github.hbs }}
       {{> components/dark.hbs }}
       {{> components/basics.hbs }}
+      {{> components/interests.hbs }}
       {{> components/skills.hbs }}
       {{> components/languages.hbs }}
-      {{> components/interests.hbs }}
       {{> components/work.hbs }}
       {{> components/projects.hbs }}
       {{> components/volunteer.hbs }}

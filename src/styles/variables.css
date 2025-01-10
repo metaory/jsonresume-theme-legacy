@@ -1,0 +1,83 @@
+/* Base Variables */
+:root {
+  /* Border Radius */
+  --brx: 18px;
+  --brl: 14px;
+  --brm: 10px;
+  --brs: 6px;
+
+  /* Blur */
+  --blur: 8px;
+
+  /* Colors - Base */
+  --bg: white;
+  --fg: var(--wk5);
+  --f2: var(--wk6);
+  --f3: var(--wk7);
+  --f4: var(--wk8);
+  --f5: var(--wk9);
+
+  /* Colors - Accent */
+  --ic: var(--cc4);
+  --ix: var(--pk9);
+  --iz: var(--c05);
+
+  /* Colors - Gradients */
+  --g1: var(--cy7);
+  --g2: var(--cc5);
+  --g3: var(--cc5);
+  --g4: var(--cc5);
+  --g5: var(--cc5);
+
+  /* Colors - Hover */
+  --ho: var(--cy2);
+
+  /* Colors - Special */
+  --xgg: #6644AA11;
+
+  /* Default Color Scheme */
+  color-scheme: light !important;
+}
+
+/* Dark Mode Variables */
+@media not print {
+  html.dark {
+    --bg: var(--wk0);
+    --fg: var(--sk9);
+    --f2: var(--zk8);
+    --f3: var(--pk4);
+    --f4: var(--pk5);
+    --f5: var(--xgg);
+    --ic: var(--sk8);
+    --ix: var(--pk1);
+    --iz: var(--pk0);
+    --g1: var(--sk3);
+    --g2: var(--sk4);
+    --g3: var(--sk5);
+    --g4: var(--sk6);
+    --g5: var(--sk7);
+    --ho: var(--sk2);
+    --xgg: #6644AA11;
+  }
+
+  html.dark #scheme-toggle {
+    --fg: var(--c03);
+    --bg: var(--wk1);
+  }
+}
+
+/* Print Mode Variables */
+@media print,
+(width: 780px) {
+  :root {
+    --bg: white !important;
+    --fg: var(--wk5) !important;
+    --f2: var(--wk6) !important;
+    --f3: var(--wk7) !important;
+    --f4: var(--wk8) !important;
+    --f5: var(--wk9) !important;
+    --ic: var(--c05) !important;
+    --ix: var(--c05) !important;
+    --iz: var(--c13) !important;
+  }
+} 

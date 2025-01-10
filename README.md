@@ -1,20 +1,20 @@
 <div align="center">
-  <img height="200" src="https://raw.githubusercontent.com/metaory/jsonresume-theme-legacy/master/src/assets/logo.svg">
-  <h4>JSONRESUME-THEME-LEGACY</h4>
-  <h4><a href="https://metaory.github.io/jsonresume-theme-legacy">LIVE DEMO</a></h4>
-</div>
-
----
-
-<div align="center">
+  <h1>
+    <img valign="middle" height="28" src="https://raw.githubusercontent.com/metaory/jsonresume-theme-legacy/master/src/assets/logo.svg">
+    𐑃⌄𐌒⌃𐣯𐐹
+  </h1>
+  <i><small>jsonresume theme</small></i><br>
+  <a href="https://metaory.github.io/jsonresume-theme-legacy">demo</a> |
   <a href="sample.pdf">sample.pdf</a>
-  <img src="screenshot.png" />
 </div>
+
+<p align="center">
+  <img src="screenshot.png" width="70%" />
+</p>
 
 ---
 
-USAGE
-=====
+## USAGE
 
 ```sh
 # clone
@@ -50,23 +50,21 @@ pnpm run build:private
 
 ---
 
-Customization
--------------
+## CUSTOMIZATION
 
-Icons
------
+### Icons
 
-> [!Note]
+> [!NOTE]
 > [Iconify](https://icon-sets.iconify.design) is used for icons.
 
-> [!Note]
+> [!NOTE]
 > The default icon map is defined in [src/pages/index.json](https://github.com/metaory/jsonresume-theme-legacy/blob/master/src/pages/index.json)
 > Under `meta.themeOptions.iconMap`
 
-> [!Tip]
+> [!TIP]
 > You can add/overwrite by adding the desired key value in your `private.json`
 
-> [!Tip]
+> [!TIP]
 > You can use icons from any collection
 
 For example to add new icon
@@ -88,26 +86,25 @@ and to overwrite the `javascript` icon;
 }
 ```
 
-> [!Important]
+> [!IMPORTANT]
 > Make sure the keys in `iconMap` are all lowercase
 >
 > While the keyword do NOT have to be lowercase
 
-> [!Tip]
+> [!TIP]
 > the iconify icon name can be in either form
 >
 > - `hugeicons:ai-view`
 > - `hugeicons--ai-view`
 
-> [!Caution]
+> [!CAUTION]
 > a complete process restart is needed if overwriting existing icons
 
 ---
 
-Images
-------
+### Images
 
-> [!Tip]
+> [!TIP]
 > Image paths can be remote or local
 >
 > Local path is from root
@@ -129,28 +126,25 @@ Images
 
 ---
 
-Summary
--------
+### Summary
 
-> [!Tip]
+> [!TIP]
 > The `basics.summary` is placed as **raw HTML**
 
 ---
 
-Titles
-------
+### Titles
 
-> [!Tip]
+> [!TIP]
 > You can change section titles
 >
 > Under `meta.themeOptions.sectionTitles`
 
 ---
 
-Colors
-------
+### Colors
 
-> [!Tip]
+> [!TIP]
 > ~~You can overwrite color values~~
 >
 > ~~Under `meta.themeOptions.colors`~~
@@ -159,15 +153,14 @@ Colors
 
 ---
 
-Troubleshooting
----------------
+### Troubleshooting
 
-> [!Caution]
+> [!CAUTION]
 > You need the dev script running before running the pdf build script
 
 ---
 
-> [!Warning]
+> [!WARNING]
 > `sh: line 1: chromium: command not found`
 >
 > [chromium](https://chromium.org) is used for pdf exports
@@ -177,13 +170,13 @@ Troubleshooting
 
 ---
 
-> [!Note]
+> [!NOTE]
 > Only tested on Linux
 >
 > Reconsider your life choices if you're running  💩 Windows!
 
 ---
 
-License
--------
+## LICENSE
+
 [MIT](LICENSE)

@@ -16,23 +16,16 @@ const { ICONS, TITLES } = readdirSync('./src/pages').reduce(
     }
   },
   {
-    ICONS: {
-      // dark: 'mage:moon-fill',
-      // light: 'mage:sun-fill',
-      dark: 'line-md:sunny-filled-loop-to-moon-filled-alt-loop-transition',
-      light: 'line-md:moon-filled-alt-to-sunny-filled-loop-transition',
-    },
+    ICONS: {},
     TITLES: {},
   }
 )
 
-const getIcon = x => `icon-[${ICONS[x.toLowerCase()]}]`.replace(':', '--')
+const getIcon = x => `icon-[${ICONS[x.toLowerCase().replaceAll(' ', '-')]}]`.replace(':', '--')
 const getTitle = x => TITLES[x] || x
 
 const mkDateFormatter = opt => str =>
-  Date.parse(str)
-    ? new Intl.DateTimeFormat('en-US', opt).format(new Date(str))
-    : str
+  Date.parse(str) ? new Intl.DateTimeFormat('en-US', opt).format(new Date(str)) : str
 
 export default {
   plugins: [
@@ -42,22 +35,22 @@ export default {
       helpers: {
         Y: mkDateFormatter({ year: 'numeric' }),
         MY: mkDateFormatter({ year: 'numeric', month: 'short' }),
-        DMY: mkDateFormatter({ year: 'numeric', month: 'short', day: 'numeric', }),
+        DMY: mkDateFormatter({ year: 'numeric', month: 'short', day: 'numeric' }),
         ICO: getIcon,
         TITLE: getTitle,
         URL: url => url.split('/').at(-1),
         URL_SEMI: url => url.split('https://').at(-1),
         URL_ICO: url => {
-          const [,domain] = url.match(/https:..(\w+).\w+/)
+          const [, domain] = url.match(/https:..(\w+).\w+/)
           return getIcon(domain)
-        }
+        },
       },
     }),
     tailwindcss({
       tailwindcss: {
         content: ['./src/components/*.hbs'],
         theme: { extend: {} },
-        safelist: Object.keys(ICONS).map(getIcon),
+        safelist: Object.values(ICONS).map(x => `icon-[${x.replace(':', '--')}]`),
         plugins: [addDynamicIconSelectors()],
       },
     }),

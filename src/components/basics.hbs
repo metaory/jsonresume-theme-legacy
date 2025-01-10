@@ -1,5 +1,5 @@
 {{#basics}}
-<article id="header" class="clear">
+<article id="header">
   <h1 class="name">
     {{ name }}
     <span class="image">
@@ -9,23 +9,21 @@
   {{> components/hr.hbs size="lg" }}
   <div class="label">
     <span>
-      <img src="{{ image }}" width="200">
+      <img src="{{ image }}" width="200" class="m-auto">
     </span>
-    <h2>{{ label }}</h2>
+    <h2>{{{ label }}}</h2>
   </div>
   {{> components/hr.hbs size="lg" }}
-  <section class="section contacts">
+    <section class="section contacts">
     {{#location}}
-    <div class="location username">
+    <div class="location">
       {{#if residency}}
-        <div class="residency username">
-          <span class="url">
-            <span class="icon {{ ICO "residency" }}"></span>
-            {{ residency }}
-          </span>
-        </div>
+        <span class="tag">
+          <span class="icon {{ ICO "residency" }}"></span>
+          {{ residency }}
+        </span>
       {{/if}}
-      <span class="url">
+      <span class="url grid-column-flow">
         <span class="icon {{ ICO "location" }}"></span>
         {{#if address}}
           <span class="address">{{ address }},</span>
@@ -44,70 +42,68 @@
         {{/if}}
       </span>
     </div>
-  {{/location}}
-  {{#if birth}}
-    {{ birth }}
-  {{/if}}
-  <div id="contact">
-    {{#if url}}
-      <div class="website username">
-        <span class="url">
+    {{/location}}
+    {{#if birth}}
+      {{ birth }}
+    {{/if}}
+    <div id="contact" class="grid-column-flow m-auto">
+      {{#if url}}
+        <span class="url grid-column-flow">
           <span class="icon {{ ICO "link" }}"></span>
-          <a class="hide-href-print" target="_blank" href="{{ url }}">{{ URL url }}</a>
+          <a target="_blank" href="{{ url }}">{{ URL url }}</a>
         </span>
-      </div>
-    {{/if}}
-    {{#if email}}
-      <div class="email username">
-        <span class="url">
-          <span class="icon {{ ICO "mail" }}"></span>
-          <a class="hide-href-print" href="mailto:{{ email }}">{{ email }}</a>
-        </span>
-      </div>
-    {{/if}}
-    {{#if phone}}
-      <div class="phone username">
-        <span class="url">
-          <span class="icon {{ ICO "phone" }}"></span>
-          <a class="hide-href-print" href="tel:{{ phone }}">{{ phone }}</a>
-        </span>
-      </div>
-    {{/if}}
-  </div>
-  {{#if profiles.length}}
-    <div id="profiles">
-      {{#each profiles}}
-        <div class="item">
-          {{#if network}}
-            <div class="username">
-              {{#if url}}
-                <span class="url">
-                  <span class="icon {{ ICO network }}"></span>
-                  <a target="_blank" href="{{ url }}">{{ username }}</a>
-                </span>
-              {{ else }}
-                <span>{{ username }}</span>
-              {{/if}}
-            </div>
-          {{/if}}
+      {{/if}}
+      {{#if email}}
+        <div class="email">
+          <span class="url grid-column-flow">
+            <span class="icon {{ ICO "mail" }}"></span>
+            <a href="mailto:{{ email }}">{{ email }}</a>
+          </span>
         </div>
-      {{/each}}
+      {{/if}}
+      {{#if phone}}
+        <div class="phone">
+          <span class="url grid-column-flow">
+            <span class="icon {{ ICO "phone" }}"></span>
+            <a href="tel:{{ phone }}">{{ phone }}</a>
+          </span>
+        </div>
+      {{/if}}
     </div>
-  {{/if}}
-</section>
-{{#if summary}}
-  {{> components/hr.hbs size="lg" }}
-  <section class="section">
-    <header>
-      <h2 class='section-title'>
-        <span class="icon {{ ICO "summary" }}"></span>
-        {{ TITLE "summary" }}
-      </h2>
-    </header>
-    <section class="main-summary">
-      {{{ summary }}}
-    </section>
+    {{#if profiles.length}}
+      <div id="profiles" class="grid-column-flow">
+        {{#each profiles}}
+          <div class="item">
+            {{#if network}}
+              <div class="username">
+                {{#if url}}
+                  <span class="url grid-column-flow">
+                    <span class="icon {{ ICO network }}"></span>
+                    <a target="_blank" href="{{ url }}">{{ username }}</a>
+                  </span>
+                {{ else }}
+                  <span>{{ username }}</span>
+                {{/if}}
+              </div>
+            {{/if}}
+          </div>
+        {{/each}}
+      </div>
+    {{/if}}
   </section>
-{{/if}}
+  {{#if summary}}
+    {{> components/hr.hbs size="lg" }}
+    <section class="section">
+      <header>
+        <h2 class="section-title grid-column-flow">
+          <span class="icon {{ ICO "summary" }}"></span>
+          {{ TITLE "summary" }}
+        </h2>
+      </header>
+      <section class="main-summary m-auto blur-card">
+        {{{ summary }}}
+      </section>
+    </section>
+  {{/if}}
 </article>
 {{/basics}}

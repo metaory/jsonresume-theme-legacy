@@ -1,17 +1,17 @@
-{{> components/hr.hbs size="md" etc="do-break-after" }}
+{{> components/hr.hbs size="md" etc="auto-break-before auto-break-after" }}
 {{#if skills.length}}
   <section class="section">
-    <header>
-      <h2 class='section-title'>
+    <header class="section-header">
+      <h2 class="section-title grid-column-flow">
         <span class="icon {{ ICO "skills" }}"></span>
         {{ TITLE "skills" }}
-      </h1>
+      </h2>
     </header>
-    <section id="skills">
+    <section id="skills" class="grid-3col">
       {{#each skills}}
-        <div class="item">
+        <div class="item card">
           {{#if name}}
-            <h3 class="name">{{ name }}</h3>
+            <h3 class="name font-bungee">{{ name }}</h3>
           {{/if}}
           {{#if level}}
             <div class="level {{ level }}">

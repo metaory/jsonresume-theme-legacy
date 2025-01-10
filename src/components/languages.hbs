@@ -1,28 +1,26 @@
 {{> components/hr.hbs size="md" }}
 {{#if languages.length}}
   <section class="section">
-    <header>
-      <h2 class='section-title'>
-        <span class="icon {{ ICO "code" }}"></span>
+    <header class="section-header">
+      <h2 class="section-title grid-column-flow">
+        <span class="icon {{ ICO "language" }}"></span>
         {{ TITLE "languages" }}
       </h2>
     </header>
-    <section id="languages">
+    <section id="languages" class="grid-3col">
       {{#each languages}}
-        <div class="display">
-          <section class="language">
-            <span>
-              <span class="icon {{ ICO language }}"></span>
-            </span>
+        <div class="card card-small">
+          <div class="language-item blur-card">
+            <span class="icon {{ ICO language }}"></span>
             <h3>{{ language }}</h3>
-          </section>
+          </div>
           <div class="item">
             {{#if fluency}}
               <div class="level fluency {{ fluency }}">
                 {{#if fluencyDisplay}}
-                  <em>{{ fluencyDisplay }}</em>
+                  <em class="blur-card">{{ fluencyDisplay }}</em>
                 {{ else }}
-                  <em>{{ fluency }}</em>
+                  <em class="blur-card">{{ fluency }}</em>
                 {{/if}}
                 <div class="bar"></div>
               </div>

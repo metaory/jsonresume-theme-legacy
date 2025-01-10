@@ -1,25 +1,35 @@
 <button id='scheme-toggle'>
-  <span></span>
+  <object class="light-icon" type="image/svg+xml" data="/src/assets/scheme/light.svg"></object>
+  <object class="dark-icon" type="image/svg+xml" data="/src/assets/scheme/dark.svg"></object>
 </button>
 
 <script>
-  const icons = [
-    'icon-[line-md--sunny-filled-loop-to-moon-filled-alt-loop-transition]',
-    'icon-[line-md--moon-filled-alt-to-sunny-filled-loop-transition]',
-  ]
-  const ico = document.querySelector('#scheme-toggle > span')
-  const prefersDark = matchMedia && matchMedia('(prefers-color-scheme: dark)').matches
+  const html = document.documentElement
+  const prefersDark = matchMedia('(prefers-color-scheme: dark)').matches
+  const lightIcon = document.querySelector('.light-icon')
+  const darkIcon = document.querySelector('.dark-icon')
 
-  if (prefersDark) document.body.parentElement.className = 'dark'
 
-  ico.className = icons[Number(prefersDark)]
-
-  const toggle = () => {
-    document.body.parentElement.classList.toggle('dark')
-    ico.className = icons.find(x => x !== ico.className)
+  if (prefersDark) {
+    html.classList.add('dark')
+    lightIcon.style.display = 'none'
+    darkIcon.style.display = 'block'
+  } else {
+    lightIcon.style.display = 'block'
+    darkIcon.style.display = 'none'
   }
 
-  document
-    .getElementById('scheme-toggle')
-    .addEventListener('click', toggle)
+
+  document.getElementById('scheme-toggle').addEventListener('click', () => {
+    const isDark = html.classList.toggle('dark')
+    if (isDark) {
+      lightIcon.style.display = 'none'
+      darkIcon.style.display = 'block'
+      darkIcon.data = darkIcon.data
+    } else {
+      lightIcon.style.display = 'block'
+      darkIcon.style.display = 'none'
+      lightIcon.data = lightIcon.data
+    }
+  })
 </script>

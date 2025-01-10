@@ -1,25 +1,22 @@
 {{#if volunteer.length}}
   {{> components/hr.hbs size="md" }}
   <section class="section">
-    <header>
-      <h2 class='section-title'>
+    <header class="section-header">
+      <h2 class='section-title grid-column-flow'>
         <span class="icon {{ ICO "volunteer" }}"></span>
         {{ TITLE "volunteers" }}
-      </h1>
+      </h2>
     </header>
     <section id="volunteer">
       {{#each volunteer}}
         <section class="volunteer-item">
           {{#if organization}}
-            {{#if summary}}
-              <label for="volunteer-item-{{@index}}"></label>
-            {{/if}}
-            <header class="clear">
+            <header class="item-header">
               <div>
                 {{#if position}}
-                  <div class="position">{{ position }}</div>
+                  <div class="position text-title-font">{{ position }}</div>
                 {{/if}}
-                <div class="organization">{{ organization }}</div>
+                <div class="organization text-title-font">{{ organization }}</div>
               </div>
               <div class="date">
                 {{#if startDate}}
@@ -34,14 +31,13 @@
             </header>
           {{/if}}
           {{#if website}}
-            <div class="website">
-              <span class="fa-solid fa-up-right-from-square"></span>
-              <a target="_blank" href="{{ website }}">{{ website }}</a>
-            </div>
+            <span class="url grid-column-flow">
+              <span class="icon {{ ICO "link" }}"></span>
+              <a target="_blank" href="{{ website }}">{{ URL website }}</a>
+            </span>
           {{/if}}
           {{#location}}
           <span class="location">
-            <span class="fa-solid fa-location-dot"></span>
             {{#if city}}
               <span class="city">{{ city }},</span>
             {{/if}}

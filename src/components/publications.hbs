@@ -1,8 +1,8 @@
 {{#if publications.length}}
   {{> components/hr.hbs size="md" }}
   <section class="section">
-    <header>
-      <h2 class='section-title'>
+    <header class="section-header">
+      <h2 class='section-title grid-column-flow'>
         <span class="icon {{ ICO "article" }}"></span>
         {{ TITLE "publications" }}
       </h2>
@@ -10,13 +10,10 @@
     <section id="publications">
       {{#each publications}}
         <section class="publication-item">
-          {{#if summary}}
-            <label for="publication-item-{{@index}}"></label>
-          {{/if}}
-          <header class="clear">
+          <header class="item-header">
             <div>
               {{#if name}}
-                <span class="name">{{ name }}</span>
+                <span class="name text-title-font">{{ name }}</span>
               {{/if}}
               {{#if publisher}}
                 <span class="url publisher">

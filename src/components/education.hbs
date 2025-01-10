@@ -1,8 +1,8 @@
 {{#if education.length}}
   <section class="section no-break-inside auto-break-before">
     {{> components/hr.hbs size="md" }}
-    <header>
-      <h2 class='section-title'>
+    <header class="section-header">
+      <h2 class='section-title grid-column-flow'>
         <span class="icon {{ ICO "education" }}"></span>
         {{ TITLE "educations" }}
         <span class="item-count">({{ education.length }})</span>
@@ -11,16 +11,13 @@
     <section id="education">
       {{#each education}}
         <section class="education-item">
-          {{#if summary}}
-            <label for="education-item-{{@index}}"></label>
-          {{/if}}
-          <header class="clear">
+          <header class="item-header">
             <div>
               {{#if studyType}}
-                <div class="studyType">{{ studyType }}</div>
+                <div class="studyType text-title-font">{{ studyType }}</div>
               {{/if}}
               {{#if institution}}
-                <div class="institution">{{ institution }}</div>
+                <div class="institution text-title-font">{{ institution }}</div>
               {{/if}}
               {{#if area}}
                 <div class="area">({{ area }})</div>

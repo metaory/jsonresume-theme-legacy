@@ -1,8 +1,8 @@
 {{#if work.length}}
-{{> components/hr.hbs size="md" etc="auto-break-before" }}
+{{> components/hr.hbs size="md" etc="do-break-before" }}
   <section class="section">
-    <header class="">
-      <h2 class="section-title">
+    <header class="section-header">
+      <h2 class="section-title grid-column-flow">
         <span class="icon {{ ICO "work" }}"></span>
         {{ TITLE "works" }}
         <span class="item-count">({{ work.length }})</span>
@@ -16,17 +16,9 @@
           {{ else }}
             {{> components/hr.hbs }}
           {{/if}}
-          {{#if summary}}
-            <label for="work-item-{{@index}}"></label>
-          {{/if}}
-          <header class="clear">
+          <header class="item-header">
             {{#if position}}
-              <div class="position">{{ position }}</div>
-            {{/if}}
-            {{#if website}}
-              <span class="company">
-                <a target="_blank" href="{{ website }}">{{ company }}</a>
-              </span>
+              <div class="position text-title-font">{{ position }}</div>
             {{/if}}
             <div class="date">
               {{#if startDate}}
@@ -39,12 +31,22 @@
               {{/if}}
             </div>
           </header>
-          {{#if url}}
-            <span class="url">
-              <span class="icon {{ ICO "link" }}"></span>
-              <a target="_blank" href="{{ url }}">{{ URL url }}</a>
-            </span>
-          {{/if}}
+          <div class="meta-row">
+            {{#if website}}
+              <span class="company">
+                <a target="_blank" href="{{ website }}">{{ company }}</a>
+              </span>
+            {{/if}}
+            {{#if url}}
+              <span class="url grid-column-flow">
+                <span class="icon {{ ICO "link" }}"></span>
+                <a target="_blank" href="{{ url }}">{{ URL url }}</a>
+              </span>
+            {{/if}}
+            {{#if location}}
+              <span class="location">{{ location }}</span>
+            {{/if}}
+          </div>
           <div class="item">
             {{#if summary}}
               <div class="summary">{{ summary }}</div>

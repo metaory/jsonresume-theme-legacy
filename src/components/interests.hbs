@@ -1,23 +1,20 @@
 {{> components/hr.hbs size="md" etc="no-break-after" }}
 {{#if interests.length}}
   <section class="section no-break-inside no-break-after">
-    <header>
-      <h2 class='section-title' class='section-title'>
+    <header class="section-header">
+      <h2 class='section-title grid-column-flow'>
         <span class="icon {{ ICO "interest" }}"></span>
         {{ TITLE "interests" }}
       </h2>
     </header>
-    <section id="interests">
+    <section id="interests" class="grid-3col">
       {{#each interests}}
-        <div class="item">
-          {{#if name}}
-              <h4>{{ name }}</h4>
-          {{/if}}
+        <div class="item card card-small">
+        <h3 class="w-max text-title-font">{{ name }}</h3>
           {{#if keywords.length}}
-            <ul class="keywords">
+            <ul class="keywords grid small">
               {{#each keywords}}
                 <li>
-                  <span class="icon {{ ICO this }}"></span>
                   {{.}}
                 </li>
               {{/each}}
