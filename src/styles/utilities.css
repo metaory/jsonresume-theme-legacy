@@ -8,9 +8,12 @@
     animation: none !important;
   }
 
-  #scheme-toggle {
+  #scheme-toggle,
+  #github
+  {
     display: none !important;
   }
+
 
   html {
     background: white !important;
@@ -43,8 +46,8 @@ body::-webkit-scrollbar {
 
 body,
 html {
-  font-family: Krypton, monospace, sans-serif;
-  font-weight: Bold;
+  font-family: Rubik, monospace, sans-serif;
+  font-weight: 400;
   font-size: 14px;
   color: var(--fg);
   margin: 0;
@@ -119,8 +122,8 @@ a:hover,
 a:visited {
   text-decoration: none;
   color: var(--f1);
-  font-family: Krypton, monospace;
-  font-weight: bold;
+  font-family: Rubik, monospace;
+  font-weight: 500;
 }
 
 /* List Reset */
@@ -315,7 +318,6 @@ li {
   width: max-content;
 }
 
-/* Icons - Consolidated pattern */
 span.icon,
 .section-title span.icon {
   width: 20px;
@@ -343,44 +345,16 @@ span.icon,
   flex-shrink: 0;
 }
 
-/* Apply icon-label styling to common patterns */
 span.url,
 .keywords li,
 .courses li,
 .language-item {
+  font-weight: 500;
   display: inline-flex;
   align-items: center;
   gap: 0.5em;
 }
 
-.keywords li .icon,
-.courses li .icon {
-  flex-shrink: 0;
-}
-
-/* Tag styling for non-clickable elements */
-.tag {
-  padding: 2px 10px 2px 6px;
-  margin: 6px;
-  height: max-content;
-  font-size: 15px;
-  backdrop-filter: blur(var(--blur));
-  background-color: var(--xgg);
-  border-radius: var(--brs);
-  max-width: 210mm;
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5em;
-  color: var(--f2);
-  font-weight: normal;
-}
-
-.tag .icon {
-  color: var(--ic);
-  flex-shrink: 0;
-}
-
-/* Level/Progress Bar Pattern */
 .level {
   margin-bottom: 0.5em;
 }
@@ -462,8 +436,7 @@ span.url,
 .company,
 .institution,
 .organization,
-.awarder,
-.location {
+.awarder {
   color: var(--ix);
   font-weight: 400;
 }
@@ -479,7 +452,7 @@ span.url,
 
 .text-title-font {
   font-family: Bungee, monospace;
-  font-weight: 600;
+  font-weight: 200;
 }
 
 /* Text Styles - Component-specific */

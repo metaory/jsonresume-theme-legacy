@@ -17,8 +17,9 @@
               {{/if}}
               {{#if publisher}}
                 <span class="url publisher">
-                  <span class="icon {{ ICO publisher }}"></span>
-                  <a target="_blank" href="{{ url }}">{{ publisher }}</a>
+                  <span class="icon {{ ICO "security" }}"></span>
+                  <span>private gist</span>
+                  <a target="_blank" href="{{ url }}">{{ URL_GIST url }}</a>
                 </span>
               {{/if}}
             </div>
@@ -35,7 +36,7 @@
           {{/if}}
           <div class="item">
             {{#if summary}}
-              <div class="summary">{{ summary }}</div>
+              <div class="summary">{{{ summary }}}</div>
             {{/if}}
           </div>
         </section>

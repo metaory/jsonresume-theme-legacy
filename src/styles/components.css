@@ -68,8 +68,9 @@
 }
 
 #header .label > span > img {
-  width: 8pc;
+  width: auto;
   height: 8pc;
+  aspect-ratio: auto;
   border: solid 1pc var(--xgg);
   backdrop-filter: contrast(90%);
   border-radius: 3em;
@@ -98,6 +99,7 @@ section.main-summary {
   max-width: 200mm;
   font-size: 15px;
   font-family: Rubik, sans-serif;
+  font-weight: 500;
   text-wrap: balance;
   padding: 1em 2em;
   margin: 0 auto 2em;
@@ -111,6 +113,7 @@ section.main-summary {
   li {
     display: block;
     font-family: Rubik, monospace;
+    font-weight: 500;
     letter-spacing: -0.9;
     padding: 4px 12px;
     text-overflow: ellipsis;

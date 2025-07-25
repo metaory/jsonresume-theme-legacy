@@ -40,6 +40,7 @@ export default {
         TITLE: getTitle,
         URL: url => url.split('/').at(-1),
         URL_SEMI: url => url.split('https://').at(-1),
+        URL_GIST: url => url.split('gist.github.com/metaory/').at(-1),
         URL_ICO: url => {
           const [, domain] = url.match(/https:..(\w+).\w+/)
           return getIcon(domain)

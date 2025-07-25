@@ -1,5 +1,5 @@
-{{> components/hr.hbs size="md" }}
 {{#if projects.length}}
+{{> components/hr.hbs size="md" etc="do-break-before" }}
   <section class="section">
     <header class="section-header">
       <h2 class='section-title grid-column-flow'>
@@ -19,6 +19,11 @@
           {{#if name}}
             <header class="item-header">
               <section>
+                {{#if roles.length}}
+                  {{#each roles}}
+                    <span class="icon {{ ICO this }}"></span>
+                  {{/each}}
+                {{/if}}
                 <span class="url">
                   {{#if url}}
                     <span class="icon {{ ICO "link" }}"></span>
