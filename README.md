@@ -48,6 +48,19 @@ http://localhost:5173/private
 pnpm run build:private
 ```
 
+> [!TIP]
+> Optimizations
+>
+> for images
+> `npm run optimize:images` or `bash optimize-images.sh`
+>
+> compress final pdf
+> `npm run optimize:pdf` or `bash compress-pdf.sh out/private.pdf`
+>
+> each optimizations comes with its own dependencies,
+> read their scripts to learn more
+
+
 ---
 
 ## CUSTOMIZATION

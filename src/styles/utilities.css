@@ -189,6 +189,9 @@ li {
   margin: 0;
 }
 
+/* display: grid; */
+/* grid-auto-flow: column; */
+/* place-items: center; */
 /* Item Header Pattern */
 .item-header {
   display: grid;
@@ -404,7 +407,7 @@ span.url,
 }
 
 .item-count {
-  color: var(--f5);
+  color: var(--f4);
   letter-spacing: 4px;
   font-family: Bungee, monospace;
   font-size: 0.6em;
@@ -453,6 +456,7 @@ span.url,
 .text-title-font {
   font-family: Bungee, monospace;
   font-weight: 200;
+  letter-spacing: 1px;
 }
 
 /* Text Styles - Component-specific */
@@ -583,6 +587,7 @@ span.url {
   padding: 2px 10px 2px 6px;
   margin: 6px;
   height: max-content;
+  width: max-content;
   font-size: 15px;
   backdrop-filter: blur(var(--blur));
   background-color: var(--xgg);

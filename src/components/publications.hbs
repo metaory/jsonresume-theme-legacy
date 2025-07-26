@@ -11,18 +11,14 @@
       {{#each publications}}
         <section class="publication-item">
           <header class="item-header">
-            <div>
-              {{#if name}}
-                <span class="name text-title-font">{{ name }}</span>
-              {{/if}}
-              {{#if publisher}}
-                <span class="url publisher">
-                  <span class="icon {{ ICO "security" }}"></span>
-                  <span>private gist</span>
-                  <a target="_blank" href="{{ url }}">{{ URL_GIST url }}</a>
-                </span>
-              {{/if}}
-            </div>
+            {{#if publisher}}
+              <span class="url publisher">
+                <span class="icon {{ ICO "security" }}"></span>
+                <a target="_blank" href="{{ url }}">
+                  <span class="name text-title-font">{{ name }}</span>
+                </a>
+              </span>
+            {{/if}}
             {{#if releaseDate}}
               <span class="date">{{ DMY releaseDate }}</span>
             {{/if}}
