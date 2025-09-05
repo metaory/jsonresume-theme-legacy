@@ -1,0 +1,16 @@
+{{#if summary}}
+<div class="card squircle card-small card-compact {{ hue }} no-break-inside">
+  <div class="icon-label">
+    {{#if roles.length}}
+      {{#each roles}}
+        <span class="icon {{ ICO this }}"></span>
+      {{/each}}
+    {{else}}
+      <span class="icon {{ ICO icon }}"></span>
+    {{/if}}
+    <a class="text-title-font title-sm clamp-2" target="_blank" href="{{#if url}}{{ url }}{{else}}#{{/if}}">{{ title }}</a>
+  </div>
+  <div class="summary clamp-3-fixed">{{ summary }}</div>
+</div>
+{{/if}}
+

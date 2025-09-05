@@ -1,4 +1,5 @@
 {
+  "page": "index",
   "basics": {
     "name": "John Doe",
     "image": "/src/assets/avatar-m.png",
@@ -90,7 +91,11 @@
       "startDate": "2011-01-01",
       "endDate": "2013-01-01",
       "score": "4.0",
-      "courses": ["X91101 - Onfvp FDY", "OBF71Z - Platea Risus", "AUGU3E - Nibh Purus"]
+      "courses": [
+        "X91101 - Onfvp FDY",
+        "OBF71Z - Platea Risus",
+        "AUGU3E - Nibh Purus"
+      ]
     }
   ],
   "awards": [
@@ -122,52 +127,114 @@
     {
       "name": "Cenpgvprf",
       "level": "Advanced",
-      "keywords": ["Ntvyr", "QEL", "XVFF"]
+      "keywords": [
+        "Ntvyr",
+        "QEL",
+        "XVFF"
+      ]
     },
     {
       "name": "Cnenqvtzf",
       "level": "Advanced",
-      "keywords": ["OQQ", "QQQ", "BBC", "SC", "EC", "GQQ"]
+      "keywords": [
+        "OQQ",
+        "QQQ",
+        "BBC",
+        "SC",
+        "EC",
+        "GQQ"
+      ]
     },
     {
       "name": "QriBcf",
       "level": "Master",
-      "keywords": ["PV/PQ", "PSA", "GS"]
+      "keywords": [
+        "PV/PQ",
+        "PSA",
+        "GS"
+      ]
     },
     {
       "name": "Pybhq",
       "level": "Intermediate",
-      "keywords": ["NJF", "TPC", "Irepry"]
+      "keywords": [
+        "NJF",
+        "TPC",
+        "Irepry"
+      ]
     },
     {
       "name": "Gbbypunva",
       "level": "Beginner",
-      "keywords": ["NepuYvahk", "Arbivz", "Gzhk", "NjrfbzrJZ", "Qbpxre", "OMS"]
+      "keywords": [
+        "NepuYvahk",
+        "Arbivz",
+        "Gzhk",
+        "NjrfbzrJZ",
+        "Qbpxre",
+        "OMS"
+      ]
     }
   ],
   "languages": [
-    { "language": "Lua", "fluency": "Master" },
-    { "language": "Bash", "fluency": "Master" },
-    { "language": "JavaScript", "fluency": "Master" },
-    { "language": "Go", "fluency": "Advanced" },
-    { "language": "Elixir", "fluency": "Intermediate" },
-    { "language": "Haskell", "fluency": "Beginner" },
-    { "language": "Python", "fluency": "Beginner" },
-    { "language": "Rust", "fluency": "Beginner" },
-    { "language": "Zig", "fluency": "Beginner" }
+    {
+      "language": "Lua",
+      "fluency": "Master"
+    },
+    {
+      "language": "Bash",
+      "fluency": "Master"
+    },
+    {
+      "language": "JavaScript",
+      "fluency": "Master"
+    },
+    {
+      "language": "Go",
+      "fluency": "Advanced"
+    },
+    {
+      "language": "Elixir",
+      "fluency": "Intermediate"
+    },
+    {
+      "language": "Haskell",
+      "fluency": "Beginner"
+    },
+    {
+      "language": "Python",
+      "fluency": "Beginner"
+    },
+    {
+      "language": "Rust",
+      "fluency": "Beginner"
+    },
+    {
+      "language": "Zig",
+      "fluency": "Beginner"
+    }
   ],
   "interests": [
     {
       "name": "Terminals",
-      "keywords": ["Alacritty", "Wezterm"]
+      "keywords": [
+        "Alacritty",
+        "Wezterm"
+      ]
     },
     {
       "name": "Window Managers",
-      "keywords": ["AwesomeWM", "Hyprland"]
+      "keywords": [
+        "AwesomeWM",
+        "Hyprland"
+      ]
     },
     {
       "name": "Text Editors",
-      "keywords": ["Neovim", "Helix"]
+      "keywords": [
+        "Neovim",
+        "Helix"
+      ]
     }
   ],
   "references": [
@@ -181,23 +248,41 @@
       "name": "znexhc.wfba",
       "url": "https://github.com/zrgnbel/znexhc.wfba",
       "description": "QBZ gerr ercerfragngvba va pbzcnpg WFBA -- Qensg Fcrp, Yvoenel naq PYV",
-      "roles": ["Author"],
+      "roles": [
+        "Author"
+      ],
       "startDate": "2024-09-12",
       "endDate": "2024-11-24",
-      "keywords": ["cli", "html", "library", "markup", "transpiler", "npm"]
+      "keywords": [
+        "cli",
+        "html",
+        "library",
+        "markup",
+        "transpiler",
+        "npm"
+      ]
     },
     {
       "name": "cpnyy.wf",
       "url": "https://github.com/zrgnbel/cpnyy.wf",
       "description": "Zvavzny Erfhyg/Zbanq yvxr ghcyrf sbe WF ── mreb-qrcraqrapl",
-      "roles": ["Author"],
+      "roles": [
+        "Author"
+      ],
       "startDate": "2024-04-18",
       "endDate": "2024-06-27",
-      "keywords": ["JavaScript", "library", "Lua", "npm"]
+      "keywords": [
+        "JavaScript",
+        "library",
+        "Lua",
+        "npm"
+      ]
     }
   ],
   "meta": {
     "themeOptions": {
+      "theme-hue": 120,
+      "theme-sat": 2,
       "iconMap": {
         "aggregator": "majesticons--filter",
         "ai": "mingcute--brain-fill",
@@ -242,6 +327,7 @@
         "containers": "solar--box-linear",
         "copy": "gravity-ui--copy",
         "cordova": "simple-icons:apachecordova",
+        "css": "tabler:brand-css3",
         "data-masking": "solar--password-minimalistic-input-bold-duotone",
         "data-mining": "mingcute--pickax-fill",
         "db": "streamline-plump--database-remix",
@@ -321,6 +407,7 @@
         "micro-framework": "fluent--protocol-handler-16-filled",
         "microservices": "carbon--microservices-1",
         "middleware": "iconamoon--3d-fill",
+        "minimal": "solar:meditation-round-bold",
         "mongodb": "tabler:brand-mongodb",
         "monitoring": "solar--danger-triangle-linear",
         "mqtt": "mdi:mq",
@@ -356,6 +443,7 @@
         "redis": "fontisto:redis",
         "reference": "solar--chat-square-like-bold-duotone",
         "remote": "solar--remote-controller-bold",
+        "responsive": "hugeicons:layout-01",
         "residency": "icon-park-twotone--death-star",
         "rust": "tabler:brand-rust",
         "safecall": "streamline--dangerous-zone-sign-solid",
@@ -423,13 +511,6 @@
         "volunteers": "volunteers",
         "educations": "education",
         "references": "references"
-      },
-      "colors": {
-        "background": ["gold", "blueviolet"],
-        "dimmed": ["lightsalmon", "fuscia"],
-        "primary": ["mediumpurple", "yellow"],
-        "secondary": ["violet", "chartreuse"],
-        "link": ["palegreen", "aqua"]
       },
       "lastModified": "2024-09-01T00:00:00.000Z",
       "canonical": "https://github.com/metaory/jsonresume-theme-legacy",

@@ -1,4 +1,4 @@
-<html lang="en">
+<html lang="en"{{#if (DARK page)}} class="dark"{{/if}}>
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -17,20 +17,31 @@
           href="/src/assets/logo.svg"
           sizes="any"
           type="image/svg+xml">
-    <link rel="stylesheet" href="/src/styles/hexo.css">
     <link rel="stylesheet" href="/src/styles/font.css">
     <link rel="stylesheet" href="/src/styles/variables.css">
     <link rel="stylesheet" href="/src/styles/utilities.css">
     <link rel="stylesheet" href="/src/styles/components.css">
+    <style>
+      :root { --hue: {{ HUE page }}deg; }
+    </style>
   </head>
   <body>
     <main>
+      <svg width="0" height="0" style="position:absolute">
+        <defs>
+          <clipPath id="poly-clip" clipPathUnits="objectBoundingBox">
+          <path
+            d="m 138.06242,143.81244 c -12.13265,-12.13265 -12.13265,-73.658129 0,-85.790777 12.13265,-12.132649 73.65813,-12.132648 85.79078,1e-6 12.13265,12.132648 12.13265,73.658136 0,85.790776 -12.13265,12.13265 -73.65813,12.13265 -85.79078,0 z"
+                  transform="scale(0.0047,0.0084) translate(-57,-53) matrix(2,0,0,1.1,-200,2)" />
+          </clipPath>
+        </defs>
+      </svg>
       {{> components/github.hbs }}
-      {{> components/dark.hbs }}
       {{> components/basics.hbs }}
       {{> components/interests.hbs }}
       {{> components/skills.hbs }}
       {{> components/languages.hbs }}
+      {{> components/overview.hbs }}
       {{> components/work.hbs }}
       {{> components/projects.hbs }}
       {{> components/volunteer.hbs }}
@@ -41,5 +52,8 @@
       {{> components/references.hbs }}
       {{> components/footer.hbs }}
     </main>
+
+    {{> components/dark.hbs }}
+    {{> components/hue-slider.hbs }}
   </body>
 </html>

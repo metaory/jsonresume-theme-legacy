@@ -41,6 +41,10 @@ cp src/pages/index.json src/pages/private.json
 # update the resume data
 nvim src/pages/private.json
 
+# customize theme (optional)
+# set "theme-hue": 120 and "theme-sat": 5 in meta.themeOptions (JSON-first)
+# starts in light mode (matches PDF exports)
+
 # view newly created page
 http://localhost:5173/private
 
@@ -155,14 +159,66 @@ and to overwrite the `javascript` icon;
 
 ---
 
-### Colors
+### Themes
 
 > [!TIP]
-> ~~You can overwrite color values~~
+> Use `theme-hue` for infinite color variations (0-360 degrees)
 >
-> ~~Under `meta.themeOptions.colors`~~
->
-> 🚧 Not implemented
+> Default: `0` (no rotation). If `theme-hue` is missing, fallback is `0` (or theme-specific like `bush` → `120`).
+
+```jsonc
+{
+  "meta": {
+    "themeOptions": {
+      "theme-hue": 300,  // Pink shift (0-360 degrees)
+      "theme-sat": 5     // Saturation boost (0-100%)
+    }
+  }
+}
+```
+
+> [!TIP]
+> **Color System:**
+> - Neutral base colors with good saturation/brightness range
+> - Global hue rotation applied to all elements (except images)
+> - Interactive theme controls with real-time preview
+> - Distinct gradient backgrounds for work vs project cards
+> - Starts in light mode (matches PDF exports)
+> - Manual toggle available for user preference
+> - PDF exports always use light mode for optimal printing
+
+> [!TIP]
+> **Theme Options:**
+> - `theme-hue`: Color hue rotation (0-360 degrees)
+> - `theme-sat`: Saturation boost (0-100%, default: 2%)
+> - Always starts in light mode (consistent with PDF exports)
+
+> [!TIP]
+> **Common Hue Values:**
+> - `0` - Default (purple base)
+> - `120` - Blue shift
+> - `180` - Cyan shift  
+> - `240` - Blue shift
+> - `300` - Pink shift
+> - `60` - Yellow shift
+
+---
+
+### Interactive Theme Controls
+
+> [!TIP]
+> **Live Theme Editor:**
+> - Real-time hue and saturation sliders in the top-right corner
+> - Adjust colors instantly without page reload
+> - Values automatically sync with your JSON configuration
+> - Perfect for finding the ideal color combination
+
+> [!TIP]
+> **Card Gradients:**
+> - Work cards: Base hue with enhanced saturation
+> - Project cards: 40° hue shift with enhanced saturation
+> - Subtle diagonal gradients for visual distinction
+> - Responsive to both light and dark themes
 
 ---
 

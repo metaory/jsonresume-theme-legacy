@@ -1,39 +1,35 @@
 /* --- Component-Specific Overrides Only --- */
 
+
 /* Header Component - Unique styling */
 #header {
-  color: var(--f2);
+  color: var(--fg);
 }
 
 #header h1 {
   display: grid;
   grid-template-columns: 2fr 1fr;
   justify-content: center;
-  color: var(--c05);
+  color: var(--primary);
   align-items: center;
   font-size: 3.8rem;
   margin-bottom: 0.6em;
   padding-left: 1em;
   text-shadow:
-    var(--c05) 0.5px 0.5px,
-    var(--c05) 1px 1px,
-    var(--cc5) 1.5px 1.5px,
-    var(--cc5) 2px 2px,
-    var(--cx5) 2.5px 2.5px,
-    var(--cx5) 3px 3px,
-    var(--cx5) 3.5px 3.5px,
-    var(--cz5) 4px 4px,
-    var(--cz5) 4.5px 4.5px,
-    var(--cz5) 5px 5px;
-}
-
-/* Apply grid utility to header h1 and label */
-#header h1 {
-  grid-template-columns: 2fr 1fr;
+    var(--primary) 0.5px 0.5px,
+    var(--primary) 1px 1px,
+    var(--primary-dark) 1.5px 1.5px,
+    var(--primary-dark) 2px 2px,
+    var(--primary-dark) 2.5px 2.5px,
+    var(--primary-dark) 3px 3px,
+    var(--primary-dark) 3.5px 3.5px,
+    var(--primary-dark) 4px 4px,
+    var(--primary-dark) 4.5px 4.5px,
+    var(--primary-dark) 5px 5px;
 }
 
 #header .username span.icon {
-  color: var(--ic);
+  color: var(--icon);
 }
 
 #header .location {
@@ -71,20 +67,20 @@
   width: auto;
   height: 8pc;
   aspect-ratio: auto;
-  border: solid 1pc var(--xgg);
+  border: solid 1pc var(--glass);
   backdrop-filter: contrast(90%);
   border-radius: 3em;
   opacity: 0.8;
 }
 
 #header span.image {
-  outline: solid 7px var(--xgg);
+  outline: solid 7px var(--glass);
   outline-offset: 6px;
   padding: 4px;
   margin: 0 20px;
   justify-self: end;
   border-radius: 40%;
-  background-color: var(--xgg);
+  background-color: var(--glass);
   backdrop-filter: contrast(94%);
 }
 
@@ -98,7 +94,7 @@ section.main-summary {
   width: 100%;
   max-width: 200mm;
   font-size: 15px;
-  font-family: Rubik, sans-serif;
+  font-family: 'Rubik Variable', sans-serif;
   font-weight: 500;
   text-wrap: balance;
   padding: 1em 2em;
@@ -112,7 +108,7 @@ section.main-summary {
   margin-bottom: 3em;
   li {
     display: block;
-    font-family: Rubik, monospace;
+    font-family: 'Rubik Variable', monospace;
     font-weight: 500;
     letter-spacing: -0.9;
     padding: 4px 12px;
@@ -127,7 +123,7 @@ section.main-summary {
 #interests h4 {
   font-size: 14px;
   padding: 8px;
-  color: var(--f2);
+  color: var(--fg);
 }
 
 /* Languages - Only unique overrides */
@@ -135,19 +131,11 @@ section.main-summary {
   padding: 0.2em 1em;
 }
 
-#languages .level .bar {
-  width: 40mm !important;
-  margin: 0 8px;
-}
-
-#languages .level .bar::after {
-  background: linear-gradient(90deg, var(--g1), var(--g5));
-}
 
 #languages .language-item {
   padding: 4px 10px;
   margin-bottom: 8px;
-  color: var(--ic);
+  color: var(--icon);
 }
 
 /* Skills - Only unique layout overrides */
@@ -194,14 +182,10 @@ section.main-summary {
   margin: 0;
 }
 
-#skills .level .bar {
-  width: 100%;
-  margin: 0;
-}
 
 /* Text Styles - Component-specific */
 .studyType {
-  color: var(--f3);
+  color: var(--fg);
   font-style: italic;
   padding: 0.2em 1em;
   text-align: right;
@@ -210,7 +194,7 @@ section.main-summary {
 }
 
 .area {
-  color: var(--f2);
+  color: var(--fg);
   font-size: 1em;
 }
 
@@ -227,8 +211,8 @@ section.main-summary {
 #references::before {
   content: '';
   position: absolute;
-  border-radius: var(--brm);
-  background: linear-gradient(var(--pk6), var(--wk4));
+  border-radius: var(--radius-md);
+  background: linear-gradient(var(--accent), var(--primary));
   width: 6px;
   height: 3em;
 }
@@ -237,13 +221,10 @@ section.main-summary {
   font-weight: 400;
 }
 
-/* #references .item { */
-/*   padding-left: 1em; */
-/*   border-radius: var(--brm); */
-/* } */
+
 
 #references .item .name {
-  color: var(--cy5);
+  color: var(--primary-light);
   font-weight: 200;
   font-size: 14px;
   font-style: italic;
@@ -256,7 +237,7 @@ section.education-item .date {
 }
 
 .publisher.url a {
-  color: var(--f3);
+  color: var(--fg);
 }
 
 /* .item .summary, .item .highlights { display: none; } */

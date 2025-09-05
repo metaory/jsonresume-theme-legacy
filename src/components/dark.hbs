@@ -5,22 +5,12 @@
 
 <script>
   const html = document.documentElement
-  const prefersDark = matchMedia('(prefers-color-scheme: dark)').matches
   const lightIcon = document.querySelector('.light-icon')
   const darkIcon = document.querySelector('.dark-icon')
 
-
-  if (prefersDark) {
-    html.classList.add('dark')
-    lightIcon.style.display = 'none'
-    darkIcon.style.display = 'block'
-  } else {
-    lightIcon.style.display = 'block'
-    darkIcon.style.display = 'none'
-  }
-/*
-*/
-
+  // Always start with light mode (matches PDF exports)
+  lightIcon.style.display = 'block'
+  darkIcon.style.display = 'none'
 
   document.getElementById('scheme-toggle').addEventListener('click', () => {
     const isDark = html.classList.toggle('dark')

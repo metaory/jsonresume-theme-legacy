@@ -1,83 +1,91 @@
-/* Base Variables */
 :root {
-  /* Border Radius */
-  --brx: 18px;
-  --brl: 14px;
-  --brm: 10px;
-  --brs: 6px;
+  --hue: 0;
+  --sat: 2%;
+  
+  --primary: hsl(var(--hue) var(--sat) 45%);
+  --primary-light: hsl(var(--hue) var(--sat) 75%);
+  --primary-dark: hsl(var(--hue) var(--sat) 22%);
 
-  /* Blur */
+  --secondary: hsl(calc(var(--hue) + 12) var(--sat) 42%);
+  --secondary-light: hsl(calc(var(--hue) + 12) var(--sat) 82%);
+
+  --accent: hsl(calc(var(--hue) - 20) var(--sat) 45%);
+  --accent-light: hsl(calc(var(--hue) - 20) var(--sat) 85%);
+  --accent-dark: hsl(calc(var(--hue) - 20) var(--sat) 25%);
+
+  --bg-light: #FAFAFA;
+  --bg-dark: #1A1A1A;
+  
+  --text-light: #2D3748;
+  --text-dark: #D1D5DB;
+  
+  --overlay-light: hsl(var(--hue) var(--sat) 90% / 40%);
+  --overlay-dark: hsl(var(--hue) var(--sat) 10% / 40%);
+
+  /* --overlay-light: #F3F4F688; */
+  /* --overlay-dark: #1A1A1A88; */
+  
+  --radius-lg: 14px;
+  --radius-md: 10px;
+  --radius-sm: 6px;
+
   --blur: 8px;
 
-  /* Colors - Base */
-  --bg: white;
-  --fg: var(--wk5);
-  --f2: var(--wk6);
-  --f3: var(--wk7);
-  --f4: var(--wk8);
-  --f5: var(--wk9);
+  --bg: var(--bg-light);
+  --fg: var(--text-light);
 
-  /* Colors - Accent */
-  --ic: var(--cc4);
-  --ix: var(--pk9);
-  --iz: var(--c05);
+  --icon: var(--primary);
+  --title: var(--primary-dark);
 
-  /* Colors - Gradients */
-  --g1: var(--cy7);
-  --g2: var(--cc5);
-  --g3: var(--cc5);
-  --g4: var(--cc5);
-  --g5: var(--cc5);
+  --gradient-light: hsl(var(--hue) 4% 85%);
+  --gradient-dark: hsl(var(--hue) 3% 72%);
 
-  /* Colors - Hover */
-  --ho: var(--cy2);
+  --hover: var(--secondary-light);
 
-  /* Colors - Special */
-  --xgg: #6644AA11;
+  --card-hover: var(--accent-light);
 
-  /* Default Color Scheme */
+  --glass: var(--overlay-light);
+
+  --work-card: linear-gradient(135deg, 
+    hsl(var(--hue) calc(var(--sat) + 20%) 80% / 0.5), 
+    hsl(var(--hue) calc(var(--sat) + 20%) 95% / 0.2));
+  --proj-card: linear-gradient(135deg, 
+    hsl(calc(var(--hue) - 40) calc(var(--sat) + 20%) 80% / 0.5),
+    hsl(calc(var(--hue) - 40) calc(var(--sat) + 20%) 95% / 0.2));
+
   color-scheme: light !important;
 }
 
-/* Dark Mode Variables */
 @media not print {
   html.dark {
-    --bg: var(--wk0);
-    --fg: var(--sk9);
-    --f2: var(--zk8);
-    --f3: var(--pk4);
-    --f4: var(--pk5);
-    --f5: var(--xgg);
-    --ic: var(--sk8);
-    --ix: var(--pk1);
-    --iz: var(--pk0);
-    --g1: var(--sk3);
-    --g2: var(--sk4);
-    --g3: var(--sk5);
-    --g4: var(--sk6);
-    --g5: var(--sk7);
-    --ho: var(--sk2);
-    --xgg: #6644AA11;
+    --bg: var(--bg-dark);
+    --fg: var(--text-dark);
+    --icon: var(--primary-light);
+    --accent: var(--accent-light);
+    --title: var(--primary);
+    --gradient-light: var(--primary-light);
+    --gradient-dark: var(--primary);
+    --hover: var(--secondary-light);
+    --card-hover: var(--accent-light);
+    --glass: var(--overlay-dark);
+    --work-card: linear-gradient(135deg, hsl(var(--hue) calc(var(--sat) + 20%) 20% / 0.5), hsl(var(--hue) calc(var(--sat) + 20%) 5% / 0.2));
+    --proj-card: linear-gradient(135deg, hsl(calc(var(--hue) - 40) calc(var(--sat) + 20%) 20% / 0.5), hsl(calc(var(--hue) - 40) calc(var(--sat) + 20%) 5% / 0.2));
   }
 
   html.dark #scheme-toggle {
-    --fg: var(--c03);
-    --bg: var(--wk1);
+    --fg: var(--accent);
+    --bg: var(--primary-dark);
   }
 }
 
-/* Print Mode Variables */
 @media print,
 (width: 780px) {
   :root {
     --bg: white !important;
-    --fg: var(--wk5) !important;
-    --f2: var(--wk6) !important;
-    --f3: var(--wk7) !important;
-    --f4: var(--wk8) !important;
-    --f5: var(--wk9) !important;
-    --ic: var(--c05) !important;
-    --ix: var(--c05) !important;
-    --iz: var(--c13) !important;
+    --fg: var(--text-light) !important;
+    --icon: var(--primary-dark) !important;
+    --accent: var(--accent-dark) !important;
+    --title: var(--primary-dark) !important;
+    --glass: var(--overlay-light) !important;
   }
 }

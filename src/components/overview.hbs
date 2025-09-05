@@ -1,0 +1,19 @@
+{{> components/hr.hbs size="md" etc="do-break-before" }}
+<section class="section">
+  <header class="section-header">
+    <h2 class="section-title grid-column-flow">
+      <span class="icon {{ ICO "summary" }}"></span>
+      overview
+    </h2>
+  </header>
+  <section id="overview" class="grid-3col">
+    {{#each work}}
+      {{> components/card.hbs hue="work-hue" icon="work" title=position url=url summary=summary }}
+    {{/each}}
+
+    {{#each projects}}
+      {{> components/card.hbs hue="project-hue" icon="opensource" title=name url=url summary=description roles=roles }}
+    {{/each}}
+  </section>
+</section>
+

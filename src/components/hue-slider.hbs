@@ -1,0 +1,62 @@
+<!-- Hue Slider UI -->
+<div id="hue-slider" class="hue-slider">
+  <div class="hue-slider-card">
+    <div class="hue-slider-header">
+      <span class="slider-label">theme-hue</span>
+      <span class="hue-value" id="hue-value">{{ HUE page }}</span>
+    </div>
+    <input 
+      type="range" 
+      id="hue-range" 
+      min="0" 
+      max="360" 
+      value="{{ HUE page }}"
+      class="hue-range"
+    >
+    <div class="hue-slider-header">
+      <span class="slider-label">theme-sat</span>
+      <span class="sat-value" id="sat-value">{{ SAT page }}%</span>
+    </div>
+    <input 
+      type="range" 
+      id="sat-range" 
+      min="0" 
+      max="100" 
+      value="{{ SAT page }}"
+      class="sat-range"
+      step="1"
+    >
+    <div class="hue-slider-footer">
+      <small>Save values in JSON</small>
+    </div>
+  </div>
+</div>
+
+<script>
+  const [hueRange, hueValue, satRange, satValue] = ['#hue-range', '#hue-value', '#sat-range', '#sat-value'].map(document.querySelector.bind(document));
+  const root = document.documentElement;
+  let timeouts = {};
+  
+  const update = (value, display, cssVar, immediate = false) => {
+    display.textContent = value;
+    const cssValue = cssVar === '--hue' ? value : value;
+    if (immediate) {
+      root.style.setProperty(cssVar, cssValue);
+    } else {
+      clearTimeout(timeouts[cssVar]);
+      timeouts[cssVar] = setTimeout(() => root.style.setProperty(cssVar, cssValue), 8);
+    }
+  };
+  
+  hueRange.addEventListener('input', e => {
+    hueValue.textContent = e.target.value;
+    update(e.target.value, hueValue, '--hue');
+  });
+  satRange.addEventListener('input', e => {
+    satValue.textContent = `${e.target.value}%`;
+    update(`${e.target.value}%`, satValue, '--sat');
+  });
+  
+  update(hueRange.value, hueValue, '--hue', true);
+  update(`${satRange.value}%`, satValue, '--sat', true);
+</script>

@@ -6,19 +6,30 @@ import { readFileSync, readdirSync } from 'node:fs'
 
 const readJson = path => JSON.parse(readFileSync(path, { encoding: 'utf8' }))
 
+const getPageData = page => {
+  try {
+    return readJson(`./src/pages/${page}.json`)
+  } catch {
+    return {}
+  }
+}
+
+const getThemeOptions = page => getPageData(page)?.meta?.themeOptions || {}
+
+const getHueValue = page => getThemeOptions(page)?.['theme-hue'] ?? 0
+const getSatValue = page => getThemeOptions(page)?.['theme-sat'] ?? 2
+
+// Static data from all pages
 const { ICONS, TITLES } = readdirSync('./src/pages').reduce(
   (acc, page) => {
-    const themeOptions = readJson(`./src/pages/${page}`)?.meta?.themeOptions
-    const { iconMap, sectionTitles } = themeOptions || {}
+    const data = getPageData(page.replace('.json', ''))
+    const { iconMap = {}, sectionTitles = {} } = data?.meta?.themeOptions || {}
     return {
       ICONS: { ...acc.ICONS, ...iconMap },
-      TITLES: { ...acc.TITLES, ...sectionTitles },
+      TITLES: { ...acc.TITLES, ...sectionTitles }
     }
   },
-  {
-    ICONS: {},
-    TITLES: {},
-  }
+  { ICONS: {}, TITLES: {} }
 )
 
 const getIcon = x => `icon-[${ICONS[x.toLowerCase().replaceAll(' ', '-')]}]`.replace(':', '--')
@@ -38,6 +49,8 @@ export default {
         DMY: mkDateFormatter({ year: 'numeric', month: 'short', day: 'numeric' }),
         ICO: getIcon,
         TITLE: getTitle,
+        HUE: getHueValue,
+        SAT: getSatValue,
         URL: url => url.split('/').at(-1),
         URL_SEMI: url => url.split('https://').at(-1),
         URL_GIST: url => url.split('gist.github.com/metaory/').at(-1),
@@ -57,3 +70,5 @@ export default {
     }),
   ],
 }
+
+// ,,,
