@@ -13,18 +13,15 @@
   --accent-light: hsl(calc(var(--hue) - 20) var(--sat) 85%);
   --accent-dark: hsl(calc(var(--hue) - 20) var(--sat) 25%);
 
-  --bg-light: #FAFAFA;
-  --bg-dark: #1A1A1A;
+  --bg-light: hsl(var(--hue) 10% 96%);
+  --bg-dark: hsl(var(--hue) 10% 10%);
   
-  --text-light: #2D3748;
-  --text-dark: #D1D5DB;
+  --text-light: hsl(var(--hue) 40% 30%);
+  --text-dark: hsl(var(--hue) 40% 70%);
   
   --overlay-light: hsl(var(--hue) var(--sat) 90% / 40%);
   --overlay-dark: hsl(var(--hue) var(--sat) 10% / 40%);
 
-  /* --overlay-light: #F3F4F688; */
-  /* --overlay-dark: #1A1A1A88; */
-  
   --radius-lg: 14px;
   --radius-md: 10px;
   --radius-sm: 6px;
@@ -37,8 +34,8 @@
   --icon: var(--primary);
   --title: var(--primary-dark);
 
-  --gradient-light: hsl(var(--hue) 4% 85%);
-  --gradient-dark: hsl(var(--hue) 3% 72%);
+  --gradient-light: hsl(var(--hue) 10% 85%);
+  --gradient-dark: hsl(var(--hue) 10% 75%);
 
   --hover: var(--secondary-light);
 
@@ -46,12 +43,12 @@
 
   --glass: var(--overlay-light);
 
-  --work-card: linear-gradient(135deg, 
-    hsl(var(--hue) calc(var(--sat) + 20%) 80% / 0.5), 
-    hsl(var(--hue) calc(var(--sat) + 20%) 95% / 0.2));
+  --work-card: linear-gradient(135deg,
+    var(--accent-light),
+    var(--bg));
   --proj-card: linear-gradient(135deg, 
-    hsl(calc(var(--hue) - 40) calc(var(--sat) + 20%) 80% / 0.5),
-    hsl(calc(var(--hue) - 40) calc(var(--sat) + 20%) 95% / 0.2));
+    var(--gradient-light),
+    var(--bg));
 
   color-scheme: light !important;
 }
@@ -78,14 +75,14 @@
   }
 }
 
-@media print,
-(width: 780px) {
-  :root {
-    --bg: white !important;
-    --fg: var(--text-light) !important;
-    --icon: var(--primary-dark) !important;
-    --accent: var(--accent-dark) !important;
-    --title: var(--primary-dark) !important;
-    --glass: var(--overlay-light) !important;
-  }
-}
+/* @media print, */
+/* (width: 780px) { */
+/*   :root { */
+/*     --bg: white !important; */
+/*     --fg: var(--text-light) !important; */
+/*     --icon: var(--primary-dark) !important; */
+/*     --accent: var(--accent-dark) !important; */
+/*     --title: var(--primary-dark) !important; */
+/*     --glass: var(--overlay-light) !important; */
+/*   } */
+/* } */

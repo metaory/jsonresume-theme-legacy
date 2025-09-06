@@ -2,38 +2,41 @@ import vituum from 'vituum'
 import handlebars from '@vituum/vite-plugin-handlebars'
 import tailwindcss from '@vituum/vite-plugin-tailwindcss'
 import { addDynamicIconSelectors } from '@iconify/tailwind'
-import { readFileSync, readdirSync } from 'node:fs'
+import { readFileSync } from 'node:fs'
 
 const readJson = path => JSON.parse(readFileSync(path, { encoding: 'utf8' }))
 
-const getPageData = page => {
-  try {
-    return readJson(`./src/pages/${page}.json`)
-  } catch {
-    return {}
-  }
+const getHueValue = pageData => pageData?.meta?.themeOptions?.['theme-hue'] ?? 0
+const getSatValue = pageData => pageData?.meta?.themeOptions?.['theme-sat'] ?? 2
+
+// Load default icons and section titles
+const DEFAULT_ICONS = readJson('./src/data/icons.json')
+const DEFAULT_TITLES = {
+  "contacts": "contacts",
+  "summary": "summary",
+  "skills": "skills",
+  "languages": "languages",
+  "interests": "interests",
+  "works": "work experience",
+  "projects": "projects",
+  "certificates": "certificates",
+  "volunteers": "volunteers",
+  "educations": "education",
+  "references": "references"
 }
 
-const getThemeOptions = page => getPageData(page)?.meta?.themeOptions || {}
+const getIcon = (x, pageData) => {
+  const customIcons = pageData?.meta?.themeOptions?.iconMap || {}
+  const allIcons = { ...DEFAULT_ICONS, ...customIcons }
+  const iconName = allIcons[x.toLowerCase().replaceAll(' ', '-')]
+  return iconName ? `icon-[${iconName}]`.replace(':', '--') : ''
+}
 
-const getHueValue = page => getThemeOptions(page)?.['theme-hue'] ?? 0
-const getSatValue = page => getThemeOptions(page)?.['theme-sat'] ?? 2
-
-// Static data from all pages
-const { ICONS, TITLES } = readdirSync('./src/pages').reduce(
-  (acc, page) => {
-    const data = getPageData(page.replace('.json', ''))
-    const { iconMap = {}, sectionTitles = {} } = data?.meta?.themeOptions || {}
-    return {
-      ICONS: { ...acc.ICONS, ...iconMap },
-      TITLES: { ...acc.TITLES, ...sectionTitles }
-    }
-  },
-  { ICONS: {}, TITLES: {} }
-)
-
-const getIcon = x => `icon-[${ICONS[x.toLowerCase().replaceAll(' ', '-')]}]`.replace(':', '--')
-const getTitle = x => TITLES[x] || x
+const getTitle = (x, pageData) => {
+  const customTitles = pageData?.meta?.themeOptions?.sectionTitles || {}
+  const allTitles = { ...DEFAULT_TITLES, ...customTitles }
+  return allTitles[x] || x
+}
 
 const mkDateFormatter = opt => str =>
   Date.parse(str) ? new Intl.DateTimeFormat('en-US', opt).format(new Date(str)) : str
@@ -47,16 +50,16 @@ export default {
         Y: mkDateFormatter({ year: 'numeric' }),
         MY: mkDateFormatter({ year: 'numeric', month: 'short' }),
         DMY: mkDateFormatter({ year: 'numeric', month: 'short', day: 'numeric' }),
-        ICO: getIcon,
-        TITLE: getTitle,
-        HUE: getHueValue,
-        SAT: getSatValue,
+        ICO: (x, { data }) => getIcon(x, data.root),
+        TITLE: (x, { data }) => getTitle(x, data.root),
+        HUE: (_, { data }) => getHueValue(data.root),
+        SAT: (_, { data }) => getSatValue(data.root),
         URL: url => url.split('/').at(-1),
         URL_SEMI: url => url.split('https://').at(-1),
         URL_GIST: url => url.split('gist.github.com/metaory/').at(-1),
-        URL_ICO: url => {
+        URL_ICO: (url, { data }) => {
           const [, domain] = url.match(/https:..(\w+).\w+/)
-          return getIcon(domain)
+          return getIcon(domain, data.root)
         },
       },
     }),
@@ -64,7 +67,7 @@ export default {
       tailwindcss: {
         content: ['./src/components/*.hbs'],
         theme: { extend: {} },
-        safelist: Object.values(ICONS).map(x => `icon-[${x.replace(':', '--')}]`),
+        safelist: Object.values(DEFAULT_ICONS).map(x => `icon-[${x.replace(':', '--')}]`),
         plugins: [addDynamicIconSelectors()],
       },
     }),

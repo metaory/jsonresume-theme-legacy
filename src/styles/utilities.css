@@ -17,9 +17,9 @@
 
 
   html {
-    background: white !important;
+    /* background: white !important; */
     color-scheme: light !important;
-    height: 100% !important;
+    /* height: 100% !important; */
   }
 
   main {
@@ -52,19 +52,12 @@ html {
 
 html {
   background-color: var(--bg);
-  background-image:
-    radial-gradient(1200px 600px at 60% 20%, hsl(var(--hue) 12% 92% / 0.35), transparent 60%),
-    radial-gradient(1000px 500px at 20% 80%, hsl(calc(var(--hue) + 30deg) 10% 94% / 0.25), transparent 60%);
   transition: background-color 0.4s linear;
 }
 
 body {
   display: grid;
   justify-content: center;
-  background-image: url('/src/assets/bg.svg');
-  background-position: 60%;
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 
 main {
@@ -602,7 +595,7 @@ span.url,
   left: 1em;
   opacity: 0.4;
   transition: all 0.3s ease;
-  background: linear-gradient(to right, #55FFDD, #6655FF);
+  background: linear-gradient(135deg, var(--secondary-light), var(--primary));
 }
 
 #github:hover {
@@ -625,7 +618,8 @@ span.url,
   backdrop-filter: blur(var(--blur));
   border-radius: var(--radius-lg);
   padding: 1em;
-  box-shadow: 0 4px 42px snow;
+  box-shadow: 0 4px 40px var(--primary);
+  outline: 4px solid var(--primary-light);
 }
 
 .hue-slider-header {

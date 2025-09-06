@@ -135,7 +135,7 @@ section.main-summary {
 #languages .language-item {
   padding: 4px 10px;
   margin-bottom: 8px;
-  color: var(--icon);
+  color: var(--fg);
 }
 
 /* Skills - Only unique layout overrides */
