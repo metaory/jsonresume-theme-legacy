@@ -76,7 +76,7 @@ h6,
 header {
   font-family: Bungee, monospace;
   font-weight: normal;
-  text-shadow: 0 0 16px currentColor;
+  text-shadow: 0 0 24px currentColor;
 }
 
 h1 {
@@ -96,14 +96,14 @@ p {
 em {
   color: var(--fg);
   opacity: 0.7;
-  font-family: Radon, serif;
+  font-family: 'Monaspace Radon', serif;
 }
 strong {
   font-weight: 700;
 }
 blockquote {
   color: var(--icon);
-  font-family: Radon, serif;
+  font-family: 'Monaspace Radon', serif;
   margin-bottom: 1em;
 }
 
@@ -385,7 +385,7 @@ li {
   font-weight: 900;
   border: none;
   font-size: 1.8rem;
-  font-family: BungeeShade, monospace;
+  font-family: 'Bungee Hairline', monospace;
   width: max-content;
 }
 
@@ -484,8 +484,9 @@ span.url,
 .item-count {
   color: var(--fg);
   letter-spacing: 4px;
-  font-family: Bungee, monospace;
+  font-family: 'Rubik Variable', monospace;
   font-size: 0.6em;
+  font-weight: 600;
   opacity: 0.8;
   vertical-align: top;
 }
@@ -774,12 +775,14 @@ span.url,
 
 /* Footer */
 footer {
-  color: var(--fg);
+  color: var(--primary);
   text-align: center;
+  text-shadow: 0 0 20px currentColor;
 }
 
 footer a {
   padding: 0 8px;
+  font-family: 'Monaspace Radon', monospace;
 }
 
 /* Base Styles */

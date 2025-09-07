@@ -57,7 +57,7 @@
 }
 
 #header .label h2 {
-  font-family: BlackoutMidnight, monospace;
+  font-family: 'Blackout Midnight', monospace;
   text-align: center;
   letter-spacing: 2px;
   padding-top: 20px;
@@ -212,9 +212,11 @@ section.main-summary {
   content: '';
   position: absolute;
   border-radius: var(--radius-md);
-  background: linear-gradient(var(--accent), var(--primary));
+  /* background: linear-gradient(var(--accent), var(--primary)); */
+  background: linear-gradient(var(--primary), var(--secondary-light));
   width: 6px;
   height: 3em;
+  left: -4px;
 }
 
 #references blockquote {

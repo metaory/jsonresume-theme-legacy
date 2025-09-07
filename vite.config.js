@@ -11,17 +11,20 @@ const getSatValue = pageData => pageData?.meta?.themeOptions?.['theme-sat'] ?? 2
 
 // Load default icons and section titles
 const DEFAULT_ICONS = readJson('./src/data/icons.json')
+
 const DEFAULT_TITLES = {
-  "contacts": "contacts",
-  "summary": "summary",
+  "basics": "contacts",
+  "interests": "interests",
   "skills": "skills",
   "languages": "languages",
-  "interests": "interests",
-  "works": "work experience",
+  "overview": "overview",
+  "work": "work experience",
   "projects": "projects",
+  "volunteer": "volunteers",
+  "education": "education",
+  "awards": "awards",
   "certificates": "certificates",
-  "volunteers": "volunteers",
-  "educations": "education",
+  "publications": "publications",
   "references": "references"
 }
 
@@ -32,11 +35,13 @@ const getIcon = (x, pageData) => {
   return iconName ? `icon-[${iconName}]`.replace(':', '--') : ''
 }
 
-const getTitle = (x, pageData) => {
-  const customTitles = pageData?.meta?.themeOptions?.sectionTitles || {}
-  const allTitles = { ...DEFAULT_TITLES, ...customTitles }
-  return allTitles[x] || x
-}
+const getTitle = (x,
+  { meta: {
+    themeOptions: { sections = {}, sectionTitles = {} } = {}
+  } = {} }) =>
+  sections[x] && typeof sections[x] === 'string'
+    ? sections[x]
+    : { ...DEFAULT_TITLES, ...sectionTitles }[x] || x
 
 const mkDateFormatter = opt => str =>
   Date.parse(str) ? new Intl.DateTimeFormat('en-US', opt).format(new Date(str)) : str

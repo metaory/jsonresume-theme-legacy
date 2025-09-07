@@ -247,6 +247,10 @@
     "themeOptions": {
       "theme-hue": 250,
       "theme-sat": 40,
+      "sections": {
+        "skills": "Powers",
+        "overview": true
+      },
       "lastModified": "2024-09-01T00:00:00.000Z",
       "canonical": "https://github.com/metaory/jsonresume-theme-legacy",
       "version": "0.1.0"

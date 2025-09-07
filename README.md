@@ -48,6 +48,12 @@ http://localhost:5173/private
 
 # build private pdf
 npm run build:private
+
+# optimize and version pdf (creates: private.{USER}.v{VERSION}.pdf)
+npm run optimize:pdf
+
+# or combine both steps
+npm run build:private && npm run optimize:pdf
 ```
 
 > [!NOTE]
@@ -99,6 +105,89 @@ Remote or local paths (local from root):
 ### Summary
 
 `basics.summary` accepts raw HTML.
+
+### Sections
+
+Control section order, visibility, and titles:
+
+```jsonc
+{
+  "meta": {
+    "themeOptions": {
+      "sections": {
+        "basics": true,
+        "work": "Professional Experience",
+        "skills": true,
+        "projects": false
+      }
+    }
+  }
+}
+```
+
+- **Default**: All sections render in default order
+- **Visibility**: Set to `false` to hide section
+- **Titles**: String values override defaults, `true` uses default title
+- **Order**: CSS Grid areas (todo)
+
+<details>
+<summary>Examples</summary>
+
+**Default behavior (no config):**
+
+```jsonc
+// Renders all sections in default order
+```
+
+**Hide specific sections:**
+
+```jsonc
+{
+  "meta": {
+    "themeOptions": {
+      "sections": {
+        "projects": false,
+        "volunteer": false
+      }
+    }
+  }
+}
+```
+
+**Custom order + hide + custom titles:**
+
+```jsonc
+{
+  "meta": {
+    "themeOptions": {
+      "sections": {
+        "work": "Professional Experience",
+        "skills": true,
+        "basics": true,
+        "projects": false
+      }
+    }
+  }
+}
+```
+
+**Minimal config (just reorder):**
+
+```jsonc
+{
+  "meta": {
+    "themeOptions": {
+      "sections": {
+        "work": true,
+        "skills": true,
+        "basics": true
+      }
+    }
+  }
+}
+```
+
+</details>
 
 ### Titles
 
