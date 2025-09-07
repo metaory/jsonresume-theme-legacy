@@ -12,9 +12,9 @@
   justify-content: center;
   color: var(--primary);
   align-items: center;
-  font-size: 3.8rem;
-  margin-bottom: 0.6em;
-  padding-left: 1em;
+  font-size: 3.4rem;
+  margin-bottom: 0.4em;
+  padding-left: 0.8em;
   text-shadow:
     var(--primary) 0.5px 0.5px,
     var(--primary) 1px 1px,
@@ -51,9 +51,9 @@
 
 #header .label {
   border-radius: 3em;
-  margin: 2em 1em;
+  margin: 1.5em 0.8em;
   grid-template-columns: 1fr 3fr;
-  gap: 2em;
+  gap: 1.5em;
 }
 
 #header .label h2 {
@@ -93,25 +93,25 @@
 section.main-summary {
   width: 100%;
   max-width: 200mm;
-  font-size: 15px;
+  font-size: 14px;
   font-family: 'Rubik Variable', sans-serif;
   font-weight: 500;
   text-wrap: balance;
-  padding: 1em 2em;
-  margin: 0 auto 2em;
+  padding: 0.8em 1.5em;
+  margin: 0 auto 1.5em;
 }
 
 /* Component-Specific Overrides */
 
 /* Interests - Only unique styling */
 #interests {
-  margin-bottom: 3em;
+  margin-bottom: 2.2em;
   li {
     display: block;
     font-family: 'Rubik Variable', monospace;
     font-weight: 500;
     letter-spacing: -0.9;
-    padding: 4px 12px;
+    padding: 3px 10px;
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
@@ -143,10 +143,10 @@ section.main-summary {
   display: flex;
   flex-direction: column;
   align-items: stretch;
-  gap: 0.5em;
+  gap: 0.4em;
   width: 100%;
   min-width: 0;
-  padding-bottom: 1.2em;
+  padding-bottom: 1em;
 }
 
 #skills .item h3 {
@@ -158,9 +158,9 @@ section.main-summary {
 #skills .keywords {
   order: 2;
   flex-wrap: wrap;
-  gap: 0.5em;
+  gap: 0.4em;
   padding: 0;
-  margin: 0.5em 0 0 0;
+  margin: 0.4em 0 0 0;
   width: 100%;
   min-height: 0;
   overflow: visible;
