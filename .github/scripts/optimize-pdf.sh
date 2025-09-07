@@ -13,7 +13,12 @@ OUT="${IN%.pdf}-tmp.pdf"
 # Get version from package.json and user from env
 VERSION=$(node -p "require('./package.json').version")
 USER="${USER:-unknown}"
-FINAL_NAME="private.${USER}.v${VERSION}.pdf"
+
+# Extract first word from input filename
+FIRST_WORD=${IN##*/}
+FIRST_WORD=${FIRST_WORD%.pdf}
+FIRST_WORD=${FIRST_WORD%%.*}
+FINAL_NAME="${FIRST_WORD}.${USER}.v${VERSION}.pdf"
 
 if command -v gs &> /dev/null; then
     echo "Compressing PDF with Ghostscript..."

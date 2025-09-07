@@ -54,6 +54,9 @@ npm run optimize:pdf
 
 # or combine both steps
 npm run build:private && npm run optimize:pdf
+
+# for sample pdf optimization
+npm run build:sample && npm run optimize:pdf out/sample.pdf
 ```
 
 > [!NOTE]

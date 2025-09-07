@@ -1,6 +1,6 @@
 {
   "name": "jsonresume-theme-legacy",
-  "version": "7.0.2",
+  "version": "7.0.3",
   "description": "✱ Modern Vite-based JSONResume theme with Iconify integration, customizable colors, and PDF export capabilities",
   "author": "metaory <metaory@gmail.com>",
   "bugs": "https://github.com/metaory/jsonresume-theme-legacy/issues",
@@ -11,7 +11,7 @@
   "scripts": {
     "dev": "vite dev --host",
     "optimize:images": "bash .github/scripts/optimize-images.sh",
-    "optimize:pdf": "bash .github/scripts/optimize-pdf.sh out/private.pdf",
+    "optimize:pdf": "bash .github/scripts/optimize-pdf.sh",
     "build": "npm run build:private",
     "build:vite": "vite build",
     "build:screenshot": "chromium --headless --disable-gpu --virtual-time-budget=2000 --screenshot --clip=0,0,780,790 http://localhost:5173",
