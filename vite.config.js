@@ -66,6 +66,7 @@ export default {
           const [, domain] = url.match(/https:..(\w+).\w+/)
           return getIcon(domain, data.root)
         },
+        isArray: (value) => Array.isArray(value),
       },
     }),
     tailwindcss({

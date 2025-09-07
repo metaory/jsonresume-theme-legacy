@@ -1,4 +1,4 @@
-{{#if volunteer.length}}
+{{#if (isArray volunteer)}}
   {{> components/hr.hbs size="md" }}
   <section class="section">
     <header class="section-header">
@@ -71,5 +71,5 @@
       </section>
     {{/each}}
   </section>
-</section>
+  </section>
 {{/if}}
