@@ -3,7 +3,7 @@
   <h1>⌞⌃⌄⌝</h1>
   <i><small>jsonresume theme v7.x</small></i><br>
   <a href="https://metaory.github.io/jsonresume-theme-legacy">demo</a> |
-  <a href="sample.pdf">sample.pdf</a>
+  <a href="out/sample.pdf">sample.pdf</a>
 </div>
 
 <p align="center">
