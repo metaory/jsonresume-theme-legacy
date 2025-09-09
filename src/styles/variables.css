@@ -6,8 +6,8 @@
   --primary-light: hsl(var(--hue) var(--sat) 75%);
   --primary-dark: hsl(var(--hue) var(--sat) 22%);
 
-  --secondary: hsl(calc(var(--hue) + 12) var(--sat) 42%);
-  --secondary-light: hsl(calc(var(--hue) + 12) var(--sat) 82%);
+  --secondary: hsl(calc(var(--hue) + 20) var(--sat) 42%);
+  --secondary-light: hsl(calc(var(--hue) + 20) var(--sat) 82%);
 
   --accent: hsl(calc(var(--hue) - 20) var(--sat) 45%);
   --accent-light: hsl(calc(var(--hue) - 20) var(--sat) 85%);
@@ -33,6 +33,9 @@
 
   --icon: var(--primary);
   --title: var(--primary-dark);
+
+  --primary-vivid: hsl(var(--hue) 50% 60%);
+  --secondary-vivid: hsl(calc(var(--hue) + 20) 50% 60%);
 
   --gradient-light: hsl(var(--hue) 10% 85%);
   --gradient-dark: hsl(var(--hue) 10% 75%);

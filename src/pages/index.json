@@ -245,8 +245,8 @@
   ],
   "meta": {
     "themeOptions": {
-      "theme-hue": 250,
-      "theme-sat": 40,
+      "theme-hue": 240,
+      "theme-sat": 20,
       "sections": {
         "skills": "Powers",
         "overview": true

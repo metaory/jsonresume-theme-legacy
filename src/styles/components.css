@@ -86,6 +86,7 @@
 
 #header span.image > img {
   width: 60px;
+  padding: 1px;
   opacity: 0.9;
 }
 

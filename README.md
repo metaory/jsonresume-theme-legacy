@@ -7,7 +7,7 @@
 </div>
 
 <p align="center">
-  <img src=".github/assets/themes.png" width="70%" />
+  <img src=".github/assets/screenshot.png" width="80%" />
 </p>
 
 ---

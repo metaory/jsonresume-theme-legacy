@@ -1,6 +1,14 @@
 <!-- Hue Slider UI -->
+
 <div id="hue-slider" class="hue-slider">
+  <span id="hue-slider-handle">
+    <span class="icon {{ ICO "arrow-left" }}"></span>
+  </span>
   <div class="hue-slider-card">
+    <div class="pulse-ripple">
+      <div class="pulse-circle"></div>
+      <div class="pulse-circle delay"></div>
+    </div>
     <div class="hue-slider-header">
       <span class="slider-label">theme-hue</span>
       <span class="hue-value" id="hue-value">{{ HUE page }}</span>
