@@ -10,6 +10,20 @@
   <img src=".github/assets/screenshot.png" width="80%" />
 </p>
 
+> [!NOTE]
+> rev3
+> - Astro over Handlebars + Vite
+> - 50% smaller (~1,535 vs ~3,110 lines)
+> 
+> <div align="center">
+>   <i><small>jsonresume-theme-roundy v0.10.0</small></i><br>
+>   <img valign="middle" src="https://github.com/metaory/jsonresume-theme-roundy/blob/master/public/logo.png?raw=true" width="30"/>
+>   <a href="https://metaory.github.io/jsonresume-theme-roundy">demo</a> |
+>   <a href="https://github.com/metaory/jsonresume-theme-roundy/blob/master/out/sample-basic.pdf">sample.pdf</a>
+>   <br>
+>   <a href="https://github.com/metaory/jsonresume-theme-roundy">github.com/metaory/jsonresume-theme-roundy</a>
+> </div>
+
 ---
 
 ## USAGE
