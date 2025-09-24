@@ -10,20 +10,6 @@
   <img src=".github/assets/screenshot.png" width="80%" />
 </p>
 
-> [!NOTE]
-> rev3
-> - Astro over Handlebars + Vite
-> - 50% smaller (~1,535 vs ~3,110 lines)
-> 
-> <div align="center">
->   <i><small>jsonresume-theme-roundy v0.10.0</small></i><br>
->   <img valign="middle" src="https://github.com/metaory/jsonresume-theme-roundy/blob/master/public/logo.png?raw=true" width="30"/>
->   <a href="https://metaory.github.io/jsonresume-theme-roundy">demo</a> |
->   <a href="https://github.com/metaory/jsonresume-theme-roundy/blob/master/out/sample-basic.pdf">sample.pdf</a>
->   <br>
->   <a href="https://github.com/metaory/jsonresume-theme-roundy">github.com/metaory/jsonresume-theme-roundy</a>
-> </div>
-
 ---
 
 ## USAGE
@@ -235,6 +221,24 @@ Live theme editor in top-right corner with hue/saturation sliders. Starts in lig
 - Requires Chromium-based browser for PDF exports (Chrome, Edge, Brave, etc.)
 - Update `package.json` scripts to use your browser: `chrome`, `edge`, `brave`, etc.
 - Tested on Linux and macOS (Windows may work but untested)
+
+---
+
+### Unstable rev3
+
+> [!NOTE]
+> rev3
+> - Astro over Handlebars + Vite
+> - 50% smaller (~1,535 vs ~3,110 lines)
+> 
+> <div align="center">
+>   <i><small>jsonresume-theme-roundy v0.10.0</small></i><br>
+>   <img valign="middle" src="https://github.com/metaory/jsonresume-theme-roundy/blob/master/public/logo.png?raw=true" width="30"/>
+>   <a href="https://metaory.github.io/jsonresume-theme-roundy">demo</a> |
+>   <a href="https://github.com/metaory/jsonresume-theme-roundy/blob/master/out/sample-basic.pdf">sample.pdf</a>
+>   <br>
+>   <a href="https://github.com/metaory/jsonresume-theme-roundy">github.com/metaory/jsonresume-theme-roundy</a>
+> </div>
 
 ---
 
