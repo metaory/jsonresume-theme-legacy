@@ -24,10 +24,16 @@
                     <span class="icon {{ ICO this }}"></span>
                   {{/each}}
                 {{/if}}
+                {{#if stars}}
+                  <span class="stars">
+                    <span class="icon {{ ICO "star" }}"></span>
+                    {{stars}}
+                  </span>
+                {{/if}}
                 <span class="url">
                   {{#if url}}
                     <span class="icon {{ ICO "link" }}"></span>
-                    <a target="_blank" href="{{ url }}">{{ URL url }}</a>
+                    <a target="_blank" href="{{ url }}">{{ name }}</a>
                   {{ else }}
                     <div class="text-title-font">{{ name }}</div>
                   {{/if}}

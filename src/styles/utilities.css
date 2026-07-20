@@ -10,11 +10,9 @@
 
   #scheme-toggle,
   #github,
-  #hue-slider
-  {
+  #hue-slider {
     display: none !important;
   }
-
 
   html {
     background: white !important;
@@ -41,7 +39,7 @@ body::-webkit-scrollbar {
 
 body,
 html {
-  font-family: 'Rubik Variable', monospace, sans-serif;
+  font-family: "Rubik Variable", monospace, sans-serif;
   font-weight: 400;
   font-size: 14px;
   color: var(--fg);
@@ -76,7 +74,7 @@ h6,
 header {
   font-family: Bungee, monospace;
   font-weight: normal;
-  text-shadow: 0 0 24px currentColor;
+  text-shadow: 0 0 32px currentColor;
 }
 
 h1 {
@@ -96,19 +94,21 @@ p {
 em {
   color: var(--fg);
   opacity: 0.7;
-  font-family: 'Monaspace Radon', serif;
+  font-family: "Monaspace Radon", serif;
 }
 strong {
   font-weight: 700;
 }
 blockquote {
   color: var(--icon);
-  font-family: 'Monaspace Radon', serif;
+  font-family: "Monaspace Radon", serif;
   margin-bottom: 1em;
 }
 
 /* Link Reset */
-a { transition: all 0.1s ease; }
+a {
+  transition: all 0.1s ease;
+}
 a,
 a:hover,
 a:visited {
@@ -130,8 +130,12 @@ li {
 /* --- Utility Classes --- */
 
 /* Z-Index Utilities */
-.z-1 { z-index: 1; }
-.z-2 { z-index: 2; }
+.z-1 {
+  z-index: 1;
+}
+.z-2 {
+  z-index: 2;
+}
 
 /* Font Utilities */
 .font-bungee {
@@ -186,7 +190,6 @@ li {
 .subsection-header:first-of-type {
   margin: 0;
 }
-
 
 /* Item Header Pattern */
 .item-header {
@@ -249,8 +252,13 @@ li {
     color: var(--fg);
     font-size: 0.9em;
   }
-  
-  h1, h2, h3, h4, h5, h6 {
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     word-break: keep-all;
     overflow-wrap: normal;
   }
@@ -270,14 +278,12 @@ li {
   position: relative;
   line-height: 1.2;
   text-align: center;
-  font-family: 'Rubik Variable', monospace;
+  font-family: "Rubik Variable", monospace;
   font-weight: 200;
   letter-spacing: 0.02em;
   text-shadow: 0 0 1px currentColor;
   overflow: hidden;
 }
-
-
 
 .card-small {
   width: 100%;
@@ -321,8 +327,14 @@ li {
   min-height: calc(1.2em * 3);
 }
 
-.break-anywhere { overflow-wrap: anywhere; word-break: break-word; }
-.title-sm { font-size: 0.95rem; line-height: 1.2; }
+.break-anywhere {
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+.title-sm {
+  font-size: 0.95rem;
+  line-height: 1.2;
+}
 
 /* Keywords Pattern */
 .keywords,
@@ -389,7 +401,7 @@ li {
   font-weight: 900;
   border: none;
   font-size: 1.8rem;
-  font-family: 'Bungee Hairline', monospace;
+  font-family: "Bungee Hairline", monospace;
   width: max-content;
 }
 
@@ -444,7 +456,7 @@ span.url,
 
 .level .bar::after {
   position: absolute;
-  content: ' ';
+  content: " ";
   top: 0;
   left: 0;
   height: 10px;
@@ -452,30 +464,30 @@ span.url,
 }
 
 /* Language-specific bar width */
-#languages .level .bar {
-  width: 40mm !important;
-  margin: 0 8px;
-}
+/* #languages .level .bar { */
+/*   width: 40mm !important; */
+/*   margin: 0 8px; */
+/* } */
 
 /* Level-specific gradients and widths */
-.level.beginner .bar::after {
+.item .beginner .bar::after {
   background: hsl(var(--hue) max(calc(var(--sat) + 20%), var(--sat)) 80%);
   width: 25%;
 }
 
-.level.intermediate .bar::after {
+.item .intermediate .bar::after {
   background: hsl(var(--hue) max(calc(var(--sat) + 15%), var(--sat)) 75%);
   width: 55%;
 }
 
-.level.advanced .bar::after,
-.level.fluent .bar::after {
+.item .advanced .bar::after,
+.item .fluent .bar::after {
   background: hsl(var(--hue) max(calc(var(--sat) + 10%), var(--sat)) 70%);
   width: 75%;
 }
 
-.level.master .bar::after,
-.level.native.speaker .bar::after {
+.item .master .bar::after,
+.item .native.speaker .bar::after {
   background: hsl(var(--hue) max(calc(var(--sat) + 5%), var(--sat)) 65%);
   width: 100%;
 }
@@ -488,11 +500,23 @@ span.url,
 .item-count {
   color: var(--fg);
   letter-spacing: 4px;
-  font-family: 'Rubik Variable', monospace;
+  font-family: "Rubik Variable", monospace;
   font-size: 0.6em;
   font-weight: 600;
   opacity: 0.8;
   vertical-align: top;
+}
+
+.stars {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.25em;
+  font-family: "Rubik Variable", monospace;
+  font-size: 1.1em;
+  font-weight: 700;
+  line-height: 1;
+  opacity: 0.85;
 }
 
 /* Company/Institution Labels */
@@ -500,7 +524,7 @@ span.url,
 .institution::before,
 .organization::before,
 .awarder::before {
-  content: '@';
+  content: "@";
   color: var(--fg);
   font-style: italic;
   padding: 0 4px 0 8px;
@@ -509,7 +533,7 @@ span.url,
 
 /* Work location @ sign */
 #work .location::before {
-  content: '@';
+  content: "@";
   color: var(--fg);
   font-style: italic;
   padding: 0 4px 0 8px;
@@ -646,12 +670,13 @@ span.url,
 }
 
 @keyframes pulse {
-  0%, 100% {
-    opacity: .1;
+  0%,
+  100% {
+    opacity: 0.1;
     transform: translate(4px, 0) scale(1);
   }
   50% {
-    opacity: .6;
+    opacity: 0.6;
     color: var(--secondary-light);
     transform: translate(0, 0) scale(1.1);
   }
@@ -697,13 +722,14 @@ span.url,
 }
 
 @keyframes pulse-ripple {
-  0%, 100% {
+  0%,
+  100% {
     opacity: 0;
-    transform: translate(-50%, -50%) scale(.2);
+    transform: translate(-50%, -50%) scale(0.2);
   }
   50% {
-    opacity: .4;
-    transform: translate(-50%, -50%) scale(.8);
+    opacity: 0.4;
+    transform: translate(-50%, -50%) scale(0.8);
   }
 }
 
@@ -747,20 +773,22 @@ span.url,
 }
 
 .hue-range {
-  background: linear-gradient(90deg, 
-    hsl(0deg 100% 50%), 
-    hsl(60deg 100% 50%), 
-    hsl(120deg 100% 50%), 
-    hsl(180deg 100% 50%), 
-    hsl(240deg 100% 50%), 
-    hsl(300deg 100% 50%), 
+  background: linear-gradient(
+    90deg,
+    hsl(0deg 100% 50%),
+    hsl(60deg 100% 50%),
+    hsl(120deg 100% 50%),
+    hsl(180deg 100% 50%),
+    hsl(240deg 100% 50%),
+    hsl(300deg 100% 50%),
     hsl(360deg 100% 50%)
   );
 }
 
 .sat-range {
-  background: linear-gradient(90deg, 
-    hsl(var(--hue) 0% 80%), 
+  background: linear-gradient(
+    90deg,
+    hsl(var(--hue) 0% 80%),
     hsl(var(--hue) 100% 80%)
   );
 }
@@ -841,9 +869,9 @@ span.url,
   height: 12px;
   display: block;
   position: relative;
-  margin: 0.8em 0;
+  margin: 0.4em 0;
   width: 100%;
-  background-image: url('/src/assets/line.svg');
+  background-image: url("/src/assets/line.svg");
   background-size: 25px 22px;
   background-repeat: space;
   opacity: 0.1;
@@ -884,7 +912,7 @@ footer {
 
 footer a {
   padding: 0 8px;
-  font-family: 'Monaspace Radon', monospace;
+  font-family: "Monaspace Radon", monospace;
 }
 
 /* Base Styles */
