@@ -7,6 +7,7 @@
   "homepage": "https://github.com/metaory/jsonresume-theme-legacy#readme",
   "repository": "git+https://github.com/metaory/jsonresume-theme-legacy.git",
   "type": "module",
+  "packageManager": "pnpm@11.15.1",
   "license": "MIT",
   "scripts": {
     "dev": "vite dev --host",
