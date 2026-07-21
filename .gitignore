@@ -4,4 +4,5 @@ private.*
 private*
 dist
 out
+src/styles/icons.safelist
 

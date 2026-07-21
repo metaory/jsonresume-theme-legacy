@@ -1,5 +1,7 @@
-@tailwind base;
-@tailwind components;
+@import "tailwindcss";
+@plugin "@iconify/tailwind4";
+@source "./icons.safelist";
+@source "../components/**/*.hbs";
 
 /* Print Mode Styles */
 @media print, (width: 780px) {

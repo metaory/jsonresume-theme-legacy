@@ -1,8 +1,7 @@
 import vituum from "vituum";
 import handlebars from "@vituum/vite-plugin-handlebars";
-import tailwindcss from "@vituum/vite-plugin-tailwindcss";
-import { addDynamicIconSelectors } from "@iconify/tailwind";
-import { readFileSync } from "node:fs";
+import tailwindcss from "@tailwindcss/vite";
+import { readFileSync, writeFileSync } from "node:fs";
 
 const readJson = (path) => JSON.parse(readFileSync(path, { encoding: "utf8" }));
 
@@ -13,6 +12,14 @@ const getSatValue = (pageData) =>
 
 // Load default icons and section titles
 const DEFAULT_ICONS = readJson("./src/data/icons.json");
+
+// TW4 scans source for class names; ICO helper builds them at render time
+writeFileSync(
+  "./src/styles/icons.safelist",
+  Object.values(DEFAULT_ICONS)
+    .map((x) => `icon-[${x.replace(":", "--")}]`)
+    .join("\n"),
+);
 
 const DEFAULT_TITLES = {
   basics: "contacts",
@@ -80,16 +87,7 @@ export default {
         isArray: (value) => Array.isArray(value),
       },
     }),
-    tailwindcss({
-      tailwindcss: {
-        content: ["./src/components/*.hbs"],
-        theme: { extend: {} },
-        safelist: Object.values(DEFAULT_ICONS).map(
-          (x) => `icon-[${x.replace(":", "--")}]`,
-        ),
-        plugins: [addDynamicIconSelectors()],
-      },
-    }),
+    tailwindcss(),
   ],
 };
 

@@ -22,24 +22,22 @@
     "preview": "vite preview"
   },
   "devDependencies": {
-    "@iconify/json": "~2.2.347",
-    "@iconify/tailwind": "~1.2.0",
-    "@vituum/vite-plugin-handlebars": "1.x",
-    "@vituum/vite-plugin-tailwindcss": "1.x",
-    "autoprefixer": "~10.4.21",
-    "postcss": "~8.5.4",
-    "tailwindcss": "~4.1.8",
-    "vite": "~6.4.2",
-    "vituum": "~1.2.0"
+    "@iconify/json": "~2.2.503",
+    "@iconify/tailwind4": "~1.2.3",
+    "@tailwindcss/vite": "~4.3.3",
+    "@vituum/vite-plugin-handlebars": "~2.0.2",
+    "tailwindcss": "~4.3.3",
+    "vite": "~8.1.5",
+    "vituum": "~2.0.2"
   },
   "dependencies": {
-    "@fontsource-variable/rubik": "^5.2.6",
-    "@fontsource/blackout-midnight": "^5.2.5",
-    "@fontsource/blackout-two-am": "^5.2.5",
-    "@fontsource/bungee": "^5.2.6",
-    "@fontsource/bungee-hairline": "^5.2.6",
-    "@fontsource/bungee-shade": "^5.2.6",
-    "@fontsource/monaspace-radon": "^5.2.5",
-    "@fontsource/rubik": "^5.2.6"
+    "@fontsource-variable/rubik": "^5.3.0",
+    "@fontsource/blackout-midnight": "^5.3.0",
+    "@fontsource/blackout-two-am": "^5.3.0",
+    "@fontsource/bungee": "^5.3.0",
+    "@fontsource/bungee-hairline": "^5.3.0",
+    "@fontsource/bungee-shade": "^5.3.0",
+    "@fontsource/monaspace-radon": "^5.3.0",
+    "@fontsource/rubik": "^5.3.0"
   }
 }
