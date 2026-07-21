@@ -1,7 +1,7 @@
 <div align="center">
   <img height="28" src="https://raw.githubusercontent.com/metaory/jsonresume-theme-legacy/master/src/assets/logo.svg">
   <h1>⌞⌃⌄⌝</h1>
-  <i><small>jsonresume theme v7.x</small></i><br>
+  <i><small>jsonresume theme v8.x</small></i><br>
   <a href="https://metaory.github.io/jsonresume-theme-legacy">demo</a> |
   <a href="out/sample.pdf">sample.pdf</a>
 </div>
