@@ -868,25 +868,45 @@ span.url,
 
 /* Line Pattern */
 .line-pattern {
-  height: 12px;
+  --line-pattern-content: ">>>>>>>>> :::::::::: >>>>>>>>> ::::::::: >>>>>>>> ::::::::: >>>>>>>>> ::::::::: >>>>>>>>>";
+  height: auto;
+  min-height: 0.75em;
   display: block;
   position: relative;
   margin: 0.4em 0;
   width: 100%;
-  background-image: url("/src/assets/line.svg");
-  background-size: 25px 22px;
-  background-repeat: space;
-  opacity: 0.1;
+  color: var(--primary);
+  font-family: "Monaspace Radon", monospace;
+  font-size: 12px;
+  line-height: 1;
+  overflow: hidden;
+  white-space: nowrap;
+  user-select: none;
+  pointer-events: none;
+  opacity: 0.4;
+
+  &::before {
+    content: var(--line-pattern-content);
+    display: block;
+    width: 100%;
+    text-align: justify;
+    text-align-last: justify;
+  }
 }
 
 .line-pattern.md {
-  height: 20px;
-  background-size: 40px 30px;
+  --line-pattern-content: "+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---";
+  min-height: 1em;
+  opacity: 0.2;
+  color: var(--primary);
+  font-size: 22px;
+  font-weight: bold;
 }
 
 .line-pattern.lg {
-  height: 30px;
-  background-size: 61px 51px;
+  min-height: 1.05em;
+  font-size: 1rem;
+  opacity: 0.22;
 }
 
 /* SVG HR Component */
