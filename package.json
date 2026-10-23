@@ -28,7 +28,7 @@
     "@tailwindcss/vite": "~4.3.3",
     "@vituum/vite-plugin-handlebars": "~2.0.2",
     "tailwindcss": "~4.3.3",
-    "vite": "~8.1.5",
+    "vite": "~8.1.6",
     "vituum": "~2.0.2"
   },
   "dependencies": {
